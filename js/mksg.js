@@ -27,7 +27,17 @@ $(function(){
        $(this).addClass(cgcssvalu);
     })
 
-
+    $(".sort_state").hover(
+      function() {
+      $(this).addClass("sort_state_hover");
+      $(".state_list").css("display","block");
+      $(".triangle").removeClass("triangle_down").addClass("triangle_up");
+    },
+    function() {
+      $(this).removeClass("sort_state_hover");
+       $(".state_list").css("display","none");
+       $(".triangle").removeClass("triangle_up").addClass("triangle_down");
+    });
 
 
 
