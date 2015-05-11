@@ -22,9 +22,9 @@
 ;(function($, undefined) {
 	"use strict";
 
-	var pluginName = 'scojs_tab';
+	var pluginName = 'scojs_tab2';
 
-	function Tab($header_wrapper, options) {
+	function scoTab($header_wrapper, options) {
 		this.options = $.extend({}, $.fn[pluginName].defaults, options);
 		this.$header_wrapper = $header_wrapper;
 
@@ -72,7 +72,7 @@
 		}
 	}
 
-	$.extend(Tab.prototype, {
+	$.extend(scoTab.prototype, {
 		select: function(index) {
 			this.$header_wrapper.find('> li:eq(' + index + ') a').trigger('click');
 			return this;
@@ -88,7 +88,7 @@
 					,data = $this.data()
 					,opts = $.extend({}, $.fn[pluginName].defaults, options, data)
 					;
-				obj = new Tab($this, opts);
+				obj = new scoTab($this, opts);
 				$.data(this, pluginName, obj);
 			}
 		});
@@ -99,7 +99,7 @@
 		if (typeof elem === 'string') {
 			elem = $(elem);
 		}
-		return new Tab(elem, options);
+		return new scoTab(elem, options);
 	};
 
 

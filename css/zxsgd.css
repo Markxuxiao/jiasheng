@@ -1061,6 +1061,14 @@
 .mod_tab .mod_tab_bd {
     border: 1px solid #E8E8E8;
 }
+
+
+.pane-wrapper > .active, .pane-wrapper > .prev, .pane-wrapper > .next {
+    display: block;
+}
+.pane-wrapper > div {
+    display: none;
+}
 /* 筛选模块结束 */
 
 

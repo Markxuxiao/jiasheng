@@ -26,7 +26,7 @@ $(function(){
        cgcss.removeClass(cgcssvalu);
        $(this).addClass(cgcssvalu);
     })
-
+    //问答列表筛选
     $(".sort_state").hover(
       function() {
       $(this).addClass("sort_state_hover");
@@ -38,8 +38,6 @@ $(function(){
        $(".state_list").css("display","none");
        $(".triangle").removeClass("triangle_up").addClass("triangle_down");
     });
-
-
 
 
 
