@@ -1266,9 +1266,173 @@
 	text-decoration: none !important;
 }
 
-/* 提问框模块 */
+/* 提问框模块end */
 
+/*zxwdpage*/
+/*问题begin*/
+.ask_qustion {
+    position: relative;
+    border: 1px solid #E8E8E8;
+    padding: 18px;
+}
 
+.ask_qustion h2 {
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+.ask_qustion_people {
+    color: #999;
+}
+.mtb10 {
+    margin: 10px auto;
+}
+.ask_solved {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.ask_qustion_people span {
+    margin: 0px 20px;
+    color: #EEE;
+}
+
+.ico_green_ask {
+    background: transparent url("../img/9901.png") no-repeat scroll 0px 0px;
+    width: 33px;
+    height: 28px;
+    position: absolute;
+    left: 0px;
+    top: -1px;
+}
+/*问题end*/
+h1.title {
+    font-weight: 100;
+    color: #333;
+    font-size: 20px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #EEE;
+}
+
+.ask_answer_li {
+    padding: 20px 0px;
+    border-bottom: 1px dashed #E8E8E8;
+}
+
+.ask_answer_li ul {
+    padding: 0px 0px 20px;
+}
+
+.ask_answer_li ul li {
+    position: relative;
+}
+.ask_btn_reply a {
+    color: #999;
+}
+.ask_btn_reply i {
+    margin-right: 5px;
+}
+.ico_praise_no,.ico_comment{
+	    background: transparent url(../img/9901.png) no-repeat scroll 0% 0%; display: inline-block;
+}
+.ico_comment {
+    background-position: 0px -44px;
+    width: 12px;
+    height: 11px;
+    vertical-align: middle;
+}
+.ico_praise_no {
+    background-position: -12px -44px;
+    width: 12px;
+    height: 11px;
+    vertical-align: middle;
+}
+
+.company_img {
+    display: block;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #EDECEC;
+    float: left;
+    margin-right: 10px;
+}
+.company_detail {
+    float: left;
+    width: 823px;
+}
+.company_name {
+    display: inline-block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    color: #01AF63;
+}
+.company_case {
+    color: #999;
+}
+.company_case b {
+    font-weight: 100;
+}
+.company_case span {
+    margin: 0px 20px;
+    color: #EEE;
+}
+.company_case .time {
+    text-align: right;
+    float: right;
+}
+.ask_one_p {
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.bg_f8f8f8 {
+    background: #F8F8F8 none repeat scroll 0% 0%;
+    position: relative;
+}
+.mtb10_ptl20 {
+    margin-top: 10px;
+    padding: 20px 0px 0px 20px;
+}
+
+.ask_textarea_h60 {
+    width: 828px;
+    padding: 10px;
+    min-height: 80px;
+    margin: 10px 0px;
+    border: 1px solid #EEE;
+    color: #BBB;
+    background: #FFF none repeat scroll 0% 0%;
+}
+.insert_img {
+    position: relative;
+}
+.insert_img_modle {
+    line-height: 32px;
+    color: #999;
+    position: relative;
+}
+.ptbr20 {
+    padding: 20px 20px 20px 0px;
+}
+.ask_btn_reply .col_r {
+    width: 50%;
+    text-align: right;
+}
+.col_r {
+    float: right;
+}
+input.btn_green {
+    display: inline-block;
+    height: 28px;
+    color: #FFF;
+    background-color: #FB8D0D;
+    border: medium none;
+    cursor: pointer;
+    padding: 0px 20px;
+}
 
 /* 翻页样式 */
 .pagination { display: inline-block; margin: 0 auto;}
@@ -1294,40 +1458,8 @@
 .fade{opacity: 0; transition: opacity 0.15s linear 0s;}
 .modal-header{padding: 9px 15px; border-bottom: 1px solid #EEE;}
 .modal-header .close{margin-top: 2px;}
-.modal-header h3 {
-	font-size: 14px;
-    margin: 0px;
-    line-height: 30px;
-}
+.modal-header h3 {font-size: 14px;margin: 0px;line-height: 30px;}
 .close{float: right; font-size: 20px; font-weight: bold; line-height: 20px; color: #000; text-shadow: 0px 1px 0px #FFF; opacity: 0.2;}
-
-
-.zx_modal {
-	width: 300px;
-	height: 200px;
-	margin: 10px 138px;
-
-}
-.zx_modal .zxipt {
-	margin: 10px 10px;
-	width: 180px;
-	height: 20px;
-	line-height: 25px;
-	border: 1px solid #D8D8D8;
-	padding: 4px 10px;
-	
-}
-.sghdbtn2 {
-    position: absolute;
-    top: 173px;
-	left: 199px;
-	width: 202px;
-    height: 34px;
-    color: #FFF;
-    background-color: #FB8D0D;
-    font-size: 14px;
-    text-align: center;
-    font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
-    border: medium none;
-    cursor: pointer;
-}
+.zx_modal{width: 300px;height: 200px;margin: 10px 138px;}
+.zx_modal .zxipt{margin: 10px 10px;width: 180px;height: 20px;line-height: 25px;border: 1px solid #D8D8D8;padding: 4px 10px;}
+.sghdbtn2{position: absolute; top: 173px;left: 199px;width: 202px; height: 34px; color: #FFF; background-color: #FB8D0D; font-size: 14px; text-align: center; font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu; border: medium none; cursor: pointer;}
