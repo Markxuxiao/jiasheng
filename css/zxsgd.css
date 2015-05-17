@@ -1434,6 +1434,78 @@ input.btn_green {
     padding: 0px 20px;
 }
 
+
+
+/* zxxwlist新闻列表 */
+.xwlist {
+	width: 100%;
+	border:1px solid #DFDFDF;
+}
+.xwlist_u li {
+	margin: 20px;
+	height: 185px;
+	border-bottom: 1px solid #DFDFDF;
+}
+.xwlist_u img {
+	width: 200px;
+	height: 160px;
+	float: left;
+}
+.wxlist_c {
+	width: 610px;
+	height: 160px;
+	margin-left: 20px;
+	overflow: hidden;
+	float: left;
+}
+.wxlist_c h1 {
+	font-weight: bold;
+	margin: 15px 0;
+
+}
+.wxlist_c p {
+	width: 610px;
+	height: 62px;
+	overflow: hidden;
+	color: #999999;
+}
+.wxlist_c_a {
+	display: block;
+	width: 93px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	margin-top: 20px;
+	background: #EAEAEA;
+}
+
+/*新闻详情*/
+.article_title{
+	border-bottom: 1px solid #DFDFDF;
+	margin: 0px 40px;
+}
+.article_title h1 {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: "微软雅黑","黑体";
+    font-weight: normal;
+    text-align: center;
+    margin: 0px;
+}
+.article_title p {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin: 10px 0px 15px;
+}
+.article_content {
+	line-height: 22px;
+	padding: 40px 47px 20px;
+
+}
+
 /* 翻页样式 */
 .pagination { display: inline-block; margin: 0 auto;}
 .pagination ul { font-size: 0; *word-spacing:-1px/*IE6、7*/; }
