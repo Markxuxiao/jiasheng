@@ -188,10 +188,10 @@
 					  position:relative;
 					  }
 
-.notice li a:link,.notice li a:visited{text-decoration:none;
+/*.notice li a:link,.notice li a:visited{
                                                color:#8B8B8B;}
 
-.notice li a:hover{color:#8B8B8B;}
+.notice li a:hover{color:#8B8B8B;}*/
 
 .mod {
 	width: 1198px;
@@ -246,7 +246,10 @@
 	background:url(../img/sgbtnr2_c2.gif) no-repeat;
 	float: right;
 }
-
+.modbtn:link, .modbtn:visited,.modbtn:active {
+    text-decoration: none;
+    color: #fff;
+}
 
 /*装修施工index页面*/
 .sghdleft {

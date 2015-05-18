@@ -1,1 +1,20 @@
-添加zxsgd.css文件
+﻿页面目录
+
+施工师傅模块 zxsgindex.html - zxsglist.html - zxsghome.html - zxsgpage.html
+问答模块     zxwdindex.html - zxwdlist.html - zxwdpage.html
+文章模块     zxxwlist.html - zxxwpage.html
+modal_zixun.html 为公用模块，获取用户手机弹窗，使用ajax方式加载。
+
+引用文件包括：
+mksg.js
+paomadeng.js
+sco.collapse.js
+sco.modal.js
+sco.panes.js
+sco.tab.js
+script.js
+
+zxsgd.css
+
+
+
