@@ -1,0 +1,219 @@
+.ds_hader {
+	width: 100%;
+	height: 465px;
+	background-color: #FF991C;
+}
+
+.ds_hd {
+	position: relative;	
+}
+.ds_zc {
+	position: absolute;
+	right: 56px;
+	top: 54px;
+	width: 254px;
+	height: 338px;
+	background: #fff;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+.ds_hd h1 {
+	font-size: 24px;
+	font-family:  "Microsoft YaHei";
+}
+.ds_hd h2 {
+	margin-bottom: 10px;
+ }
+.ds_hd select {
+	width: 224px;
+	height: 26px;
+	margin-bottom: 10px;
+}
+.ds_hd textarea {
+	width: 218px;
+}
+
+.ds_zc input {
+	margin-bottom: 10px;
+	width: 212px;
+	height: 20px;
+	padding: 3px 5px;
+}
+.ds_zc input[type="button"]{
+	height: 32px;
+	background-color: #FF991C;
+	color: #fff;
+	width: 224px;
+}
+
+.ds_zxlc {
+	margin-top: 20px;
+	position: relative;
+}
+.ds_zxlc h1 {
+	position: absolute;
+	top: 9px;
+	right: 47px;
+	font: 18px "Microsoft YaHei";
+	font-weight: bold;
+	color: #FB8D0D;
+}
+.ds_zxlc a {
+	position: absolute;
+	top: 45px;
+	right: 49px;
+	display: block;
+	width: 155px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	background-color: #FF991C;
+	color: #fff;
+}
+.ds_zxlc a:hover {
+	text-decoration: none;
+}
+
+.ds_tjpp h1 {
+	font:16px "Microsoft YaHei";
+	margin: 20px 0 10px 0;
+}
+
+.ds_tjpp li {
+	display: inline;
+	margin-right: 16px;
+	margin-bottom: 10px;
+}
+.ds_tjpp li img {
+	width: 90px;
+	height: 43px;
+}
+
+.ds_md2 {
+	width: 100%;
+	height: 500px;
+	margin-top: 20px;
+	background-color: #EEEEEE;
+	padding-top: 47px;
+}
+.ds_md3 {
+	height: 421px;
+	background: url(../img/design/de_20.jpg) no-repeat right bottom ;
+}
+.ds_md3 img {
+	margin: 30px 0;
+}
+#ds_md3_p {
+	width: 708px;
+	height: 290px;
+}
+#ds_md3_p b {
+	font-size: 47px;
+}
+#ds_md3_p p {
+	font: 14px/30px "Microsoft YaHei";
+}
+#ds_md4_img{
+	margin-bottom: 30px;
+}
+.ds_md5 {
+	width: 100%;
+	height: 644px;
+	background: url(../img/design/de_47.jpg) repeat ;
+}
+
+.ds_sjs_l {
+	width: 790px;
+	height: 520px;
+	float: left;
+}
+.ds_sjs_r {
+	width: 120px;
+	height: 503px;
+	float: left;
+}
+
+.ds_sjs_md_1 {
+	width: 120px;
+	height: 250px;
+
+}
+.ds_sjs_md_2 {
+	width: 250px;
+	height: 250px;
+}
+.ds_sjs_md_3 {
+	width: 120px;
+	height: 120px;
+}
+.ds_sjs_md_1, .ds_sjs_md_2, .ds_sjs_md_3{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: #ccc;
+	border: 1px solid #fff;
+}
+.ds_sjs1,.ds_sjs2{
+	float: right;
+	width: 261px;
+}
+.ds_sjs1 p{
+	margin-bottom: 10px;
+}
+.ds_sjs1 label {
+	font:14px "Microsoft YaHei";
+}
+.ds_sjs1 input{
+	width: 200px;
+	height: 20px;
+	padding: 3px 5px;
+}
+.ds_sjs1 input[type="button"]{
+	height: 32px;
+	background-color: #FF991C;
+	color: #FFF;
+	width: 254px;
+}
+.ds_md6 {
+	padding-top: 30px;
+}
+.ds_md6_l {
+	width: 258px;
+	float: left;
+
+}
+.ds_md6_l dt {
+	float: left;
+	width: 57px;
+	height: 45px;
+	margin-left: 20px;
+	border-right: 2px solid #ccc;
+}
+.ds_md6_l dt h1 {
+	font: 18px "Microsoft YaHei";
+}
+.ds_md6_l dt h2 {
+	font: 12px "Microsoft YaHei";
+	color: #ccc;
+}
+.ds_md6_l dd {
+	width: 171px;
+	height: 45px;
+	margin-left: 98px;
+}
+.ds_md6_l li {
+	float: left;
+	width: 57px;
+	height: 22px;
+	overflow: hidden;
+}
+.ds_md6_line {
+	width: 270px;
+	height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.ds_md6_r {
+	float: right;
+
+}
+.ds_md6_r li
