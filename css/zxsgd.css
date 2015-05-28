@@ -1536,5 +1536,15 @@ input.btn_green {
 .modal-header h3 {font-size: 14px;margin: 0px;line-height: 30px;}
 .close{float: right; font-size: 20px; font-weight: bold; line-height: 20px; color: #000; text-shadow: 0px 1px 0px #FFF; opacity: 0.2;}
 .zx_modal{width: 300px;height: 200px;margin: 10px 138px;}
-.zx_modal .zxipt{margin: 10px 10px;width: 180px;height: 20px;line-height: 25px;border: 1px solid #D8D8D8;padding: 4px 10px;}
-.sghdbtn2{position: absolute; top: 173px;left: 199px;width: 202px; height: 34px; color: #FFF; background-color: #FB8D0D; font-size: 14px; text-align: center; font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu; border: medium none; cursor: pointer;}
+.zx_modal .zxipt{margin-left: 5px;width: 180px;height: 20px;line-height: 25px;border: 1px solid #D8D8D8;padding: 4px 10px;}
+.sghdbtn2{width: 202px; height: 34px; color: #FFF; background-color: #FB8D0D; font-size: 14px; text-align: center; font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu; border: medium none; cursor: pointer;}
+.inner dl dt {font-size: 14px;line-height: 28px;color: #777;text-align: right;width: 60px;float: left; }
+.inner dl dd { margin-left: 60px;}
+.inner dd label {
+    clear: both;
+    float: left;
+    line-height: 24px;
+    height: 24px;
+    width: 210px;
+    margin: 0px;
+}

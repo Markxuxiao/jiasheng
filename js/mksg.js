@@ -1,4 +1,4 @@
-$(function(){
+(function($){
 
     //输入框默认值插件
     var select_form = $('input:text,textarea'); //选择需要添加提示文字的表单
@@ -39,8 +39,10 @@ $(function(){
        $(".triangle").removeClass("triangle_up").addClass("triangle_down");
     });
 
+})(jQuery);
+
 
 
        
 
-})
+
