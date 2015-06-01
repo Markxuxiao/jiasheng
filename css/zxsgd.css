@@ -149,7 +149,7 @@
 	overflow: hidden;
 }
 
-/*施工详情*/
+/*æ–½å·¥è¯¦æƒ…*/
 .wrapper{
 	width:1200PX;
 	margin:0 auto;
@@ -251,7 +251,7 @@
     color: #fff;
 }
 
-/*装修施工index页面*/
+/*è£…ä¿®æ–½å·¥indexé¡µé¢*/
 .sghdleft {
 	float: left;
 	width: 957px;
@@ -320,7 +320,7 @@
 	background-color: #FB8D0D;
 	font-size: 14px;
 	text-align: center;
-	font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+	font-family: "Microsoft YaHei",å¾®è½¯é›…é»‘,"Microsoft JhengHei",åŽæ–‡ç»†é»‘,STHeiti,MingLiu;
 	border: medium none;
 	cursor: pointer;
 	
@@ -371,12 +371,12 @@
 
 .sgname2 {
 	font-size: 15px;
-	font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+	font-family: "Microsoft YaHei",å¾®è½¯é›…é»‘,"Microsoft JhengHei",åŽæ–‡ç»†é»‘,STHeiti,MingLiu;
 }
 
 
 
-/*工长信息*/
+/*å·¥é•¿ä¿¡æ¯*/
 .lisgongzhang {
 	background: url("../img/gongzhang.jpg") no-repeat right;
 }
@@ -483,7 +483,7 @@
 	height: 18px;
 	background-color: #D1D0CF;
 	font-size: 22px;
-	font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;	
+	font-family: "Microsoft YaHei",å¾®è½¯é›…é»‘,"Microsoft JhengHei",åŽæ–‡ç»†é»‘,STHeiti,MingLiu;	
 }
 
 .jiedameu {
@@ -543,7 +543,7 @@
 }
 
 
-/*装修施工list*/
+/*è£…ä¿®æ–½å·¥list*/
 
 /* select */
 .select {
@@ -772,9 +772,9 @@
 }
 
 
-/*装修问答主页*/	
+/*è£…ä¿®é—®ç­”ä¸»é¡µ*/	
 
-/*装修问答导航*/
+/*è£…ä¿®é—®ç­”å¯¼èˆª*/
 .wdnav {
 	width: 193px;
 	overflow: hidden;
@@ -804,7 +804,7 @@
 .wdmainr {
 	width: 986px;
 }
-/*装修问答搜索*/
+/*è£…ä¿®é—®ç­”æœç´¢*/
 .wdsearch {
 	height: 100px;
 }
@@ -872,7 +872,7 @@
 	margin: 0 30px;
 	font-size: 16px;
 	font-weight: bold;
-	font-family: "宋体";
+	font-family: "å®‹ä½“";
 }
 .wdques_2 .first {
 	height: 65px;
@@ -983,7 +983,7 @@
     margin: 0px 30px;
     font-size: 16px;
     font-weight: bold;
-    font-family: "宋体";
+    font-family: "å®‹ä½“";
 }
 
 .wdques_6 {
@@ -1009,13 +1009,13 @@
 	height: 144px;
 	padding: 0px 22px;
 }
-/* 问答列表页 */
+/* é—®ç­”åˆ—è¡¨é¡µ */
 .wdleft {
 	width: 890px;
 	float: left;
 }
 
-/* 筛选模块开始 */
+/* ç­›é€‰æ¨¡å—å¼€å§‹ */
 .mod_tab .mod_tab_hd {
     height: 43px;
     background-color: #F8F8F8;
@@ -1074,10 +1074,10 @@
 .pane-wrapper > div {
     display: none;
 }
-/* 筛选模块结束 */
+/* ç­›é€‰æ¨¡å—ç»“æŸ */
 
 
-/* 排序模块开始 */
+/* æŽ’åºæ¨¡å—å¼€å§‹ */
 .mod_sort {
     border-bottom: 1px solid #EEE;
     height: 35px;
@@ -1170,9 +1170,9 @@
 	background: url(../img/9901.png) no-repeat scroll 0 -61px;
 }
 
-/* 排序模块结束 */
+/* æŽ’åºæ¨¡å—ç»“æŸ */
 
-/* 问答列表模块开始 */
+/* é—®ç­”åˆ—è¡¨æ¨¡å—å¼€å§‹ */
 .question_list li {
     border-bottom: 1px dotted #E8E8E8;
     padding: 20px 0px 28px;
@@ -1215,7 +1215,7 @@
 .col_r {
     float: right;
 }
-/* 问答列表模块结束 */
+/* é—®ç­”åˆ—è¡¨æ¨¡å—ç»“æŸ */
 
 
 .wdright {
@@ -1223,7 +1223,7 @@
 	float: right;
 }
 
-/* 提问框模块 */
+/* æé—®æ¡†æ¨¡å— */
 .ask_path {
     background-color: #F8F8F8;
     padding: 0 0 20px;
@@ -1269,10 +1269,10 @@
 	text-decoration: none !important;
 }
 
-/* 提问框模块end */
+/* æé—®æ¡†æ¨¡å—end */
 
 /*zxwdpage*/
-/*问题begin*/
+/*é—®é¢˜begin*/
 .ask_qustion {
     position: relative;
     border: 1px solid #E8E8E8;
@@ -1308,7 +1308,7 @@
     left: 0px;
     top: -1px;
 }
-/*问题end*/
+/*é—®é¢˜end*/
 h1.title {
     font-weight: 100;
     color: #333;
@@ -1439,7 +1439,7 @@ input.btn_green {
 
 
 
-/* zxxwlist新闻列表 */
+/* zxxwlistæ–°é—»åˆ—è¡¨ */
 .xwlist {
 	width: 100%;
 	border:1px solid #DFDFDF;
@@ -1482,7 +1482,7 @@ input.btn_green {
 	background: #EAEAEA;
 }
 
-/*新闻详情*/
+/*æ–°é—»è¯¦æƒ…*/
 .article_title{
 	border-bottom: 1px solid #DFDFDF;
 	margin: 0px 40px;
@@ -1492,7 +1492,7 @@ input.btn_green {
     line-height: 24px;
     overflow: hidden;
     font-size: 20px;
-    font-family: "微软雅黑","黑体";
+    font-family: "å¾®è½¯é›…é»‘","é»‘ä½“";
     font-weight: normal;
     text-align: center;
     margin: 0px;
@@ -1509,18 +1509,18 @@ input.btn_green {
 
 }
 
-/* 翻页样式 */
+/* ç¿»é¡µæ ·å¼ */
 .pagination { display: inline-block; margin: 0 auto;}
-.pagination ul { font-size: 0; *word-spacing:-1px/*IE6、7*/; }
+.pagination ul { font-size: 0; *word-spacing:-1px/*IE6ã€7*/; }
 .pagination ul li { vertical-align: top; letter-spacing: normal; word-spacing: normal; display: inline-block; margin: 0 0 0 -1px;}
-.pagination ul li { *display: inline/*IE6、7*/; *zoom:1;}
+.pagination ul li { *display: inline/*IE6ã€7*/; *zoom:1;}
 .pagination li span { font: normal 14px/20px "microsoft yahei"; color: #AAA; background-color: #FAFAFA; text-align: center; display: block; min-width: 20px; padding: 8px; border: 1px solid #E6E6E6; position: relative; z-index: 1;}
 .pagination li a span , 
 .pagination li a:visited span { color: #005AA0; text-decoration: none; background-color: #FFF; position: relative; z-index: 1;}
 .pagination li a:hover span, .pagination li a:active span{ color: #FFF; text-decoration: none; background-color: #D93600; border-color: #CA3300; position: relative; z-index: 9; cursor:pointer;}
 .pagination li span.currentpage { color: #AAA; font-weight: bold; background-color: #FAFAFA; border-color: #E6E6E6; position: relative; z-index: 2;}
 
-/*modal弹出窗口*/
+/*modalå¼¹å‡ºçª—å£*/
 .modal-backdrop, .modal-backdrop.fade.in{opacity: 0.8;}
 .modal-backdrop.fade{opacity: 0;}
 .fade.in{opacity: 1;}
@@ -1537,7 +1537,7 @@ input.btn_green {
 .close{float: right; font-size: 20px; font-weight: bold; line-height: 20px; color: #000; text-shadow: 0px 1px 0px #FFF; opacity: 0.2;}
 .zx_modal{width: 300px;height: 200px;margin: 10px 138px;}
 .zx_modal .zxipt{margin-left: 5px;width: 180px;height: 20px;line-height: 25px;border: 1px solid #D8D8D8;padding: 4px 10px;}
-.sghdbtn2{width: 202px; height: 34px; color: #FFF; background-color: #FB8D0D; font-size: 14px; text-align: center; font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu; border: medium none; cursor: pointer;}
+.sghdbtn2{width: 202px; height: 34px; color: #FFF; background-color: #FB8D0D; font-size: 14px; text-align: center; font-family: "Microsoft YaHei",å¾®è½¯é›…é»‘,"Microsoft JhengHei",åŽæ–‡ç»†é»‘,STHeiti,MingLiu; border: medium none; cursor: pointer;}
 .inner dl dt {font-size: 14px;line-height: 28px;color: #777;text-align: right;width: 60px;float: left; }
 .inner dl dd { margin-left: 60px;}
 .inner dd label {
