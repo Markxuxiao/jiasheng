@@ -21,96 +21,97 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/home_login.css" rel="stylesheet" type="text/css">
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/zxsgd.css">
-
-<!--[if IE 7]>
-  <link rel="stylesheet" href="http://www.jstimes.com/shop/resource/font/font-awesome/css/font-awesome-ie7.min.css">
-<![endif]-->
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-      <script src="http://www.jstimes.com/data/resource/js/html5shiv.js"></script>
-      <script src="http://www.jstimes.com/data/resource/js/respond.min.js"></script>
-<![endif]-->
-<!--[if IE 6]>
-<script src="http://www.jstimes.com/data/resource/js/IE6_PNG.js"></script>
+<link rel="stylesheet" type="text/css" href="css/zxsjs.css">
+  <!--[if IE 7]>
+    <link rel="stylesheet" href="http://www.jstimes.com/shop/resource/font/font-awesome/css/font-awesome-ie7.min.css">
+  <![endif]-->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+        <script src="http://www.jstimes.com/data/resource/js/html5shiv.js"></script>
+        <script src="http://www.jstimes.com/data/resource/js/respond.min.js"></script>
+  <![endif]-->
+  <!--[if IE 6]>
+  <script src="http://www.jstimes.com/data/resource/js/IE6_PNG.js"></script>
+  <script>
+  DD_belatedPNG.fix('.pngFix');
+  </script>
+  <script>
+  // <![CDATA[
+  if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand))
+  try{
+  document.execCommand("BackgroundImageCache", false, true);
+     }
+  catch(e){}
+  // ]]>
+  </script>
+  <![endif]-->
 <script>
-DD_belatedPNG.fix('.pngFix');
-</script>
-<script>
-// <![CDATA[
-if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand))
-try{
-document.execCommand("BackgroundImageCache", false, true);
-   }
-catch(e){}
-// ]]>
-</script>
-<![endif]-->
-<script>
-var COOKIE_PRE = 'D1BD_';var _CHARSET = 'utf-8';var SITEURL = 'http://www.jstimes.com/shop';var SHOP_SITE_URL = 'http://www.jstimes.com/shop';var RESOURCE_SITE_URL = 'http://www.jstimes.com/data/resource';var RESOURCE_SITE_URL = 'http://www.jstimes.com/data/resource';var SHOP_TEMPLATES_URL = 'http://www.jstimes.com/shop/templates/default';
+  var COOKIE_PRE = 'D1BD_';var _CHARSET = 'utf-8';var SITEURL = 'http://www.jstimes.com/shop';var SHOP_SITE_URL = 'http://www.jstimes.com/shop';var RESOURCE_SITE_URL = 'http://www.jstimes.com/data/resource';var RESOURCE_SITE_URL = 'http://www.jstimes.com/data/resource';var SHOP_TEMPLATES_URL = 'http://www.jstimes.com/shop/templates/default';
 </script>
 <script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_004.js"></script>
 <script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/common.js" charset="utf-8"></script>
 <script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_003.js"></script>
 <script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_006.js"></script>
 <script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_002.js"></script>
-<script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/dialog.js" id="dialog_js" charset="utf-8"></script><link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/dialog.css" rel="stylesheet" type="text/css">
+<script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/dialog.js" id="dialog_js" charset="utf-8"></script>
+<link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/dialog.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
-var PRICE_FORMAT = '&yen;%s';
-$(function(){
-	//首页左侧分类菜单
-	$(".category ul.menu").find("li").each(
-		function() {
-			$(this).hover(
-				function() {
-				    var cat_id = $(this).attr("cat_id");
-					var menu = $(this).find("div[cat_menu_id='"+cat_id+"']");
-					menu.show();
-					$(this).addClass("hover");
-					if(menu.attr("hover")>0) return;
-					menu.masonry({itemSelector: 'dl'});
-					/*
-					var menu_height = menu.height();
-					if (menu_height < 60) menu.height(80);
-					*/
-					var menu_height = menu.height(448);
-					if (menu_height < 60) menu.height(448);
-					menu_height = menu.height();
-					var li_top = $(this).position().top;
-					if ((li_top > 60) && (menu_height >= li_top)) $(menu).css("top",-li_top+38);
-					if ((li_top > 150) && (menu_height >= li_top)) $(menu).css("top",-li_top+38);
-					if ((li_top > 240) && (li_top > menu_height)) $(menu).css("top",-li_top+38);
-					if (li_top > 300 && (li_top > menu_height)) $(menu).css("top",-li_top+38);
-					if ((li_top > 40) && (menu_height <= 120)) $(menu).css("top",-li_top+38);
-					menu.attr("hover",1);
-				},
-				function() {
-					$(this).removeClass("hover");
-				    var cat_id = $(this).attr("cat_id");
-					$(this).find("div[cat_menu_id='"+cat_id+"']").hide();
-				}
-			);
-		}
-	);
-	$(".head-user-menu dl").hover(function() {
-		$(this).addClass("hover");
-	},
-	function() {
-		$(this).removeClass("hover");
-	});
-	$('.head-user-menu .my-mall').mouseover(function(){// 最近浏览的商品
-		load_history_information();
-		$(this).unbind('mouseover');
-	});
-	$('.head-user-menu .my-cart').mouseover(function(){// 运行加载购物车
-		load_cart_information();
-		$(this).unbind('mouseover');
-	});
-	$('#button').click(function(){
-	    if ($('#keyword').val() == '') {
-		    return false;
-	    }
-	});
-});
+  var PRICE_FORMAT = '&yen;%s';
+  $(function(){
+  	//首页左侧分类菜单
+  	$(".category ul.menu").find("li").each(
+  		function() {
+  			$(this).hover(
+  				function() {
+  				    var cat_id = $(this).attr("cat_id");
+  					var menu = $(this).find("div[cat_menu_id='"+cat_id+"']");
+  					menu.show();
+  					$(this).addClass("hover");
+  					if(menu.attr("hover")>0) return;
+  					menu.masonry({itemSelector: 'dl'});
+  					/*
+  					var menu_height = menu.height();
+  					if (menu_height < 60) menu.height(80);
+  					*/
+  					var menu_height = menu.height(448);
+  					if (menu_height < 60) menu.height(448);
+  					menu_height = menu.height();
+  					var li_top = $(this).position().top;
+  					if ((li_top > 60) && (menu_height >= li_top)) $(menu).css("top",-li_top+38);
+  					if ((li_top > 150) && (menu_height >= li_top)) $(menu).css("top",-li_top+38);
+  					if ((li_top > 240) && (li_top > menu_height)) $(menu).css("top",-li_top+38);
+  					if (li_top > 300 && (li_top > menu_height)) $(menu).css("top",-li_top+38);
+  					if ((li_top > 40) && (menu_height <= 120)) $(menu).css("top",-li_top+38);
+  					menu.attr("hover",1);
+  				},
+  				function() {
+  					$(this).removeClass("hover");
+  				    var cat_id = $(this).attr("cat_id");
+  					$(this).find("div[cat_menu_id='"+cat_id+"']").hide();
+  				}
+  			);
+  		}
+  	);
+  	$(".head-user-menu dl").hover(function() {
+  		$(this).addClass("hover");
+  	},
+  	function() {
+  		$(this).removeClass("hover");
+  	});
+  	$('.head-user-menu .my-mall').mouseover(function(){// 最近浏览的商品
+  		load_history_information();
+  		$(this).unbind('mouseover');
+  	});
+  	$('.head-user-menu .my-cart').mouseover(function(){// 运行加载购物车
+  		load_cart_information();
+  		$(this).unbind('mouseover');
+  	});
+  	$('#button').click(function(){
+  	    if ($('#keyword').val() == '') {
+  		    return false;
+  	    }
+  	});
+  });
 </script>
 </head>
 <body>
@@ -198,15 +199,15 @@ $(function(){
   </div>
 </div>
 <script type="text/javascript">
-$(function(){
-	$(".quick-menu dl").hover(function() {
-		$(this).addClass("hover");
-	},
-	function() {
-		$(this).removeClass("hover");
-	});
-
-});
+  $(function(){
+  	$(".quick-menu dl").hover(
+      function() {
+  		$(this).addClass("hover");
+  	},
+  	function() {
+  		$(this).removeClass("hover");
+  	});
+  });
 </script>
 <!-- PublicHeadLayout Begin -->
 <div class="header-wrap">
@@ -1136,305 +1137,508 @@ $(function(){
   </div>
 </nav>
 <!-- PublicNavLayout End-->
-<div class="nch-breadcrumb-layout">
-    <div class="nch-breadcrumb wrapper"><i class="icon-home"></i>
-            <span><a href="http://www.jstimes.com/shop/index.php">首页</a></span>
-            <span class="arrow">&gt;</span>
-                <span>金牌施工</span>
-            <span class="arrow">&gt;</span>
-                <span>xxx位置</span>
-          </div>
-  </div>
 
-<div class="sgmain_1200">
-  <!-- 左侧导航 -->
-  <div class="wdnav fl">
-    <div class="wdnav1">
-      <h1>家装设计</h1>
-      <div class="wdnav_nav">
-        <a href="#" >装修风水</a>
-        <a href="#" >装修风格</a>
-        <a href="#" >客厅</a>
-        <a href="#" >玄关</a>
-        <a href="#" >过道</a>
-        <a href="#" >卧室</a>
-        <a href="#" >书房</a>
-        <a href="#" >餐厅</a>
-      </div>
-    </div>
-    <div class="wdnav1">
-      <h1>装修流程</h1>
-      <div class="wdnav_nav">
-        <a href="#" >新房验收</a>
-        <a href="#" >收费咨询</a>
-        <a href="#" >装修预算</a>
-        <a href="#" >装修合同</a>
-        <a href="#" >施工工艺</a>
-        <a href="#" >业主维权</a>
-        <a href="#" >环保检测</a>
-        <a href="#" >装修公司</a>
 
-      </div>
-    </div>
-    <div class="wdnav1">
-      <h1>家居产品</h1>
-      <div class="wdnav_nav">
-        <a href="#" >家用电器</a>
-        <a href="#" >橱柜</a>
-        <a href="#" >厨卫电器</a>
-        <a href="#" >厨房用具</a>
-        <a href="#" >地毯</a>
-        <a href="#" >饰品</a>
-        <a href="#" >庭院/花园</a>
-        <a href="#" >暖气设备</a>
-      </div>
-    </div>
-    <div class="wdnav1">
-      <h1>装饰材料</h1>
-      <div class="wdnav_nav">
-        <a href="#" >涂料/油漆</a>
-        <a href="#" >瓷砖/石材</a>
-        <a href="#" >门窗</a>
-        <a href="#" >五金</a>
-        <a href="#" >壁纸</a>
-        <a href="#" >水龙头</a>
-        <a href="#" >建筑构件</a>
-     </div>
-    </div>
-    <div class="wdnav1">
-      <h1>公装设计</h1>
-      <div class="wdnav_nav">
-        <a href="#" >休闲健身</a>
-        <a href="#" >体育场馆</a>
-        <a href="#" >会展剧场</a>
-        <a href="#" >博物馆</a>
-        <a href="#" >图书馆</a>
-        <a href="#" >医院</a>
-      </div>
-    </div>
-    <div class="wdnav1">
-      <h1>房产知识</h1>
-      <div class="wdnav_nav">
-        <a href="#" >购房资格</a>
-        <a href="#" >购房税费</a>
-        <a href="#" >委托担保</a>
-        <a href="#" >交易流程</a>
-        <a href="#" >产权产证</a>
-        <a href="#" >贷款利率</a>
-        <a href="#" >贷款流程</a>
+<div class="ds_hader">
+  <div class="wrapper">
+    <div class="ds_hd">
+      <img src="img/design/de_03.jpg" alt="">
+      <div class="ds_zc">
+        <h1>在线预约免费设计</h1>
+        <h2>已有7680业主预约，预约人数达106839</h2>
+        <form action="">
+          <input type="text" maxlength="5" fs="您的称呼">
+          <input type="text" maxlength="11" fs="手机号码">
+          <select name="ds_select">
+            <option value="newhose">新房装修</option>
+          </select>
+          <textarea rows="4" cols="30" maxlength="85" fs="您可以在这里写上您想要装修的风格或
+  者,其它需求"></textarea>
+          <input type="button" value="立即申请">
+        </form>
       </div>
     </div>
   </div>
-
-
-  <!-- 右侧模块 -->
-  <div class="wdmainr fr">
-    <!-- 搜索 --> 
-    <div class="wdsearch">
-      <h6>有问题尽管问我吧！在下面搜索个问题试试。</h6>
-      <form action="">
-        <input type="text" fs="请把你要提出的问题写在这里">
-        <a href="#"><span>找答案</span></a>
-        <a href="#"><span>我要提问</span></a>
-      </form>
-    </div>
-    <div class="wdmain">
-      <div class="wdques">
-        <h1 class="wdmain_h1">精典问题</h1>
-        <div class="wdques_1 fl">
-          <a href="#"><img src="img/temp/5133946.jpg" alt=""></a>
-          <a href="#"><img src="img/temp/5134007.jpg" alt=""></a>
-        </div>
-        <div class="wdques_2 fl">
-          <ul>
-            <li class="first"><span>12/05</span><a href="#"><i>客厅的窗子太多，是端头房怎么装修</i> 
-              <p>我的房子是套4室的，客厅窗子太多，不好放沙发，请教一下大家应该怎么装我的房子是套4室的，客厅窗子太多，不好放沙发，请教一下大家应该怎么装</p></a></li>
-            <li><span>12/05</span><a href="#">衣柜用高密度板环保吗? </a></li>
-            <li><span>12/05</span><a href="#">我的房子是81.3平方的两室两厅怎样装修 我的房子是81.3平方的两室两厅怎样装修</a></li>
-            <li><span>12/05</span><a href="#">地下室墙体返潮怎么办啊？ </a></li>
-            <li><span>12/05</span><a href="#">三室二厅花三万元如何装修 </a></li>
-            <li><span>12/05</span><a href="#">木质地板与瓷砖哪个更好</a></li>
-            <li><span>12/05</span><a href="#">三室二厅花三万元如何装修 </a></li>
-            <li><span>12/05</span><a href="#">木质地板与瓷砖哪个更好</a></li>
-          </ul>
-        </div>
-        <div class="wdques_3 fl">
-          <ul>
-            <li>
-              <a href="">
-                <img src="img/temp/5133946.jpg" alt="">
-                <div>音乐厅声学装修要注意什么问题？注意什么问题？注意什么问题？</div>
-                <p>选择室内装修材料和构造时,应注意低频、中频、高频各种...一家专业从事建筑声学设计注意什么问题？注意什么问题？注意什么问题？</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="img/temp/5133946.jpg" alt="">
-                <div>音乐厅声学装修要注意什么问题？注意什么问题？注意什么问题？</div>
-                <p>选择室内装修材料和构造时,应注意低频、中频、高频各种...一家专业从事建筑声学设计注意什么问题？注意什么问题？注意什么问题？</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="img/temp/5133946.jpg" alt="">
-                <div>音乐厅声学装修要注意什么问题？注意什么问题？注意什么问题？</div>
-                <p>选择室内装修材料和构造时,应注意低频、中频、高频各种...一家专业从事建筑声学设计注意什么问题？注意什么问题？注意什么问题？</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="wdques">
-      <div class="wdques_4">
-        <h1 class="wdmain_h1">已解决的问题</h1>
-        <div class="sidenav">
-          <a class="active" href="#" data-trigger="collapse" data-parent=".sidenav" >
-            <div class="jiedameu5 jiedameu4" data-cgcss = "jiedameu4" >王先生：哪些问题影响报价？装修报价中易掺水的地方</div>
-          </a>
-          <div style="collapsible " class="collapsible" data-cgcss >
-            <div class="wdcoll" >
-              接影响着装修过
-              接影响着装修过程的整体支出，因此报价也是装修中较为重要的一部分，而往，就很容易陷入装修公司以及装修工人设下的陷阱中。
-            </div>
-          </div>
-          <a class="" href="#"  data-trigger="collapse" data-parent=".sidenav">
-            <div class="jiedameu5" data-cgcss = "jiedameu4" >王先生：衣柜用高密度板环保吗? </div>
-          </a>
-          <div class="collapsible"   style="display: none;">
-            <div class="wdcoll" >
-            王工长回：装修报价直接影响着装修过程的整体支出，因此报价也是装修中较为重要的一部
-            分，而往，就很容易陷入装修公司以及装修工人设下的陷阱中。王工长回：装修报价直接影响着装修过程的整体支出，因此报价也是装修中较为重要的一部
-            </div>
-          </div>
-          <a class="" href="#"  data-trigger="collapse" data-parent=".sidenav">
-            <div class="jiedameu5" data-cgcss='jiedameu4' >王先生：我的房子是81.3平方的两室两厅怎样装修 </div>
-          </a>
-          <div class="collapsible"   style="display: none;">
-            <div class="wdcoll" >
-           王工长回：装修报价直接影响着装修过程的整体支出，因此报价也是装修中较为重要的一部
-            分，而往，就很容易陷入装修公司以及装修工人设下的陷阱中。王工长回：
-            </div>
-          </div>
-          <a class="" href="#"  data-trigger="collapse" data-parent=".sidenav">
-            <div class="jiedameu5" data-cgcss='jiedameu4' >王先生：地下室墙体返潮怎么办啊？ </div>
-          </a>
-          <div class="collapsible"   style="display: none;">
-            <div class="wdcoll" >
-           王工长回：装修报价直接影响着装修过程的整体支出，因此报价也是装修中较为重要的一部
-            分，而往，就很容易陷入装修公司以及装修工人设下的陷阱中。王工长回：
-            </div>
-          </div>
-          <a class="" href="#"  data-trigger="collapse" data-parent=".sidenav">
-            <div class="jiedameu5" data-cgcss='jiedameu4' >王先生：三室二厅花三万元如何装修 </div>
-          </a>
-          <div class="collapsible"  style="display: none;">
-            <div class="wdcoll" >
-           王工长回：装修报价直接影响着装修过程的整体支出，因此报价也是装修中较为重要的一部
-            分，而往，就很容易陷入装修公司以及装修工人设下的陷阱中。王工长回：
-            </div>
-          </div>
-          <a class="" href="#"  data-trigger="collapse" data-parent=".sidenav">
-            <div class="jiedameu5" data-cgcss='jiedameu4' >王先生：哪些问题影响报价？装修报价中易掺水的地方</div>
-          </a>
-          <div class="collapsible"  style="display: none;">
-            <div class="wdcoll" >
-           王工长回：装修报价直接影响着装修过程的整体支出，因此报价也是装修中较为重要的一部
-            分，而往，就很容易陷入装修公司以及装修工人设下的陷阱中。王工长回：
-            </div>
-          </div>
-          <a class="" href="#"  data-trigger="collapse" data-parent=".sidenav">
-            <div class="jiedameu5" data-cgcss='jiedameu4' >王先生：哪些问题影响报价？装修报价中易掺水的地方</div>
-          </a>
-          <div class="collapsible"  style="display: none;">
-            <div class="wdcoll" >
-           王工长回：装修报价直接影响着装修过程的整体支出，因此报价也是装修中较为重要的一部
-            分，而往，就很容易陷入装修公司以及装修工人设下的陷阱中。王工长回：
-            </div>
-          </div>
-      </div>
-      </div>
-      <div class="wdques_5">
-        <h1 class="wdmain_h1">待解决的问题</h1>
-          <ul>
-            <li><span>12/05</span><a href="#">客厅的窗子太多，是端头房怎么装修</a></li>
-            <li><span>12/05</span><a href="#">衣柜用高密度板环保吗? </a></li>
-            <li><span>12/05</span><a href="#">我的房子是81.3平方的两室两厅怎样装修 我的房子是81.3平方的两室两厅怎样装修</a></li>
-            <li><span>12/05</span><a href="#">地下室墙体返潮怎么办啊？ </a></li>
-            <li><span>12/05</span><a href="#">三室二厅花三万元如何装修 </a></li>
-            <li><span>12/05</span><a href="#">木质地板与瓷砖哪个更好</a></li>
-            <li><span>12/05</span><a href="#">三室二厅花三万元如何装修 </a></li>
-            <li><span>12/05</span><a href="#">木质地板与瓷砖哪个更好</a></li>
-            <li><span>12/05</span><a href="#">木质地板与瓷砖哪个更好</a></li>
-          </ul>
-      </div>
-      <div class="wdques_6">
-        <h1 class="wdmain_h1">装修案例</h1>
-        <div class="sidenav">
-          <a class="active" href="#" data-trigger="collapse" data-parent=".sidenav" >
-            <div class="wdquesli" ><span>1</span> 美仑堡--孙才余-普通住宅-现代简约</div>
-          </a>
-          <div style="collapsible " class="collapsible" data-cgcss >
-            <div class="wdquesliimg" >
-              <img src="img/temp/5134007.jpg">
-            </div>
-          </div>
-          <a class="" href="#" data-trigger="collapse" data-parent=".sidenav" >
-            <div class="wdquesli" ><span>2</span> 美仑堡--孙才余-普通住宅-现代简约</div>
-          </a>
-          <div class="collapsible" data-cgcss style="display: none;" >
-            <div class="wdquesliimg" >
-              <img src="img/temp/5134007.jpg">
-            </div>
-          </div>
-          <a class="" href="#" data-trigger="collapse" data-parent=".sidenav" >
-            <div class="wdquesli" ><span>3</span> 美仑堡--孙才余-普通住宅-现代简约</div>
-          </a>
-          <div class="collapsible" data-cgcss style="display: none;" >
-            <div class="wdquesliimg" >
-              <img src="img/temp/5134007.jpg">
-            </div>
-          </div>
-          <a class="" href="#" data-trigger="collapse" data-parent=".sidenav" >
-            <div class="wdquesli" ><span>4</span> 美仑堡--孙才余-普通住宅-现代简约</div>
-          </a>
-          <div class="collapsible" data-cgcss style="display: none;" >
-            <div class="wdquesliimg" >
-              <img src="img/temp/5134007.jpg">
-            </div>
-          </div>
-          <a class="" href="#" data-trigger="collapse" data-parent=".sidenav" >
-            <div class="wdquesli" ><span>5</span> 美仑堡--孙才余-普通住宅-现代简约</div>
-          </a>
-          <div class="collapsible" data-cgcss style="display: none;" >
-            <div class="wdquesliimg" >
-              <img src="img/temp/5134007.jpg">
-            </div>
-          </div>
-        </div>  
-      </div>
-    </div>
-
-  </div>
-
 </div>
 
+<div class="wrapper">
+  <div class="ds_zxlc">
+    <img src="img/design/de0012.jpg" alt="装修流程">
+    <h1>小区装修方案及预算</h1>
+    <a href="">马上获取免费案例</a>
+  </div>
+  <div class="ds_tjpp">
+    <h1>推荐品牌</h1>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/temp/41652.jpg" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
+<div class="ds_md2">
+  <div class="wrapper">
+    <img src="img/design/de_12.jpg" alt="设计免费">
+  </div>
+</div>
+<div class="wrapper ds_md3">
+  <img src="img/design/de_16.jpg" alt="家装设计院">
+  <div id="ds_md3_p">
+  <p><b>由</b>28名专业设计师聚集成了行业顶尖的设计师精英团队，该团队正逐步朝着“专业化、职业化”的方向发展，术业有专攻的设计师们将最新设计潮流和客户需求紧密结合，为客户“量身定做”最佳私人定制方案，实现客户价值的完美体现。该团队既有高端资深的设计师，又有时尚前卫具有现代气息的年轻设计师。年轻的设计师们有着现代的审美观点，并且有着时尚前卫的创意思路。</p>
+  <p>面对每一个设计项目，设计院都会安排由资深高级设计师领衔的项目小组。依托深厚的职业素养和长期的实战经验，从专业的角度出发，对设计项目进行深入研究，在专业设计和客户需求中找到项目个性化的解决方案。为客户提供更精致的专业化服务，设计有三种模式的服务项目：私人定制家装设计、套装家装设计、产品设计；量化服务内容，分工更细、职责更专。根据客户的不同需求免费提供专业化设计服务。</p>
+  </div>
+</div>
+<div class="wrapper ">
+  <img id="ds_md4_img" src="img/design/de_24.jpg" alt="家装设计院">
+  <div class="ds_sjs clearfix">
+    <div class="ds_sjs_l " >
+      <img class="ds_sjs_md_1" src="img/temp/001.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <div id="ds_sjs_md_1" class="tooltip" style="display: none;">
+       <div class="ds_sjs_md">
+        <h1>曹祥滔</h1>
+        <p>2002年毕业广西建筑技术学院建筑装饰专业，现任家盛集团设计部主管，主要负责集团商业项目.</p>
+        <p><b>擅长风格：</b> 田园风格、欧美风格、简约风格、新古典风格、中式风格等等</p>
+        <a href="">查看详情</a>
+       </div>
+      </div>
+      <img class="ds_sjs_md_2" src="img/temp/112.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/113.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/114.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/115.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/116.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/117.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/118.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_2" src="img/temp/118.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_1" src="img/temp/117.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/113.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/114.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/115.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/116.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/117.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/118.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+    </div>
+    <div class="ds_sjs_r">
+      <img class="ds_sjs_md_3" src="img/temp/115.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_1" src="img/temp/117.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+      <img class="ds_sjs_md_3" src="img/temp/116.jpg" alt="设计师" data-trigger="tooltip" data-content-elem="#ds_sjs_md_1" data-position="e">
+    </div>
+  </div>
+  <div class="ds_sjs1">
+    <img src="img/design/de_29.jpg" alt="在线预约">
+    <p><label>姓名：</label><input type="text" maxlength="5" fs="您的姓名"></p>
+    <p><label>手机：</label><input type="text"maxlength="11" fs="请填写真实有效的手机号码"></p>
+    <p><input type="button" value="免费预约"></p>
+    <div class="ds_sjs2">
+      <img src="img/design/5441233.jpg" alt="问题解答">
+      <div id="ds_sjs2_gd">
+        <ul>
+          <li>
+            <p class="ds_sjs2_p"><i>问：</i>客餐厅和电视柜怎么设计？</p>
+            <p class="ds_sjs2_2p"><span>答：</span>整体使用米灰、白、黑等对比色搭配，使空间更具层次感，错落有致的柜体不仅满足了储物功能，也使整体风格时尚大气。</p>
+          </li>
+          <li>
+            <p class="ds_sjs2_p"><i>问：</i>客餐厅和电视柜怎么设计？</p>
+            <p class="ds_sjs2_2p"><span>答：</span>整体使用米灰、白、黑等对比色搭配，使空间更具层次感，错落有致的柜体不仅满足了储物功能，也使整体风格时尚大气。</p>
+          </li>
+          <li>
+            <p class="ds_sjs2_p"><i>问：</i>客餐厅和电视柜怎么设计？</p>
+            <p class="ds_sjs2_2p"><span>答：</span>整体使用米灰、白、黑等对比色搭配，使空间更具层次感，错落有致的柜体不仅满足了储物功能，也使整体风格时尚大气。</p>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+  </div>
+  
+</div>
+<div class="ds_md5">
+  <div class="wrapper">
+    <img src="img/design/de_37.jpg" alt="设计免费">
+  </div>
+</div>
+<div class="wrapper ds_md6">
+  <div class="ds_md6_l">
+    <img src="img/design/de_40.jpg" alt="">
+    <img src="img/design/8163937.jpg" alt="">
+    <dl>
+      <dt><a href=""><h1>空间</h1><h2>HOME</h2></a></dt>
+      <dd>
+        <ul>
+          <a href="">
+            <li>空间空</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+        </ul>
+      </dd>
+      <hr style="border:1px solid #ccc;margin: 15px 0;">
+      <dt><a href=""><h1>空间</h1><h2>HOME</h2></a></dt>
+      <dd>
+        <ul>
+          <a href="">
+            <li>空间空</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+        </ul>
+      </dd>
+      <hr style="border:1px solid #ccc;margin: 15px 0;">
+      <dt><a href=""><h1>空间</h1><h2>HOME</h2></a></dt>
+      <dd>
+        <ul>
+          <a href="">
+            <li>空间空</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+        </ul>
+      </dd>
+      <hr style="border:1px solid #ccc;margin: 15px 0;">
+      <dt><a href=""><h1>空间</h1><h2>HOME</h2></a></dt>
+      <dd>
+        <ul>
+          <a href="">
+            <li>空间空</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+          <a href="">
+            <li>空间</li></a>
+        </ul>
+      </dd>
+    
+  </div>
+  <div class="ds_md6_r">
+    <img src="img/design/de_42.jpg" alt="">
+        <!-- Slideshow  -->
+    <ul class="rslides" id="ds_md6_r_s">
+      <li><img src="img/temp/1.jpg" alt=""></li>
+      <li><img src="img/temp/2.jpg" alt=""></li>
+      <li><img src="img/temp/3.jpg" alt=""></li>
+      <li><img src="img/temp/1.jpg" alt=""></li>
+    </ul>
 
+    <!-- Slideshow  Pager -->
+    <ul id="ds_md6_r_s-pager">
+      <li><a href="#">客餐空间</a></li>
+      <li><a href="#">卧室空间</a></li>
+      <li><a href="#">厨房空间</a></li>
+      <li><a href="#">卫浴空间</a></li>
+    </ul>
+    
+  </div>
+</div>
+<div class="ds_md7">
+  <div class="wrapper">
+    <div class="ds_md7_hd">
+      <img src="img/design/de_49.jpg" alt="">
+      <div id="ds_md7_hd_fs">
+        <em>风格：</em>
+        <span><a href="">现代简约</a> | </span>
+        <span><a href="">自然田园</a> | </span>
+        <span><a href="">古典风格</a> | </span>
+        <span><a href="">中式风格</a> | </span>
+        <span><a href="">欧式风格</a></span>
+      </div>
 
+    </div>
+    <div class="ds_md7_main clearfix">
+      <ul>
+        <li>
+          <a href="">
+          <img src="img/temp/ds_r2_c2.gif" alt="">
+          <p><span>设计师：</span>曹祥涛</p>
+          <p><span>类型：</span>简约、三居室、90-120平米、3...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/temp/ds_r2_c2.gif" alt="">
+          <p><span>设计师：</span>曹祥涛</p>
+          <p><span>类型：</span>简约、三居室、90-120平米、3...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/temp/ds_r2_c2.gif" alt="">
+          <p><span>设计师：</span>曹祥涛</p>
+          <p><span>类型：</span>简约、三居室、90-120平米、3...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/temp/ds_r2_c2.gif" alt="">
+          <p><span>设计师：</span>曹祥涛</p>
+          <p><span>类型：</span>简约、三居室、90-120平米、3...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/temp/ds_r2_c2.gif" alt="">
+          <p><span>设计师：</span>曹祥涛</p>
+          <p><span>类型：</span>简约、三居室、90-120平米、3...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/temp/ds_r2_c2.gif" alt="">
+          <p><span>设计师：</span>曹祥涛</p>
+          <p><span>类型：</span>简约、三居室、90-120平米、3...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/temp/ds_r2_c2.gif" alt="">
+          <p><span>设计师：</span>曹祥涛</p>
+          <p><span>类型：</span>简约、三居室、90-120平米、3...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/temp/ds_r2_c2.gif" alt="">
+          <p><span>设计师：</span>曹祥涛</p>
+          <p><span>类型：</span>简约、三居室、90-120平米、3...</p>
+          </a>
+        </li>
 
+      </ul>
+    </div>
+    <div class="ds_md7_mu">
+      <a href="">
+      <img src="img/design/de0013.jpg" alt="">
+      <i>餐厅</i>
+      </a>
+    </div>
+    <div class="ds_md7_mu">
+      <a href="">
+      <img src="img/design/de0014.jpg" alt="">
+      <i>客厅</i>
+      </a>
+    </div>
+    <div class="ds_md7_mu">
+      <a href="">
+      <img src="img/design/de0015.jpg" alt="">
+      <i>卧室</i>
+      </a>
+    </div>
+    <div class="ds_md7_mu">
+      <a href="">
+      <img src="img/design/de0016.jpg" alt="">
+      <i>厨房</i>
+      </a>
+    </div>
+    <div class="ds_md7_mu">
+      <a href="">
+      <img src="img/design/de0017.jpg" alt="">
+      <i>阳台</i>
+      </a>
+    </div>
+    <div class="ds_md7_mu">
+      <a href="">
+      <img src="img/design/de0018.jpg" alt="">
+      <i>卫生间</i>
+      </a>
+    </div>
+    <div class="ds_md7_mu">
+      <a href="">
+      <img src="img/design/de0019.jpg" alt="">
+      <i>吊顶</i>
+      </a>
+    </div>
+    <div class="ds_md7_mu">
+      <a href="">
+      <img src="img/design/de0011.jpg" alt="">
+      <i>背景墙</i>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="ds_md8 wrapper">
+  <div class="ds_md8_hd">
+    <h1>2015家居装修设计图展示</h1>
+    <p>2015 HOME DECCRATION DESIGN 每日不断更新 1200张 家居效果图</p>
+  </div>
+  <ul class="ds_md8_pic">
+    <li>
+      <h1>装修指南 <a href=""><span>更多</span></a></h1>
+      <a class="ds_md8_pic_im" href="">
+        <img src="img/temp/ds_r2_c2.gif" alt="嘉盛时代">
+        <div>厨房装修步骤有哪些？</div>
+      </a>
+      <ul class="ds_md8_pic_li">
+        <li><a href="">现在屋顶只要下大雨就会有点渗水，怎么办.</a></li>
+        <li><a href="">建欧风格的橱柜，白色烤漆柜门搭配黑色石英石台面怎么样？</a></li>
+        <li><a href="">一套60的两居室，装修报价是多少？家具家电除外.</a></li>
+        <li><a href="">家具布置为装修添色彩.</a></li>
+        <li><a href="">79平的房子 尽装修5万块够不够.</a></li>
+      </ul>
+    </li>
+    <li>
+      <h1>装修指南 <a href=""><span>更多</span></a></h1>
+      <a class="ds_md8_pic_im" href="">
+        <img src="img/temp/ds_r2_c2.gif" alt="嘉盛时代">
+        <div>厨房装修步骤有哪些？</div>
+      </a>
+      <ul class="ds_md8_pic_li">
+        <li><a href="">现在屋顶只要下大雨就会有点渗水，怎么办.</a></li>
+        <li><a href="">建欧风格的橱柜，白色烤漆柜门搭配黑色石英石台面怎么样？</a></li>
+        <li><a href="">一套60的两居室，装修报价是多少？家具家电除外.</a></li>
+        <li><a href="">家具布置为装修添色彩.</a></li>
+        <li><a href="">79平的房子 尽装修5万块够不够.</a></li>
+      </ul>
+    </li>
+    <li>
+      <h1>装修指南 <a href=""><span>更多</span></a></h1>
+      <a class="ds_md8_pic_im" href="">
+        <img src="img/temp/ds_r2_c2.gif" alt="嘉盛时代">
+        <div>厨房装修步骤有哪些？</div>
+      </a>
+      <ul class="ds_md8_pic_li">
+        <li><a href="">现在屋顶只要下大雨就会有点渗水，怎么办.</a></li>
+        <li><a href="">建欧风格的橱柜，白色烤漆柜门搭配黑色石英石台面怎么样？</a></li>
+        <li><a href="">一套60的两居室，装修报价是多少？家具家电除外.</a></li>
+        <li><a href="">家具布置为装修添色彩.</a></li>
+        <li><a href="">79平的房子 尽装修5万块够不够.</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
-
-
-
-
-
-
-
-
-
-<div id="faq">
+<div id="faq" class="wrapper">
   <div class="wrapper">
     <ul>
            <li> <dl class="s1">
@@ -1494,19 +1698,25 @@ $(function(){
             <!--   </p>网站备案编号：鄂ICP备14020050号-1 | ICP经营许可证编号：鄂B2-20150042<br>
 
   <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254120465'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254120465%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1254120465"><a href="http://www.cnzz.com/stat/website.php?web_id=1254120465" target="_blank" title="站长统计"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/pic.gif" hspace="0" border="0" vspace="0"></a></span><script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/z_stat.php" type="text/javascript"></script><script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/core.php" charset="utf-8" type="text/javascript"></script> --> </div>
+
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_005.js"></script>
-<script type="text/javascript" src="js/mksg.js"></script>
 <script src="js/sco.collapse.js"></script>
-
+<script src="js/sco.panes.js"></script>
+<script src="js/sco.tab.js"></script>
+<script src="js/sco.tooltip.js"></script>
+<script src="js/jquery.kxbdmarquee.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="js/mksg.js"></script>
 <script language="javascript">
-
-$(function(){
-	// Membership card
-	$('[nctype="mcard"]').membershipCard({type:'shop'});
-});
+  $(function(){
+  	// Membership card
+  	$('[nctype="mcard"]').membershipCard({type:'shop'});
+  });
 </script>
+
+
 
 
 </body></html>

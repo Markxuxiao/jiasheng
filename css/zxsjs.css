@@ -1,4 +1,4 @@
-/*全局*/
+/*å…¨å±€*/
 /* sco.tooltip.js */
 .tooltip {
 	padding: .6em;
@@ -91,7 +91,7 @@
 	left: 8px;
 	bottom: -13px;
 }
-/*幻灯*/
+/*å¹»ç¯*/
 .rslides {
   position: relative;
   list-style: none;
@@ -124,7 +124,7 @@
   border: 0;
   }
 
-/*全局*/
+/*å…¨å±€*/
 
 
 
@@ -266,7 +266,7 @@
 .ds_sjs_md {
 	width: 200px;
 	height: 200px;
-	background: #E8E8E8;
+	background: #F5F4F4;
 	padding:20px;
 	color: #000;
 }
