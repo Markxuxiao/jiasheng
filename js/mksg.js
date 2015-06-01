@@ -39,6 +39,14 @@
        $(".triangle").removeClass("triangle_up").addClass("triangle_down");
     });
 
+    //设计师主页滚动调用
+    $("#ds_sjs2_gd").kxbdMarquee({direction:"up",isEqual:false,scrollDelay:"50"});
+
+
+    $("#ds_md6_r_s").responsiveSlides({
+        manualControls: '#ds_md6_r_s-pager'
+       
+      });
 })(jQuery);
 
 
