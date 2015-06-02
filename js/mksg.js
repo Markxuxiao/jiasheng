@@ -41,12 +41,25 @@
 
     //设计师主页滚动调用
     $("#ds_sjs2_gd").kxbdMarquee({direction:"up",isEqual:false,scrollDelay:"50"});
+    $("#ds_md6_r_s").responsiveSlides({manualControls: '#ds_md6_r_s-pager'});
+    //designerhome.html
+    $('#allinone_carousel_charming').allinone_carousel({
+      skin: 'charming',
+      width: 1200,
+      height: 550,
+      autoPlay: 5,
+      resizeImages: true,
+      autoHideBottomNav: false,
+      showElementTitle: false,
+      verticalAdjustment: 50,
+      showPreviewThumbs: false,
+      //easing:'easeOutBounce',
+      numberOfVisibleItems: 3,
+      nextPrevMarginTop: 0,
+      playMovieMarginTop: 0,
+      bottomNavMarginBottom: -10
+    });
 
-
-    $("#ds_md6_r_s").responsiveSlides({
-        manualControls: '#ds_md6_r_s-pager'
-       
-      });
 })(jQuery);
 
 
