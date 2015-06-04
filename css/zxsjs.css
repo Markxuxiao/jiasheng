@@ -1124,3 +1124,45 @@ skins available:
 	font: 20px "Microsoft YaHei";
 	font-weight: bold;
 }
+
+.ds_design_pj h1 {
+	font-weight: bold;
+	margin-bottom: 20px;
+
+}
+.ds_design_pj form {
+	margin-bottom: 20px;
+}
+.ds_design_pj input[type=radio] {
+	margin-left: 10px;
+	/* padding-top: 5px; */
+}
+.ds_design_pj textarea {
+	width: 648px;
+	height: 80px;
+	padding: 10px;
+	margin-top: 20px;
+
+}
+.ds_design_pj input[type=submit] {
+	position: relative;
+	top: -49px;
+	right: -20px;
+	width: 90px;
+	height: 30px;
+	color: #fff;
+	background: #FB8D0D;
+}
+.ds_design_pjnr li {
+	margin-bottom: 20px;
+}
+.ds_design_pjnr span {
+	color: #FB8D0D;
+}
+.ds_design_pjnr i{
+	margin-left: 10px;
+
+}
+.ds_design_pjnr p{
+	margin-top:10px;
+} 
