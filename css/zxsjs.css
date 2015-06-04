@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /*全局*/
-/*selectdaohang.js*/
+/*selectdaohang.js
+	设计师图片列表导航
+*/
 .select-2 {
 	padding: 5px 10px;
 	border: #ddd 1px solid;
@@ -77,7 +79,10 @@
 }
 
 /*selectdaohang.js*/
-/* sco.tooltip.js */
+
+/* sco.tooltip.js
+	设计院首页设计师效果
+ */
 .tooltip {
 	padding: .6em;
 	/*width: 12em;*/
@@ -169,7 +174,7 @@
 	left: 8px;
 	bottom: -13px;
 }
-/*幻灯*/
+/*设计院首页幻灯*/
 .rslides {
   position: relative;
   list-style: none;
@@ -201,6 +206,328 @@
   width: 100%;
   border: 0;
   }
+
+
+/*
+幻灯插件皮肤
+skins available:
+	- sweet
+	- powerful
+	- charming
+*/
+
+/* the container */
+.allinone_carousel {
+	position:relative;
+}
+.allinone_carousel img {
+	max-width:none;
+	max-height:none;
+}
+.allinone_carousel_list {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:none;
+}
+
+.allinone_carousel .contentHolder {
+	position:relative;
+	overflow:hidden;
+}
+.mycanvas {
+	position:absolute;
+	top:8px;
+	right:10px;
+	z-index:1000;
+}
+
+.myloader {
+	background:url(skins/loader.gif);
+	width:37px;
+	height:37px;
+	position:absolute;
+	left:49%;
+	top:49%;
+	z-index:999;
+}
+/***charming SKIN***/
+
+.allinone_carousel.charming .contentHolderUnit {
+	position:absolute;
+	/*float:left;
+	display:block;*/
+	width: 900px;
+	height: 500px;
+	overflow:hidden;
+	cursor: pointer;
+	background:url(../img/design/skins/charming/empty.gif) repeat;
+}
+
+
+
+.allinone_carousel.charming .elementTitle {
+	position:absolute;
+	left:0;
+	top:40px;
+	width:100%;
+	text-align:center;
+	font: bold 22px/30px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:capitalize;
+}
+
+
+
+.allinone_carousel.charming .playOver {
+	position:absolute;
+	width:73px;
+	height:73px;
+	background:url(../img/design/skins/charming/play_overOFF.png) 0 0 no-repeat;
+	display:none;
+	z-index:200;
+	cursor: pointer;
+}
+
+.allinone_carousel.charming .playOver:hover {
+	background:url(../img/design/skins/charming/play_overON.png) 0 0 no-repeat;
+	display:none;
+	z-index:200;
+	cursor: pointer;
+}
+
+.allinone_carousel.charming .bannerControls {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:101;
+	width:100%;
+}
+
+.allinone_carousel.charming .leftNav {
+	position:absolute;
+	left:5px;
+	width:47px;
+	height:47px;
+	background:url(../img/design/skins/charming/leftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.allinone_carousel.charming .leftNav:hover {
+	background:url(../img/design/skins/charming/leftNavON.png) 0 0 no-repeat;
+}
+.allinone_carousel.charming .rightNav {
+	position:absolute;
+	right:5px;
+	width:47px;
+	height:47px;
+	background:url(../img/design/skins/charming/rightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.allinone_carousel.charming .rightNav:hover {
+	background:url(../img/design/skins/charming/rightNavON.png) 0 0 no-repeat;
+}
+.allinone_carousel.charming .bottomNav {
+	position:absolute;
+	height:35px;
+	width:0;
+	padding-left:9px;
+	z-index:140;
+}
+.allinone_carousel.charming .bottomNavButtonOFF {
+	float:left;
+	display:block;
+	width:19px;
+	height:19px;
+	background:url(../img/design/skins/charming/bottomNavOFF.png) 0 0 no-repeat;
+	padding-left:9px;
+	cursor: pointer;
+}
+
+.allinone_carousel.charming .bottomNavButtonON {
+	float:left;
+	display:block;
+	width:19px;
+	height:19px;
+	padding-left:9px;
+	background:url(../img/design/skins/charming/bottomNavON.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.allinone_carousel.charming .bottomNavLeft {
+	display:none;
+	position:absolute;
+	z-index:140;
+}
+.allinone_carousel.charming .bottomNavRight {
+	display:none;
+	position:absolute;
+	z-index:140;
+}
+
+.allinone_carousel.charming .bottomOverThumb {
+	position:absolute;
+	width:88px;
+	height:106px;
+	background:url(../img/design/skins/charming/bottomOverThumbBg.png) 23px bottom no-repeat;
+	bottom:27px;
+	xleft:0px;
+	margin-left:-25px;
+}
+.allinone_carousel.charming .bottomOverThumb img {
+	border:4px solid #22032e;
+}
+/*******/
+
+/* 设计师page页幻灯 the container */
+.allinone_thumbnailsBanner {
+	position:relative;
+}
+.allinone_thumbnailsBanner img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width:none;
+	max-height:none;
+	/* width: 880px; */
+	/* height: 550px; */
+}
+.allinone_thumbnailsBanner_list {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:none;
+}
+.allinone_thumbnailsBanner .stripe {
+	position:absolute;
+	display:block;	
+	height:100%;
+	z-index:1;
+	overflow:hidden;
+}
+.allinone_thumbnailsBanner .block {
+	position:absolute;
+	display:block;	
+	z-index:1;
+	overflow:hidden;
+}
+.mycanvas {
+	position:absolute;
+	top:8px;
+	right:10px;
+	z-index:10;
+}
+
+/**SIMPLE SKIN***/
+
+.allinone_thumbnailsBanner.simple .bannerControls {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	width:100%;
+}
+
+.allinone_thumbnailsBanner.simple .leftNav {
+	position:absolute;
+	left:0px;
+	top:50%;
+	/*margin-top:-35px;  height/2 */
+	width:31px;
+	height:71px;
+	background:url(../img/design/skins/simple/leftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.allinone_thumbnailsBanner.simple .leftNav:hover {
+	background:url(../img/design/skins/simple/leftNavON.png) 0 0 no-repeat;
+}
+.allinone_thumbnailsBanner.simple .rightNav {
+	position:absolute;
+	right:0px;
+	top:50%;
+	/*margin-top:-35px;  height/2 */
+	width:31px;
+	height:71px;
+	background:url(../img/design/skins/simple/rightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.allinone_thumbnailsBanner.simple .rightNav:hover {
+	background:url(../img/design/skins/simple/rightNavON.png) 0 0 no-repeat;
+}
+.allinone_thumbnailsBanner.simple .thumbsHolderWrapper {
+	position:absolute;
+	background:#FFFFFF;
+	border-top:1px solid #23b6ed;
+	height:98px;
+	width:100%;
+	overflow:hidden;
+	z-index:10;
+}
+.allinone_thumbnailsBanner.simple .thumbsHolderVisibleWrapper {
+	position:absolute;
+	width:100%;
+	height:121px;
+	overflow:hidden;
+}
+.allinone_thumbnailsBanner.simple .thumbsHolder {
+	position:absolute;
+}
+.allinone_thumbnailsBanner.simple .thumbsHolder_ThumbOFF {
+	float:left;
+	display:block;
+	width:110px;
+	height:65px;
+	cursor: pointer;
+}
+
+.allinone_thumbnailsBanner.simple .thumbsHolder_ThumbOFF img {
+	position:relative;
+}
+
+.allinone_thumbnailsBanner.simple .thumbsHolder_ThumbON {
+	background:url(../img/design/skins/simple/thumbActiveArrow.png) center 0px no-repeat;	
+}
+.allinone_thumbnailsBanner.simple .carouselLeftNav {
+	position:absolute;
+	width:46px;
+	height:98px;
+	background:url(../img/design/skins/simple/carouselLeftNav.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.allinone_thumbnailsBanner.simple .carouselLeftNav:hover {
+	background:url(../img/design/skins/simple/carouselLeftNavOn.png) 0 0 no-repeat;
+}
+
+.allinone_thumbnailsBanner.simple .carouselLeftNavDisabled {
+	background:url(../img/design/skins/simple/carouselLeftNavDisable.png) 0 0 no-repeat;
+	cursor:default;
+}
+.allinone_thumbnailsBanner.simple .carouselLeftNavDisabled:hover {
+	background:url(../img/design/skins/simple/carouselLeftNavDisable.png) 0 0 no-repeat;
+}
+
+
+.allinone_thumbnailsBanner.simple .carouselRightNav {
+	position:absolute;
+	width:46px;
+	height:98px;
+	background:url(../img/design/skins/simple/carouselRightNav.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.allinone_thumbnailsBanner.simple .carouselRightNav:hover {
+	background:url(../img/design/skins/simple/carouselRightNavOn.png) 0 0 no-repeat;
+}
+.allinone_thumbnailsBanner.simple .carouselRightNavDisabled {
+	background:url(../img/design/skins/simple/carouselRightNavDisable.png) 0 0 no-repeat;
+	cursor:default;
+}
+.allinone_thumbnailsBanner.simple .carouselRightNavDisabled:hover {
+	background:url(../img/design/skins/simple/carouselRightNavDisable.png) 0 0 no-repeat;
+}
+
+
 
 /*全局*/
 
@@ -584,6 +911,10 @@
 	margin-left: -32px;
 	margin-bottom: 80px;
 }
+
+.ds_page_zxzn.ds_md8_pic {
+    margin: 0;
+}
 .ds_md8_pic>li {
 	width: 376px;
 	display: inline-block;
@@ -606,6 +937,14 @@
 	width: 376px;
 	height: 212px;
 	position:relative;
+}
+
+.ds_page_zxzn a div {
+    width: 260px;
+}
+
+.ds_page_zxzn a, .ds_page_zxzn a img {
+    width: 270px;
 }
 .ds_md8_pic_im img {
 	width: 376px;
@@ -659,176 +998,129 @@
 	font-weight: bold;
 }
 
-
-/*
-skins available:
-	- sweet
-	- powerful
-	- charming
-*/
-
-/* the container */
-.allinone_carousel {
-	position:relative;
+.ds_page_l {
+	width: 270px;
+	float: left;
 }
-.allinone_carousel img {
-	max-width:none;
-	max-height:none;
+.ds_page_r {
+	width: 905px;
+	float: right;
+	border:1px solid #ccc;
 }
-.allinone_carousel_list {
-	margin:0;
-	padding:0;
-	list-style:none;
-	display:none;
+.ds_page_sjs.clearfix {
+  padding: 20px 10px;
+  border: 1px solid #ccc;
+  width: 250px;
 }
-
-.allinone_carousel .contentHolder {
-	position:relative;
-	overflow:hidden;
+.ds_page_sjs>img {
+	width: 80px;
+	height: 81px;
+	float: left;
 }
-.mycanvas {
-	position:absolute;
-	top:8px;
-	right:10px;
-	z-index:1000;
+.ds_page_sjs_na {
+	float: left;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+.ds_page_sjs>p {
+	width:166px;
+}
+.ds_page_sjs_na .sgzx-btn {
+	margin-top: 5px;
 }
 
-.myloader {
-	background:url(skins/loader.gif);
-	width:37px;
-	height:37px;
-	position:absolute;
-	left:49%;
-	top:49%;
-	z-index:999;
+.ds_page_zx {
+	position: relative;
+	width: 270px;
+	height: 178px;
+	border: 1px solid #ccc;
+}
+.ds_page_zx h1 {
+	color: #FB8D0D;
+	font: 20px "Microsoft YaHei";
+	font-weight: bold;
+	margin: 10px 61px;
+}
+.ds_sghdname {
+  position: absolute;
+  top: 54px;
+  left: 21px;
+  width: 203px;
+  height: 20px;
+  line-height: 25px;
+  border: 1px solid #D8D8D8;
+  padding: 4px 10px;
+}
+.ds_sghdphone {
+  position: absolute;
+  top: 94px;
+  left: 21px;
+  width: 203px;
+  height: 20px;
+  line-height: 25px;
+  border: 1px solid #D8D8D8;
+  padding: 4px 10px;
+}
+.ds_sghdbtn {
+  position: absolute;
+  top: 134px;
+  left: 22px;
+  width: 224px;
+  height: 28px;
+  color: #FFF;
+  background-color: #FB8D0D;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+  border: medium none;
+  cursor: pointer;
 }
 
-
-/***charming SKIN***/
-
-.allinone_carousel.charming .contentHolderUnit {
-	position:absolute;
-	/*float:left;
-	display:block;*/
-	width: 900px;
-	height: 500px;
-	overflow:hidden;
-	cursor: pointer;
-	background:url(../img/design/skins/charming/empty.gif) repeat;
+.ds_page_zxzn>.ds_md8_pic_li {
+  margin-top: 15px;
+  margin-left: 0px;
+  padding-left: 15px;
+  font-size: 13px;
+  color: #7A7A7A;
+  line-height: 30px;
+  list-style-type: square;
 }
 
+.ds_page_zxzn>.ds_md8_pic_li>li {
+    width: 255px;
+    height: 30px;
 
-
-.allinone_carousel.charming .elementTitle {
-	position:absolute;
-	left:0;
-	top:40px;
-	width:100%;
-	text-align:center;
-	font: bold 22px/30px 'Droid Sans', Verdana, Helvetica, sans-serif;
-	color:#FFFFFF;
-	text-transform:capitalize;
 }
-
-
-
-.allinone_carousel.charming .playOver {
-	position:absolute;
-	width:73px;
-	height:73px;
-	background:url(../img/design/skins/charming/play_overOFF.png) 0 0 no-repeat;
-	display:none;
-	z-index:200;
-	cursor: pointer;
+.ds_page_hd {
+  font: 16px "Microsoft YaHei";
+  padding-left: 10px;
+  border-left: 4px solid #000;
+  margin-bottom: 10px;
 }
-
-.allinone_carousel.charming .playOver:hover {
-	background:url(../img/design/skins/charming/play_overON.png) 0 0 no-repeat;
-	display:none;
-	z-index:200;
-	cursor: pointer;
+.ds_page_dajia {
+	border: 1px solid #ccc;
+	padding: 20px 0;
+	width: 1200px;
+	height: 173px;
 }
-
-.allinone_carousel.charming .bannerControls {
-	position:absolute;
-	left:0;
-	top:0;
-	z-index:101;
-	width:100%;
+.ds_page_dajia img {
+	width: 215px;
+	height: 145px;
+}
+.ds_page_dajia li {
+	float: left;
+	margin-left: 21px;
+}
+.ds_page_dajia h1 {
+	width: 215px;
+	/* height: 32px; */
+	overflow: hidden;
 }
 
-.allinone_carousel.charming .leftNav {
-	position:absolute;
-	left:5px;
-	width:47px;
-	height:47px;
-	background:url(../img/design/skins/charming/leftNavOFF.png) 0 0 no-repeat;
-	cursor: pointer;
+.ds_page_mian {
+	padding: 20px 13px;
 }
-.allinone_carousel.charming .leftNav:hover {
-	background:url(../img/design/skins/charming/leftNavON.png) 0 0 no-repeat;
+.ds_page_mian_hd h1 {
+	font: 20px "Microsoft YaHei";
+	font-weight: bold;
 }
-.allinone_carousel.charming .rightNav {
-	position:absolute;
-	right:5px;
-	width:47px;
-	height:47px;
-	background:url(../img/design/skins/charming/rightNavOFF.png) 0 0 no-repeat;
-	cursor: pointer;
-}
-.allinone_carousel.charming .rightNav:hover {
-	background:url(../img/design/skins/charming/rightNavON.png) 0 0 no-repeat;
-}
-.allinone_carousel.charming .bottomNav {
-	position:absolute;
-	height:35px;
-	width:0;
-	padding-left:9px;
-	z-index:140;
-}
-.allinone_carousel.charming .bottomNavButtonOFF {
-	float:left;
-	display:block;
-	width:19px;
-	height:19px;
-	background:url(../img/design/skins/charming/bottomNavOFF.png) 0 0 no-repeat;
-	padding-left:9px;
-	cursor: pointer;
-}
-
-.allinone_carousel.charming .bottomNavButtonON {
-	float:left;
-	display:block;
-	width:19px;
-	height:19px;
-	padding-left:9px;
-	background:url(../img/design/skins/charming/bottomNavON.png) 0 0 no-repeat;
-	cursor: pointer;
-}
-
-.allinone_carousel.charming .bottomNavLeft {
-	display:none;
-	position:absolute;
-	z-index:140;
-}
-.allinone_carousel.charming .bottomNavRight {
-	display:none;
-	position:absolute;
-	z-index:140;
-}
-
-.allinone_carousel.charming .bottomOverThumb {
-	position:absolute;
-	width:88px;
-	height:106px;
-	background:url(../img/design/skins/charming/bottomOverThumbBg.png) 23px bottom no-repeat;
-	bottom:27px;
-	xleft:0px;
-	margin-left:-25px;
-}
-.allinone_carousel.charming .bottomOverThumb img {
-	border:4px solid #22032e;
-}
-
-
-/*******/

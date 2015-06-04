@@ -59,7 +59,15 @@
       playMovieMarginTop: 0,
       bottomNavMarginBottom: -10
     });
-
+    //designerpage.html
+    $('#allinone_thumbnailsBanner_simple').allinone_thumbnailsBanner({
+      skin: 'simple',
+      numberOfThumbsPerScreen:7,
+      width: 880,
+      height: 550,
+      thumbsReflection:0,
+      defaultEffect: 'random'
+    });
 })(jQuery);
 
 
