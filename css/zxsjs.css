@@ -379,153 +379,26 @@ skins available:
 /*******/
 
 /* 设计师page页幻灯 the container */
-.allinone_thumbnailsBanner {
-	position:relative;
-}
-.allinone_thumbnailsBanner img {
-	position:absolute;
-	top:0px;
-	left:0px;
-	max-width:none;
-	max-height:none;
-	/* width: 880px; */
-	/* height: 550px; */
-}
-.allinone_thumbnailsBanner_list {
-	margin:0;
-	padding:0;
-	list-style:none;
-	display:none;
-}
-.allinone_thumbnailsBanner .stripe {
-	position:absolute;
-	display:block;	
-	height:100%;
-	z-index:1;
-	overflow:hidden;
-}
-.allinone_thumbnailsBanner .block {
-	position:absolute;
-	display:block;	
-	z-index:1;
-	overflow:hidden;
-}
-.mycanvas {
-	position:absolute;
-	top:8px;
-	right:10px;
-	z-index:10;
-}
 
-/**SIMPLE SKIN***/
+#play {width: 845px;text-align:center;position:relative;overflow:hidden;margin:5px auto;}
+#play .change_a {width:50%;height:100%;position:absolute;top:0;z-index:1;cursor:pointer;display:block;overflow:hidden;background:url(about:blank);}
+#play .prev_a {left:0;}
+#play .next_a {right:0}
+#play .change_a span {width:24px;height:43px;display:block;position:absolute;top:50%;margin-top:-21px;display:none}
+#play .prev_a span {background:url(../img/s_gallery_2012110702.png) no-repeat 0px -50px;left:0;}
+#play .next_a span {background:url(../img/s_gallery_2012110702.png) no-repeat -30px -50px;right:0;}
+#play .img_ul {position:relative;z-index:1;}
+.img_hd  {width: 845px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#eee;overflow:hidden;height:66px;padding:2px 0;margin-top:15px;margin:5px auto;position:relative;}
+.img_hd ul {position:absolute;z-index:1}
+.img_hd ul li {float:left;width:80px;height: 60px;border:3px solid #eee;cursor:pointer;margin:0 3px 0 1px;overflow:hidden;*display:inline;padding:1px;text-align:center}
+.img_hd ul li img {height:60px;}
+.img_hd ul li.on{ border-color:rgb(45, 150, 233);}
+.img_hd .bottom_a {background:url(../img/s_gallery_2012110702.png) no-repeat;width:22px;height:22px;position:absolute;display:block;top:50%;margin-top:-11px;cursor:pointer;z-index:10}
+.img_hd .prev_a { background-position:0 -24px;left:5px;}
+.img_hd .next_a { background-position:-30px -24px;right:5px;}
 
-.allinone_thumbnailsBanner.simple .bannerControls {
-	position:absolute;
-	left:0;
-	top:0;
-	z-index:2;
-	width:100%;
-}
+#foot_bm a,#foot_bm,p,p a{color:#666;}
 
-.allinone_thumbnailsBanner.simple .leftNav {
-	position:absolute;
-	left:0px;
-	top:50%;
-	/*margin-top:-35px;  height/2 */
-	width:31px;
-	height:71px;
-	background:url(../img/design/skins/simple/leftNavOFF.png) 0 0 no-repeat;
-	cursor: pointer;
-}
-
-.allinone_thumbnailsBanner.simple .leftNav:hover {
-	background:url(../img/design/skins/simple/leftNavON.png) 0 0 no-repeat;
-}
-.allinone_thumbnailsBanner.simple .rightNav {
-	position:absolute;
-	right:0px;
-	top:50%;
-	/*margin-top:-35px;  height/2 */
-	width:31px;
-	height:71px;
-	background:url(../img/design/skins/simple/rightNavOFF.png) 0 0 no-repeat;
-	cursor: pointer;
-}
-.allinone_thumbnailsBanner.simple .rightNav:hover {
-	background:url(../img/design/skins/simple/rightNavON.png) 0 0 no-repeat;
-}
-.allinone_thumbnailsBanner.simple .thumbsHolderWrapper {
-	position:absolute;
-	background:#FFFFFF;
-	border-top:1px solid #23b6ed;
-	height:98px;
-	width:100%;
-	overflow:hidden;
-	z-index:10;
-}
-.allinone_thumbnailsBanner.simple .thumbsHolderVisibleWrapper {
-	position:absolute;
-	width:100%;
-	height:121px;
-	overflow:hidden;
-}
-.allinone_thumbnailsBanner.simple .thumbsHolder {
-	position:absolute;
-}
-.allinone_thumbnailsBanner.simple .thumbsHolder_ThumbOFF {
-	float:left;
-	display:block;
-	width:110px;
-	height:65px;
-	cursor: pointer;
-}
-
-.allinone_thumbnailsBanner.simple .thumbsHolder_ThumbOFF img {
-	position:relative;
-}
-
-.allinone_thumbnailsBanner.simple .thumbsHolder_ThumbON {
-	background:url(../img/design/skins/simple/thumbActiveArrow.png) center 0px no-repeat;	
-}
-.allinone_thumbnailsBanner.simple .carouselLeftNav {
-	position:absolute;
-	width:46px;
-	height:98px;
-	background:url(../img/design/skins/simple/carouselLeftNav.png) 0 0 no-repeat;
-	cursor: pointer;
-}
-
-.allinone_thumbnailsBanner.simple .carouselLeftNav:hover {
-	background:url(../img/design/skins/simple/carouselLeftNavOn.png) 0 0 no-repeat;
-}
-
-.allinone_thumbnailsBanner.simple .carouselLeftNavDisabled {
-	background:url(../img/design/skins/simple/carouselLeftNavDisable.png) 0 0 no-repeat;
-	cursor:default;
-}
-.allinone_thumbnailsBanner.simple .carouselLeftNavDisabled:hover {
-	background:url(../img/design/skins/simple/carouselLeftNavDisable.png) 0 0 no-repeat;
-}
-
-
-.allinone_thumbnailsBanner.simple .carouselRightNav {
-	position:absolute;
-	width:46px;
-	height:98px;
-	background:url(../img/design/skins/simple/carouselRightNav.png) 0 0 no-repeat;
-	cursor: pointer;
-}
-
-.allinone_thumbnailsBanner.simple .carouselRightNav:hover {
-	background:url(../img/design/skins/simple/carouselRightNavOn.png) 0 0 no-repeat;
-}
-.allinone_thumbnailsBanner.simple .carouselRightNavDisabled {
-	background:url(../img/design/skins/simple/carouselRightNavDisable.png) 0 0 no-repeat;
-	cursor:default;
-}
-.allinone_thumbnailsBanner.simple .carouselRightNavDisabled:hover {
-	background:url(../img/design/skins/simple/carouselRightNavDisable.png) 0 0 no-repeat;
-}
 
 
 
@@ -1118,7 +991,10 @@ skins available:
 }
 
 .ds_page_mian {
-	padding: 20px 13px;
+	padding: 15px 30px;
+}
+.ds_page_mian_hd {
+	margin-bottom: 20px;
 }
 .ds_page_mian_hd h1 {
 	font: 20px "Microsoft YaHei";
