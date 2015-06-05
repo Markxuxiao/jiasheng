@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*全局*/
+
+.ts_linear { -moz-transition:all 0.2s linear; -webkit-transition:all 0.2s linear; -o-transition:all 0.2s linear; transition:all 0.2s linear; }
+.ds_btn_hover:hover {
+	background: #D0750B;
+}
 /*selectdaohang.js
 	设计师图片列表导航
 */
@@ -453,6 +458,8 @@ skins available:
 	background-color: #FF991C;
 	color: #fff;
 	width: 224px;
+	border: medium none;
+	cursor: pointer;
 }
 
 .ds_zxlc {
@@ -632,6 +639,7 @@ skins available:
 	background-color: #FF991C;
 	color: #FFF;
 	width: 254px;
+	border: medium none;    cursor: pointer;
 }
 .ds_md6 {
 	padding-top: 30px;
@@ -1028,6 +1036,7 @@ skins available:
 	height: 30px;
 	color: #fff;
 	background: #FB8D0D;
+	border: medium none;
 }
 .ds_design_pjnr li {
 	margin-bottom: 20px;

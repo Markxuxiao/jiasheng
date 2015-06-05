@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.ts_linear { -moz-transition:all 0.2s linear; -webkit-transition:all 0.2s linear; -o-transition:all 0.2s linear; transition:all 0.2s linear; }
+input[type="button"]:hover.ts_linear,
+input[type="submit"]:hover.ts_linear{
+	background: #DD8218;
+}
 .sgmain_1200 {
 	width: 1200px;
 	margin: 0px auto;
@@ -292,10 +297,11 @@
 	left: 21px;
 	width: 180px;
 	height: 20px;
-	line-height: 25px;
+	line-height: 21px;
 	border: 1px solid #D8D8D8;
 	padding: 4px 10px;
 
+	/* background-color: #ccc; */
 }
 .sghdphone {
 	position: absolute;
@@ -310,8 +316,8 @@
 .sghdbtn {
 	position: absolute;
 	top: 134px;
-	left: 49px;
-	width: 150px;
+	left: 22px;
+	width: 200px;
 	height: 25px;
 	color: #FFF;
 	background-color: #FB8D0D;
@@ -1018,7 +1024,7 @@
     background-color: #F8F8F8;
     border-width: 1px 1px medium;
     border-style: solid solid none;
-    border-color: #E8E8E8 #E8E8E8 -moz-use-text-color;
+    border-color: #eee;
     -moz-border-top-colors: none;
     -moz-border-right-colors: none;
     -moz-border-bottom-colors: none;
@@ -1103,7 +1109,7 @@
     width: 75px;
     border-width: 1px 1px medium;
     border-style: solid solid none;
-    border-color: #FFF #FFF -moz-use-text-color;
+    border-color: #eee;
     -moz-border-top-colors: none;
     -moz-border-right-colors: none;
     -moz-border-bottom-colors: none;
@@ -1135,7 +1141,7 @@
     width: 75px;
     border-width: medium 1px 1px;
     border-style: none solid solid;
-    border-color: -moz-use-text-color #EEE #EEE;
+    border-color: #eee;
     -moz-border-top-colors: none;
     -moz-border-right-colors: none;
     -moz-border-bottom-colors: none;
@@ -1261,6 +1267,7 @@
     background-color: #FB8D0D;
     float: right;
     font-size: 14px;
+    border: medium none;    cursor: pointer;
 }
 .path_btn {
 	text-decoration: none !important;
