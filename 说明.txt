@@ -17,4 +17,11 @@ script.js
 zxsgd.css
 
 
+添加设计院板块
+添加相应html页面
 
+designindex - designlist - designerpage
+	   |
+	    - designerhome
+添加css文件
+及js文件

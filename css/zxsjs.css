@@ -1,10 +1,7 @@
 @charset "UTF-8";
 /*全局*/
 
-.ts_linear { -moz-transition:all 0.2s linear; -webkit-transition:all 0.2s linear; -o-transition:all 0.2s linear; transition:all 0.2s linear; }
-.ds_btn_hover:hover {
-	background: #D0750B;
-}
+
 /*selectdaohang.js
 	设计师图片列表导航
 */
