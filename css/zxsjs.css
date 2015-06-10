@@ -406,8 +406,24 @@ skins available:
 
 /*全局*/
 
-
-
+.ds_index_hd {
+	position: relative;
+	min-width: 1200px;
+}
+.ds_index_hd img {
+	width: 100%;
+	min-width: 1200px;
+	height: 100%;
+}
+.ds_index_hd_ab {
+	display: block;
+	position: absolute;
+	  z-index: 99;
+	  width: 11%;
+	  height: 10%;
+	  top: 54%;
+	  left: 67%;
+}
 
 .ds_hader {
 	width: 100%;
@@ -504,10 +520,9 @@ skins available:
 
 .ds_md2 {
 	width: 100%;
-	height: 500px;
+	height: 540px;
 	margin-top: 20px;
 	background-color: #EEEEEE;
-	padding-top: 47px;
 }
 .ds_md3 {
 	height: 421px;
@@ -531,7 +546,7 @@ skins available:
 }
 .ds_md5 {
 	width: 100%;
-	height: 644px;
+	height: 550px;
 	background: url(../img/design/de_47.jpg) repeat ;
 }
 
@@ -631,7 +646,7 @@ skins available:
 	height: 20px;
 	padding: 3px 5px;
 }
-.ds_sjs1 input[type="button"]{
+.ds_sjs1 input[type="submit"]{
 	height: 32px;
 	background-color: #FF991C;
 	color: #FFF;
