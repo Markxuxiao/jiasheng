@@ -1525,7 +1525,7 @@ input.btn_green {
 .pagination li span.currentpage { color: #AAA; font-weight: bold; background-color: #FAFAFA; border-color: #E6E6E6; position: relative; z-index: 2;}
 
 /*modal弹出窗口*/
-.modal-backdrop, .modal-backdrop.fade.in{opacity: 0.8;}
+.modal-backdrop, .modal-backdrop.fade.in{opacity: 0.8;filter: alpha(opacity=50);}
 .modal-backdrop.fade{opacity: 0;}
 .fade.in{opacity: 1;}
 .modal-backdrop{position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: 1040; background-color: #000;}

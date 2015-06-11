@@ -417,6 +417,8 @@ skins available:
 }
 .ds_index_hd_ab {
 	display: block;
+	background-color: rgba(255, 255, 255, 0);
+	filter: alpha(opacity=00);
 	position: absolute;
 	  z-index: 99;
 	  width: 11%;
@@ -510,8 +512,17 @@ skins available:
 
 .ds_tjpp li {
 	display: inline;
-	margin-right: 16px;
+	margin-left: 12px;
 	margin-bottom: 10px;
+}
+
+.ds_tjpp ul {
+    width: 1200px;
+}
+
+.ds_tjpp ul {
+    margin-left: -16px;
+    margin-right: -16px;
 }
 .ds_tjpp li img {
 	width: 90px;
@@ -609,6 +620,15 @@ skins available:
 	float: right;
 	width: 261px;
 }
+
+.ds_sjs1 {
+    margin-left: 17px;
+}
+
+.ds_sjs {
+    display: inline-block;
+    float: left;
+}
 .ds_sjs2 li{
 	border:2px solid ;
 	margin-bottom: 10px;
@@ -670,6 +690,7 @@ skins available:
 	height: 45px;
 	margin-left: 20px;
 	border-right: 2px solid #ccc;
+	display: inline;
 }
 .ds_md6_l dt h1 {
 	font: 18px "Microsoft YaHei";
@@ -714,6 +735,7 @@ skins available:
 	margin: 0 5px;
 	line-height: 27px;
 	text-align: center;
+	float: left;
 }
 #ds_md6_r_s-pager li a:hover {
 	text-decoration: none;
@@ -733,7 +755,7 @@ skins available:
 	margin-bottom: 20px;
 }
 #ds_md7_hd_fs {
-	width: 327px;
+	width: 339px;
 	position: absolute;
 	right: 0;
 	bottom: 15px;
@@ -747,22 +769,23 @@ skins available:
 	width: 1200px;
 }
 .ds_md7_main ul {
-	position: relative;
+	display: block;
 	margin-left: -17px;
+	width: 1225px;
 }
 .ds_md7_main li {
-	position: relative;
 	display: inline-block;
-	width: 284px;
+	float: left;
+	width: 282px;
 	height: 291px;
 	overflow: hidden;
-	margin-left: 16px;
+	margin-left: 20px;
 	margin-bottom: 10px;
-	border: 1px solid rgba(255, 255, 255, 0);
+	border: 1px solid #fff;
 }
 
 .ds_md7_main li:hover {
-    border: 1px solid;
+    border: 1px solid red;
 }
 .ds_md7_main a {
 	display: block;
@@ -786,6 +809,7 @@ skins available:
 	overflow: hidden;
 	text-align: center;
 	padding: 20px 27px;
+	float: left;
 }
 .ds_md7_mu img {
 	margin-bottom: 4px;
@@ -803,6 +827,8 @@ skins available:
 .ds_md8_pic {
 	margin-left: -32px;
 	margin-bottom: 80px;
+	width: 1216px;
+	display: block;
 }
 
 .ds_page_zxzn.ds_md8_pic {
@@ -811,7 +837,8 @@ skins available:
 .ds_md8_pic>li {
 	width: 376px;
 	display: inline-block;
-	margin-left: 32px;
+	margin-left: 29px;
+	float: left;
 }
 .ds_md8_pic h1 {
 	font:16px "Microsoft YaHei";
@@ -846,11 +873,13 @@ skins available:
 
 .ds_md8_pic_im div {
 	position: absolute;
+	right: 0;
 	bottom: 0;
 	width: 366px;
 	height: 39px;
 	line-height: 37px;
 	background: #000 none repeat scroll 0% 0%;
+	filter: alpha(opacity=70);
 	opacity: 0.7;
 	color: #fff;
 	font-size: 13px;
