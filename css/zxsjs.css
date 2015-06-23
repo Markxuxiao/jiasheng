@@ -1102,3 +1102,131 @@ skins available:
 .ds_design_pjnr p{
 	margin-top:10px;
 } 
+
+
+/*装修图片下载*/
+/* xz_select 筛选*/
+.xz_select {
+	  padding: 5px 10px;
+	  border: #ddd 1px solid;
+	  border-radius: 4px;
+	  font-size: 12px;
+}
+.xz_select li {
+	list-style: none;
+	padding: 10px 0 5px 100px
+}
+.xz_select .xz_select-list {
+	border-bottom: #eee 1px dashed
+}
+.xz_select dl {
+	zoom: 1;
+	position: relative;
+	line-height: 24px;
+}
+.xz_select dl:after {
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden
+}
+.xz_select dt {
+	width: 100px;
+	margin-bottom: 5px;
+	position: absolute;
+	top: 0;
+	left: -100px;
+	text-align: right;
+	color: #666;
+	height: 24px;
+	line-height: 24px
+}
+.xz_select dd {
+	float: left;
+	display: inline;
+	margin: 0 0 5px 5px;
+}
+.xz_select a {
+	  display: inline-block;
+	  white-space: nowrap;
+	  height: 24px;
+	  padding: 0 10px;
+	  text-decoration: none;
+	  color: #7D7676;
+	  border-radius: 2px;
+}
+.xz_select a:hover {
+	color: #f60;
+	background-color: #f3edc2
+}
+.xz_select .xz_selected a {
+	color: #fff;
+	background-color: #f60
+}
+.xz_select-result dt {
+	font-weight: bold
+}
+.xz_select-no {
+	color: #999
+}
+.xz_select .xz_select-result a {
+	padding-right: 20px;
+	background: #f60 url("../img/close.gif") right 9px no-repeat
+}
+.xz_select .xz_select-result a:hover {
+	background-position: right -15px
+}
+dd.xz_select-all {
+	display: none;
+}
+#xz_xiaoqu dl {
+	display: none;
+}
+#xz_xiaoqu dl.on {
+	display: block;
+}
+
+.xz_md2 ul li {
+	height: 220px;
+  	width: 100%;
+  	margin-top: 20px;
+  	border-bottom: 1px solid #ccc;
+}
+.xz_main_img {
+	float: left;
+	margin-right: 10px;
+}
+.xz_main_img img {
+	width: 260px;
+	height: 200px;
+}
+.xz_mian_contain {
+	float: left;
+	width: 930px;
+	height: 200px;
+}
+.xz_mian_contain h1 {
+	font: 21px "Microsoft YaHei";
+ 	 margin: 10px;
+}
+.xz_mian_contain p {
+	height: 98px;
+ 	 font-size: 14px;
+ 	 margin: 10px;
+ 	 overflow: hidden;
+}
+.xz_main_down span{
+	margin: 10px;
+  	display: block;
+  	float: left;
+
+}
+.xz_main_down a {
+	float: right;
+	display: block;
+	width: 126px;
+  	height: 37px;
+	background: url("../img/download_r2_c2.gif") no-repeat;
+}
+/*装修图片下载end*/
