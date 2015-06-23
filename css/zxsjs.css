@@ -417,8 +417,9 @@ skins available:
 }
 .ds_index_hd_ab {
 	display: block;
-	background-color: rgba(255, 255, 255, 0);
+	background-color: #fff;
 	filter: alpha(opacity=00);
+	opacity: 0;
 	position: absolute;
 	  z-index: 99;
 	  width: 11%;
@@ -511,9 +512,10 @@ skins available:
 }
 
 .ds_tjpp li {
-	display: inline;
-	margin-left: 12px;
+	display: inline-block;
+	margin-right: 17px;
 	margin-bottom: 10px;
+	float: left;
 }
 
 .ds_tjpp ul {
@@ -521,7 +523,7 @@ skins available:
 }
 
 .ds_tjpp ul {
-    margin-left: -16px;
+    margin-left: 4px;
     margin-right: -16px;
 }
 .ds_tjpp li img {
@@ -562,7 +564,7 @@ skins available:
 }
 
 .ds_sjs_l {
-	width: 790px;
+	width: 922px;
 	height: 520px;
 	float: left;
 }
@@ -678,7 +680,7 @@ skins available:
 	height: 525px;
 }
 .ds_md6_l {
-	width: 258px;
+	width: 280px;
 	float: left;
 }
 .ds_md6_l a:hover {
@@ -689,7 +691,7 @@ skins available:
 	width: 57px;
 	height: 45px;
 	margin-left: 20px;
-	border-right: 2px solid #ccc;
+	border-right: 1px solid #ccc;
 	display: inline;
 }
 .ds_md6_l dt h1 {
@@ -703,6 +705,11 @@ skins available:
 	width: 171px;
 	height: 45px;
 	margin-left: 98px;
+	/* float: left; */
+}
+
+.ds_md6_l dd ul {
+    float: left;
 }
 .ds_md6_l li {
 	float: left;
@@ -731,7 +738,9 @@ skins available:
 	display: inline-block;
 	width: 82px;
 	height: 27px;
-	background: rgba(255, 255, 255, 0.7);
+	background: #fff;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
 	margin: 0 5px;
 	line-height: 27px;
 	text-align: center;
@@ -833,6 +842,7 @@ skins available:
 
 .ds_page_zxzn.ds_md8_pic {
     margin: 0;
+    width: 100%;
 }
 .ds_md8_pic>li {
 	width: 376px;
