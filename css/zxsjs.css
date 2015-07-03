@@ -764,7 +764,6 @@ skins available:
 	margin-bottom: 20px;
 }
 #ds_md7_hd_fs {
-	width: 339px;
 	position: absolute;
 	right: 0;
 	bottom: 15px;
@@ -805,6 +804,9 @@ skins available:
 
 .ds_md7_main p {
     padding-left: 5px;
+    overflow: hidden;
+    width: 274px;
+    height: 18px;
 }
 .ds_md7_main img {
 	width: 286px;
