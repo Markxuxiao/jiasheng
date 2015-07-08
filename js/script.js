@@ -66,3 +66,15 @@ $(function(){
 	});
 	
 });
+
+
+//咨询弹窗
+$(function(){
+  var modal=$.scojs_modal({
+    title:"免费申请",
+    content: $('#inner').html(),
+    keyboard: true});
+  $(".sco_modal_zx").click(function(){
+    modal.show();
+  })
+});

@@ -1138,7 +1138,7 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 </nav>
 <!-- PublicNavLayout End-->
 <div class="ds_index_hd">
-  <a class="ds_index_hd_ab" data-trigger="modal" href="modal_zixun.html" data-title="申请免费设计">.</a> 
+  <a class="ds_index_hd_ab sco_modal_zx" href="javascript:;"></a>
   <img src="img/design/de_index_hd.jpg" >
 </div>
 
@@ -1625,6 +1625,32 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
     </li>
   </ul>
 </div>
+<!-- 咨询弹窗-->
+<div class="modal fade" id="modal">
+  <div class="modal-header">
+    <a class="close" href="#" data-dismiss="modal">×</a>
+    <h3></h3>
+  </div>
+  <div class="inner" id="inner">
+    <div class="zx_modal">
+      <form id="zx_form">
+        <dl>
+          <dt>您的姓名:</dt>
+          <dd><input id="zx_name" style="color: rgb(153, 153, 153);" class="zxipt"  type="text" placeholder="请输入姓名" maxlength="5">
+                  <label></label>
+              </dd>
+          <dt>您的电话:</dt>
+          <dd><input id="zx_phone"style="color: rgb(153, 153, 153);" class="zxipt"  type="text" placeholder="请输入电话号码" maxlength="11">
+                  <label></label>
+              </dd>
+          <dd><input class="sghdbtn2" value="免费申请" type="submit"></dd>
+        </dl>
+        </form>
+      </div>
+
+  </div>
+</div>
+<!-- 咨询弹窗end-->
 
 <div id="faq" class="wrapper">
   <div class="wrapper">
@@ -1697,15 +1723,14 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <script src="js/sco.tooltip.js"></script>
 <script src="js/jquery.kxbdmarquee.js"></script>
 <script src="js/responsiveslides.min.js"></script>
+<script src="js/allinone_carousel.js"></script>
 <script type="text/javascript" src="js/mksg.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 <script language="javascript">
   $(function(){
   	// Membership card
   	$('[nctype="mcard"]').membershipCard({type:'shop'});
   });
 </script>
-
-
-
 
 </body></html>

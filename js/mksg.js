@@ -59,6 +59,9 @@
       playMovieMarginTop: 0,
       bottomNavMarginBottom: -10
     });
+
+
+    
 })(jQuery);
 
 
