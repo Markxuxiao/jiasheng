@@ -14,12 +14,12 @@ $(document).ready(function(){
 		}
 		// 添加的tab关联
 		$("#xz_selectB").remove();
-		$("#xz_select2 dd").removeClass("xz_selected");
-		$("#xz_select2 dd.xz_select-all").addClass("xz_selected");
+		$(".xz_select2 dd").removeClass("xz_selected");
+		$(".xz_select2 dd.xz_select-all").addClass("xz_selected");
 		// 添加的tab关联end
 	});
 	
-	$("#xz_select2 dd").click(function () {
+	$(".xz_select2 dd").click(function () {
 		$(this).addClass("xz_selected").siblings().removeClass("xz_selected");
 		if ($(this).hasClass("xz_select-all")) {
 			$("#xz_selectB").remove();
@@ -54,7 +54,7 @@ $(document).ready(function(){
 	
 	$("#xz_selectB").live("click", function () {
 		$(this).remove();
-		$("#xz_select2 .xz_select-all").addClass("xz_selected").siblings().removeClass("xz_selected");
+		$(".xz_select2 .xz_select-all").addClass("xz_selected").siblings().removeClass("xz_selected");
 	});
 	
 	$("#xz_selectC").live("click", function () {
