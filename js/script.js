@@ -78,3 +78,14 @@ $(function(){
     modal.show();
   })
 });
+
+  $(function(){
+  	$(".public-nav-layout .site-menu li").hover(
+      function() {
+  		$(this).addClass("hover");
+  	},
+  	function() {
+  		$(this).removeClass("hover");
+  	});
+  });
+

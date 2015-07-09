@@ -1,7 +1,39 @@
 @charset "UTF-8";
 /*全局*/
-
-
+/*头部下拉导航*/
+.public-nav-layout .site-menu li{
+	position: relative;
+}
+.site-menu-ul {
+	display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fa9928;
+  width: 112px;
+  top: 40px;
+  left: 0;
+}
+.hover .site-menu-ul {
+	display: block;
+}
+.public-nav-layout .site-menu-ul li {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+.public-nav-layout .site-menu-ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #FFF;
+  height: 40px;
+  padding: 0;
+  width: 100%;
+  border-right: none;
+  text-align: center;
+  zoom: 1;
+}
+/*头部下拉导航end*/
 /*selectdaohang.js
 	设计师图片列表导航
 */
