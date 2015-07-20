@@ -208,7 +208,36 @@
 	left: 8px;
 	bottom: -13px;
 }
-/*设计院首页幻灯*/
+/*设计院首页幻灯模块1*/
+#rslides_r_s {
+	max-height: 380px;
+}
+#rslides_r_s-pager {
+  position: relative;
+  top: -31px;
+  text-align: center;
+  z-index: 99;
+}
+#rslides_r_s-pager li {
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  background: #fff;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  margin: 0 5px;
+  line-height: 27px;
+  text-align: center;
+}
+#rslides_r_s-pager li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#rslides_r_s-pager .rslides_here{
+	background: #ccc;
+}
+/*设计院首页幻灯模块2*/
 .rslides {
   position: relative;
   list-style: none;
@@ -440,7 +469,8 @@ skins available:
 
 .ds_index_hd {
 	position: relative;
-	min-width: 1200px;
+	width: 1200px;
+	margin: 0 auto;
 }
 .ds_index_hd img {
 	width: 100%;

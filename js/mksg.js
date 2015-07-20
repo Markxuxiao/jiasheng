@@ -39,8 +39,21 @@
        $(".triangle").removeClass("triangle_up").addClass("triangle_down");
     });
 
-    //设计师主页滚动调用
+    //设计师主页轮播模块1
+    $("#rslides_r_s").responsiveSlides({pause: "true",manualControls: '#rslides_r_s-pager',
+                        before: function () {
+                          var $img = $('#rslides_r_s').find("img");
+                          $img.each(function(){
+                            $(this).width("100%");
+                            $(this).height("100%");
+                            $(this).animate({width:"101%",height:"101%"},2000);
+                          })
+                        },
+                      });
+    
+    //设计师主页问答滚动调用
     $("#ds_sjs2_gd").kxbdMarquee({direction:"up",isEqual:false,scrollDelay:"50"});
+    //设计师主页轮播模块2调用
     $("#ds_md6_r_s").responsiveSlides({manualControls: '#ds_md6_r_s-pager'});
     //designerhome.html
     $('#allinone_carousel_charming').allinone_carousel({
@@ -67,5 +80,4 @@
 
 
        
-
 
