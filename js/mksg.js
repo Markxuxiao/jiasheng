@@ -44,11 +44,12 @@
                         before: function () {
                           var $img = $('#rslides_r_s').find("img");
                           $img.each(function(){
-                            $(this).width("100%");
-                            $(this).height("100%");
-                            $(this).animate({width:"101%",height:"101%"},2000);
+                           // $(this).width("100%");
+                           // $(this).height("100%");
+                           $(this).animate({width:"101%",height:"101%",left:"-0.5%"},0);
+                            $(this).animate({width:"100%",height:"100%",left:"0%"},1000);
                           })
-                        },
+                        }
                       });
     
     //设计师主页问答滚动调用

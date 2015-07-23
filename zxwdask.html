@@ -1149,61 +1149,70 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 
 
 <div class="sgmain_1200">
-
-  <form class="form-horizontal">
-    <fieldset>
-      <div id="legend" class="">
-        <legend class="">表单名</legend>
-      </div>
-    <div class="control-group">
-
-          <!-- Text input-->
-          <label class="control-label" for="input01">Text input</label>
-          <div class="controls">
-            <input type="text" placeholder="placeholder" class="input-xlarge">
-            <p class="help-block">Supporting help text</p>
-          </div>
-        </div>
-
-    <div class="control-group">
-
-          <!-- Textarea -->
-          <label class="control-label">Textarea</label>
-          <div class="controls">
-            <div class="textarea">
-                  <textarea type="" class=""> </textarea>
+  <div class="mainask">
+    <h1>请简单描述您的问题:</h1>
+    <form class="form-horizontal">
+      
+      <div class="control-group">
+            <!-- Text input-->
+            <label class="control-label" for="input01">问题标题</label>
+            <div class="controls">
+              <input id="wd_title" type="text" placeholder="请描述您的问题，如：家庭装修应该如何选择瓷砖？" class="input-xlarge" maxlength="100">
+              <p class="help-block">最多可以输入100字</p>
             </div>
           </div>
-        </div>
+      <div class="control-group">
+            <!-- Textarea -->
+            <label class="control-label">问题描述</label>
+            <div class="controls">
+              <div class="textarea">
+                    <textarea  id="wd_content" class="input-xlarge" placeholder="更详细的描述有助于获得更准确的答案。（选填）" maxlength="1500"></textarea>
+                    <p class="help-block">最多可以输入1000字</p>
+              </div>
+            </div>
+          </div>
+      <div class="control-group">
+            <!-- Select Basic -->
+            <label class="control-label">问题分类</label>
+            <div class="controls">
+              <select name="type_pid" id="type_pid" onchange="changeAsks('type_pid','type_id')" style="border-color: rgb(221, 221, 221);">
+                <option value="0">-请选择-</option>
+                <option value="2">家装设计</option>
+                <option value="3" selected="selected">装修流程</option>
+                <option value="4">家居产品</option>
+                <option value="5">装饰材料</option>
+                <option value="6">公装设计</option>
+                <option value="7">房产知识</option>
+                <option value="8">技术专区</option>
+              </select>
+              <select name="type_id" id="type_id">
+                <option value="0">新房验收</option>
+                <option value="1">收费咨询</option>
+                <option value="2">装修预算</option>
+                <option value="3">装修合同</option>
+                <option value="4">施工工艺</option>
+                <option value="5">业主维权</option>
+                <option value="6">环保检测</option>
+                <option value="7">装修公司</option>
+                <option value="8">完工验收</option>
+                <option value="9">水电改造</option>
+                <option value="10">维护保养</option>
+                <option value="11" selected="selected">-请选择-</option>
+              </select>
+            </div>
 
-    <div class="control-group">
-
-          <!-- Select Basic -->
-          <label class="control-label">Select - Basic</label>
-          <div class="controls">
-            <select class="input-xlarge">
-              <option>Enter</option>
-              <option>Your</option>
-              <option>Options</option>
-              <option>Here!</option>
-            </select>
           </div>
 
-        </div>
-
-    <div class="control-group">
-          <label class="control-label">Button</label>
-
-          <!-- Button -->
-          <div class="controls">
-            <button class="btn btn-success">Button</button>
+      <div class="control-group">
+            <!-- Button -->
+            <div class="controls">
+              <input type="submit" class="btn btn-success ts_linear" value="提交问题">
+            </div>
           </div>
-        </div>
 
-    </fieldset>
-  </form>
-
-
+      
+    </form>
+  </div>
 </div>
 
 
@@ -1271,17 +1280,63 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_005.js"></script>
-<script type="text/javascript" src="js/mksg.js"></script>
-<script src="js/sco.collapse.js"></script>
-<script src="js/sco.panes.js"></script>
-<script src="js/sco.tab.js"></script>
+
+
 <script language="javascript">
   $(function(){
   	// Membership card
   	$('[nctype="mcard"]').membershipCard({type:'shop'});
   });
-</script>
 
+</script>
+<script src="http://cdn.bootcss.com/jquery-placeholder/1.8.7/jquery.placeholder.min.js"></script>
+<script type="text/javascript">
+
+// 二级关联select
+var ask_select = new Array();ask_select[0]=new Array("-请选择-");ask_select[2]=new Array("装修风水","装修风格","客厅","玄关","过道","卧室","书房","餐厅","厨房","阳台","花园","卫生间","儿童房","衣帽间","别墅","小户型","二手房装修","复式","样板间","装饰柜","其他");ask_select[3]=new Array("新房验收","收费咨询","装修预算","装修合同","施工工艺","业主维权","环保检测","装修公司","完工验收","水电改造","维护保养","-请选择-");ask_select[4]=new Array("家具","卫浴设备","灯具/照明","儿童家具/用品","家用电器","橱柜","厨卫电器","厨房用具","地毯","饰品","庭院/花园","暖气设备","家庭影院","壁炉/火炉","天花板/吊顶","床上用品","窗帘/配件","日杂用品","其他","家居生活");ask_select[5]=new Array("夹板木材","地板","涂料/油漆","瓷砖/石材","门窗","五金","壁纸","水龙头","建筑构件","管材管件","其他");ask_select[6]=new Array("办公楼","商场","专卖店","酒店宾馆/客房","餐饮酒吧","歌舞迪厅","休闲健身","体育场馆","会展剧场","博物馆","图书馆","学校","医院","机场车船站","工厂","公园广场","会所","园林","其他");ask_select[7]=new Array("购房资格","购房税费","委托担保","交易流程","产权产证","购房首付","贷款利率","贷款流程","贷款类型","公积金","商品房","限价房","经适保障房","民房土地","房产政策","合同协议","房屋性质","其他");ask_select[8]=new Array("3DMAX","VR","LS","AutoCAD","Photoshop","电脑网络问题","模型材质","培训认证","手机问题");;
+function changeAsks(pid, id) {
+    var iPid = document.getElementById(pid).value;
+    console.log(iPid);
+    var ilen = ask_select[iPid].length;
+    document.getElementById(id).length = ilen;
+    for (var i = 0; i < ilen; i++) {
+        document.getElementById(id).options[i].value = i;
+        document.getElementById(id).options[i].text = ask_select[iPid][i];
+    }
+    document.getElementById(id).options[0].selected = "selected";
+}
+
+
+
+//还剩可输入字数提示
+function numCharLeft(that, pos, maxNum, lablTag) {
+    var maxLen = maxNum,
+        len = $(that).val().length,
+        obj = pos;
+    var labl = lablTag || "em";
+    if(len >= maxLen) {
+        obj.html('已达到最大字数限制');
+        $(that).val($(that).val().substr(0,maxLen));
+    } else {
+        obj.html('还可以输入 <'+ labl +'>'+(maxLen - len)+'</'+ labl +'> 字')  ;
+    }
+}
+
+$(function(){
+  $(".mainask")
+              .on('keyup','#wd_title',function(){
+                  var pos = $(this).next();
+                  numCharLeft(this, pos, 100);
+              })
+              .on("keyup","#wd_content",function(){
+                  var pos = $(this).next();
+                  numCharLeft(this, pos, 1000);
+              });
+
+  //placeholder插件
+  $('input, textarea').placeholder();
+ });
+</script>
 
 
 

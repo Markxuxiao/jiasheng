@@ -210,7 +210,9 @@
 }
 /*设计院首页幻灯模块1*/
 #rslides_r_s {
-	max-height: 380px;
+	overflow: hidden;
+	width: 1200px;
+	height: 380px;
 }
 #rslides_r_s-pager {
   position: relative;
@@ -228,6 +230,8 @@
   margin: 0 5px;
   line-height: 27px;
   text-align: center;
+  *display:inline;
+  *zoom:1;
 }
 #rslides_r_s-pager li a{
 	display: block;
@@ -470,12 +474,14 @@ skins available:
 .ds_index_hd {
 	position: relative;
 	width: 1200px;
+	height: 380px;
 	margin: 0 auto;
 }
 .ds_index_hd img {
 	width: 100%;
 	min-width: 1200px;
 	height: 100%;
+	position: relative;
 }
 .ds_index_hd_ab {
 	display: block;

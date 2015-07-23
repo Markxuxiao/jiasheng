@@ -339,14 +339,14 @@ input[type="submit"]:hover.ts_linear{
 
 #roll2 dd {
     width: 210px;
-    height: 310px;
+    height: 350px;
     float: left;
     margin-right: 10px;
 }
 
 .box2 {
     width: 1100px;
-    height: 300px;
+    height: 350px;
     margin-top: 20px;
     margin-left: 50px;
     position: relative;
@@ -1551,4 +1551,354 @@ input.btn_green {
     height: 24px;
     width: 210px;
     margin: 0px;
+}
+
+
+
+
+/*施工队首页滚动*/
+.box{
+	width: 1100px;
+	height:300px;
+	margin-top: 20px;
+	margin-left:50px;
+	position: relative;
+	overflow:hidden;
+}
+#roll{width: 200%;}
+#roll dd{
+	width: 210px;
+	height: 350px;
+	float:left;
+	margin-right:10px;
+			}
+.box span{position: absolute;bottom: 40%; display: inline-block;width: 50px;text-align: center;cursor: pointer;background: red;z-index: 90;color: #fff;}
+.box .next{right: 0;}
+.mk-box {
+	width: 1198px;
+	height: 373px;
+	margin-top:34px;
+	border:#ccc solid 1px;
+	position: relative;
+	overflow:hidden;
+	}
+
+/* CSS Document */
+.mk-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.mk-ncsl-nav {
+    width: 1200px;
+    margin: auto;
+}
+.banner img {
+	width: 1200px;
+	height:175px;
+	}
+
+	
+.mk-slides-top {
+	width: 1200px;
+    margin: auto;
+	}
+.mk-slides-left {
+	width: 208px;
+	height:431px;
+	float:left;
+	padding-left:32px;
+	padding-top:18px;
+	overflow:hidden;
+	border-width:1px;
+	border-style:solid;
+	border-color:#DBD7D6;
+	}
+	
+.mk-slides-left-box {
+	width: 208px;
+	height: 365px;
+	position: relative;
+	overflow:hidden;
+	}
+.mk-slides-left-box-botm {
+	width:176px;
+	height:25px;
+	margin-top: -6px;
+	overflow:hidden;
+	background-color:#DDD4CF;
+	}
+.mk-slides-left li {
+	margin-bottom:14px;
+	
+	}
+.mk-slides-left .pic {
+	width:176px;
+	height:150px;
+	overflow:hidden;
+	background-color:#DDD4CF;
+	}	
+.mk-slides-right {
+	width: 950px;
+	height:450px;
+	float:right;
+
+	}
+.marg-l-15{
+	margin-left:15px;
+	}
+.marg-r-15{
+	margin-right:10px;
+	}
+.J_1172 {
+	float: left;
+	line-height:25px;
+	font-family: verdana;
+	font-size: 12px;
+	color: #444444;
+	}
+.tm-price {
+	color: #444444;
+	line-height:25px;
+	font-size: 12px;
+	}
+.tm-price-x {
+	text-decoration: line-through;
+	}
+.mk-slides-left-btn1 {
+	overflow: hidden;
+	margin-top:10px;
+	width: 93px;
+	height: 18px;
+	float:left;
+	background:url(../img/r7_c2.gif) no-repeat;
+	}
+.mk-slides-left-btn2 {
+	overflow: hidden;
+	margin-top:10px;
+	width: 81px;
+	height: 18px;
+	float:left;
+	background:url(../img/r7_c3.gif) no-repeat;
+	}
+	
+.mk-slides-right {
+	width: 940px;
+	height: 450px;
+	overflow: hidden;
+	margin-left:10px;
+	}
+	
+.mk-hot {
+	width: 1200px;
+	margin:0 auto;
+	padding-top:43px;
+	clear:both;
+	
+	}
+.mk-hot-top {
+	width: 100%;
+	border-bottom:#655001 solid;
+	float: left;
+	}
+.mk-hot	img {
+	float:left;
+	}
+.mk-hot-botm {
+	width: 1100px;
+	height:300px;
+	padding:20px 50px;
+	border:#ccc solid 1px;
+	margin-top: 34px;
+	position: relative;
+	overflow:hidden;
+	}
+#mk-roll{ width: 200%;}
+#mk-roll li {
+	width: 210px;
+	height: 310px;
+	float:left;
+	margin-right:10px;
+	}
+
+
+.mk-prev {
+	width:24px;
+	height:54px;
+	position:absolute;
+	top:38%;
+	left:10px;
+	background:url(../img/r18_c22.gif) no-repeat;
+	z-index: 90;
+	}
+.mk-next {
+	width:24px;
+	height:54px;
+	position:absolute;
+	top:38%;
+	right:10px;
+	background:url(../img/r18_c3.gif) no-repeat;
+	z-index: 90;
+	}
+.mk-hot-botm .biaoqian {
+	height: 40px;
+	}
+.hot-pic {
+	width: 205px;
+	height: 250px;
+	padding:5px;
+	border:#ccc solid 1px;
+	position:relative;
+	}
+.hot-pic img {
+	width: 205px;
+	height: 250px;
+	}
+.hot2 {
+	width: 205px;
+	height: 40px;
+	overflow:hidden;
+	}
+.biaoqian .J_11723 {
+	float: left;
+	line-height:38px;
+	font-family: verdana;
+	font-size: 12px;
+	color: #E4393C;
+	}
+.tm-price2 {
+	color: #BDBDBD;
+	line-height:40px;
+	font-size: 12px;
+	}
+.hot-pic-new {
+	top:0;
+	left:0;
+	width:32px;
+	height:23px;
+	background:url(../img/r14_c4.gif) no-repeat;
+    position:absolute;
+	}
+/*施工队首页滚动结束*/
+
+
+
+/*问答提问页面*/
+.mainask {
+	background-color: #f8f8f8;
+	padding: 55px 60px 60px;
+}
+.mainask h1 {
+  font-size: 20px;
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 30px;
+  margin-left: 83px;
+}
+.form-horizontal .control-label {
+float: left;
+width: 140px;
+padding-top: 5px;
+text-align: right;
+}
+.form-horizontal .controls {
+margin-left: 160px;
+}
+.form-horizontal .control-group {
+margin-bottom: 20px;
+}
+label {
+display: block;
+margin-bottom: 5px;
+}
+label, input, button, select, textarea {
+font-size: 14px;
+font-weight: normal;
+line-height: 20px;
+}
+label {
+cursor: default;
+}
+.form-horizontal input{
+display: inline-block;
+margin-bottom: 0;
+vertical-align: middle;
+}
+
+.form-horizontal .help-block {
+margin-bottom: 0;
+}
+.mainask .help-block {
+display: block;
+width: 300px;
+margin-left: 393px;
+text-align: right;
+color: #999;
+}
+.form-horizontal .control-group:before, .form-horizontal .control-group:after {
+display: table;
+line-height: 0;
+content: "";
+}
+.form-horizontal .control-group:after {
+clear: both;
+}
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.mainask textarea, .mainask input[type="text"],.mainask select, .uneditable-input {
+background-color: #fff;
+border: 1px solid #ccc;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+-webkit-transition: border linear .2s,box-shadow linear .2s;
+-moz-transition: border linear .2s,box-shadow linear .2s;
+-o-transition: border linear .2s,box-shadow linear .2s;
+transition: border linear .2s,box-shadow linear .2s;
+}
+.mainask select, .mainask textarea,.mainask input[type="text"], .uneditable-input {
+display: inline-block;
+height: 30px;
+padding: 4px 6px;
+margin-bottom: 10px;
+font-size: 14px;
+line-height: 30px;
+color: #555;
+vertical-align: middle;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.mainask .input-xlarge{
+	width: 680px;
+}
+
+.mainask textarea.input-xlarge {
+	height: 108px;
+}  
+.mainask .btn-success {
+  display: inline-block;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #FF991C;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
 }
