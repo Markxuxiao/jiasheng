@@ -1,43 +1,41 @@
 $(function(){
 							
-	$("#select1 dd").click(function () {
+	$("#select1 a").click(function () {
 		$(this).addClass("selected").siblings().removeClass("selected");
 		if ($(this).hasClass("select-all")) {
 			$("#selectA").remove();
 		} else {
 			var copyThisA = $(this).clone();
 			if ($("#selectA").length > 0) {
-				$("#selectA a").html($(this).text());
+				$("#selectA").html($(this).text());
 			} else {
-				$(".select-result dl").append(copyThisA.attr("id", "selectA"));
+				$("#select-re").append(copyThisA.attr("id", "selectA"));
 			}
 		}
 	});
-	
-	$("#select2 dd").click(function () {
+		$("#select2 a").click(function () {
 		$(this).addClass("selected").siblings().removeClass("selected");
 		if ($(this).hasClass("select-all")) {
 			$("#selectB").remove();
 		} else {
-			var copyThisB = $(this).clone();
+			var copyThisA = $(this).clone();
 			if ($("#selectB").length > 0) {
-				$("#selectB a").html($(this).text());
+				$("#selectB").html($(this).text());
 			} else {
-				$(".select-result dl").append(copyThisB.attr("id", "selectB"));
+				$("#select-re").append(copyThisA.attr("id", "selectB"));
 			}
 		}
 	});
-	
-	$("#select3 dd").click(function () {
+		$("#select3 a").click(function () {
 		$(this).addClass("selected").siblings().removeClass("selected");
 		if ($(this).hasClass("select-all")) {
 			$("#selectC").remove();
 		} else {
-			var copyThisC = $(this).clone();
+			var copyThisA = $(this).clone();
 			if ($("#selectC").length > 0) {
-				$("#selectC a").html($(this).text());
+				$("#selectC").html($(this).text());
 			} else {
-				$(".select-result dl").append(copyThisC.attr("id", "selectC"));
+				$("#select-re").append(copyThisA.attr("id", "selectC"));
 			}
 		}
 	});
@@ -46,25 +44,35 @@ $(function(){
 		$(this).remove();
 		$("#select1 .select-all").addClass("selected").siblings().removeClass("selected");
 	});
-	
 	$("#selectB").live("click", function () {
 		$(this).remove();
 		$("#select2 .select-all").addClass("selected").siblings().removeClass("selected");
 	});
-	
 	$("#selectC").live("click", function () {
 		$(this).remove();
 		$("#select3 .select-all").addClass("selected").siblings().removeClass("selected");
 	});
 	
-	$(".select dd").live("click", function () {
-		if ($(".select-result dd").length > 1) {
+
+	$(".select a").live("click", function () {
+		if ($("#select-re a").length > 0) {
 			$(".select-no").hide();
 		} else {
 			$(".select-no").show();
 		}
 	});
 	
+	//展开收起
+	$(".select-op").click(function(){
+		$("#select2").toggleClass("on");
+		var that = $(this);
+		that.toggleClass("on");
+		if (that.hasClass("on")) {
+			that.text("收起")
+		}else{
+			that.text("展开")
+		};
+	});
 });
 
 

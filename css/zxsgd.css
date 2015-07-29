@@ -166,24 +166,26 @@ input[type="submit"]:hover.ts_linear{
 .notice-tit{height:40px;
             position:relative;
 			font-size:14px;
+			width:1198px;
+			border:1px solid #DBD7D6;
 			}
 
-.notice-tit ul{position:absolute;
-               width:1198px;
-				border:1px solid #DBD7D6;
-           }
 
-.notice-tit li{background:url(../img/sg_r2_c21.gif) no-repeat;
+.notice-tit>li{background:url(../img/sg_r2_c21.gif) no-repeat;
 				float:left;
                width:127px;
                height:39px;
                line-height:40px;
-               text-align:center;;
+               text-align:center;
                padding:0;
+               
                border-right:1px solid #DBD7D6;}
+.notice-tit>li>a:hover{
+	text-decoration:none;
+}
 
-.notice-tit li.select{background:url(../img/sg_r2_c31.gif) no-repeat;
-                      border-bottom-color:#FFF;
+.notice-tit li.active{background:url(../img/sg_r2_c31.gif) no-repeat;
+                      border-bottom:2px solid #FFF;
                       border-left:1px solid #eee;
                       border-right:1px solid #eee;
                       padding:0;
@@ -239,6 +241,25 @@ input[type="submit"]:hover.ts_linear{
 	margin: 20px 0;
 }
 
+.modjindu.bg1{
+	background-image: url(../img/sglc1.jpg);
+}
+.modjindu.bg2{
+	background-image: url(../img/sglc2.jpg);
+}
+.modjindu.bg3{
+	background-image: url(../img/sglc3.jpg);
+}
+.modjindu.bg4{
+	background-image: url(../img/sglc4.jpg);
+}
+.modjindu.bg5{
+	background-image: url(../img/sglc5.jpg);
+}
+.modjindu.bg6{
+	background-image: url(../img/sglc6.jpg);
+}
+
 .modbtn {
 	width: 118px;
 	height: 30px;
@@ -257,7 +278,6 @@ input[type="submit"]:hover.ts_linear{
 .sghdleft {
 	float: left;
 	width: 957px;
-	height: 203px;
 }
 .sghdleft img {
 	float: left;
@@ -553,78 +573,115 @@ input[type="submit"]:hover.ts_linear{
 	padding: 5px 10px;
 	border: #ddd 1px solid;
 	border-radius: 4px;
-	width: 96%;
+	width: 907px;
+	margin: 4px 0;
 	font-size: 12px
 }
 
-.select li {
-	list-style: none;
-	padding: 10px 0 5px 100px
+.select .select-list,
+.select .select-result {
+	position:relative;
+	float:left;
+	width: 100%;
+	border-bottom: #eee 1px dashed;
 }
-.select .select-list {
-	border-bottom: #eee 1px dashed
+.select .select-list,
+.select .select-result {
+	padding: 10px 0;
 }
-.select dl {
-	zoom: 1;
-	position: relative;
-	line-height: 24px;
-}
-.select dl:after {
+.select:after {
 	content: " ";
 	display: block;
 	clear: both;
 	height: 0;
 	overflow: hidden
 }
-.select dt {
-	width: 100px;
-	margin-bottom: 5px;
-	position: absolute;
-	top: 0;
-	left: -100px;
-	text-align: right;
+#select1,
+#select2,
+#select3 {
+
+	float: left;
+	width: 83%;
+	zoom: 1;
+	position: relative;
+	line-height: 24px;
+	overflow: hidden;
+}
+#select2.on {
+	height: 30px;
+}
+
+.select-list h1,
+.select-result h1 {
 	color: #666;
 	height: 24px;
-	line-height: 24px
-}
-.select dd {
+	line-height: 24px;
+	padding-right: 6px;
+	text-align: right;
+	width: 100px;
 	float: left;
-	display: inline;
-	margin: 0 0 5px 5px;
+	margin-top: 2px;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
 }
+
 .select a {
 	display: inline-block;
 	white-space: nowrap;
 	height: 24px;
 	padding: 0 10px;
+	margin: 3px;
 	text-decoration: none;
-	color: #7D7676;
+	color: #039;
 	border-radius: 2px;
+	line-height: 24px;
 }
 .select a:hover {
 	color: #f60;
+	background-color: #f3edc2
 }
-.select .selected a {
+.select a.selected {
 	color: #fff;
 	background-color: #f60
 }
-.select-result dt {
-	font-weight: bold
-}
+
 .select-no {
-	color: #999
+	color: #999;
+	margin: 0 0 5px 5px;
+	padding-top: 3px;
+
+}
+.select .select-result h1 {
+	font-weight: bold;
 }
 .select .select-result a {
 	padding-right: 20px;
 	background: #f60 url("../img/close.gif") right 9px no-repeat
 }
 .select .select-result a:hover {
-	background-position: right -15px;
+	background-position: right -15px
 }
 
+.select-list .select-op {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	background: #FCE7E7;
+}
 
+.select-re a {
+	margin-left: 3px;
+}
 /*list*/
-
+#select_gd{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 39px;
+	height: 24px;
+}
 .blist{
     width: 522px;
     height: 270px;
@@ -1510,7 +1567,12 @@ input.btn_green {
 .article_content {
 	line-height: 22px;
 	padding: 40px 47px 20px;
+	overflow: hidden;
 
+}
+.article_content img {
+  max-width: 100%;
+  width: expression(this.offsetWidth > 790 ? '790px': true);
 }
 
 /* 翻页样式 */
