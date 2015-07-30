@@ -1190,9 +1190,8 @@ $(function(){
 <!-- 施工详情 -->
 <!-- <div class="wrapper"> -->
   <div id="notice" class="notice">
-    <div id="notice-tit" class="notice-tit">
-      <ul>
-        <li class="select">
+      <ul class="nav nav-tabs notice-tit" data-trigger="tab">
+        <li class="active">
           <a href="#">全部项目</a>
         </li>
         <li>
@@ -1202,9 +1201,8 @@ $(function(){
           <a href="#">已完成项目</a>
         </li>
       </ul>
-    </div>
-    <div id="notice-con" class="notice-con">
-          <div class="mod" style="display:block">
+    <div id="notice-con" class="notice-con pane-wrapper">
+          <div class="mod active">
             <ul class="modli">
               <li>
                 <a href="#"><img class="mod-left" src="img/sg11400.png" ></a>
@@ -1244,23 +1242,22 @@ $(function(){
               </li>
 
             </ul>
-        <div class="tc mt100 mb100">
-            <div class="pagination">
-             <ul>
-                <li><span>首页</span></li>
-                <li><span>上一页</span></li>
-                <li><span class="currentpage">1</span>
-                </li><li><span>下一页</span></li>
-                <li><span>末页</span></li>
-              </ul>
+            <div class="tc mt100 mb100">
+                <div class="pagination">
+                 <ul>
+                    <li><span>首页</span></li>
+                    <li><span>上一页</span></li>
+                    <li><span class="currentpage">1</span>
+                    </li><li><span>下一页</span></li>
+                    <li><span>末页</span></li>
+                  </ul>
+                 </div>
              </div>
-         </div>
-  
           </div>
-          <div class="mod" style="display:none">
+          <div class="mod">
             2
           </div>
-          <div class="mod" style="display:none">
+          <div class="mod">
             3
           </div>
     </div>
@@ -1335,8 +1332,8 @@ $(function(){
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_005.js"></script>
 <script src="js/sco.modal.js"></script>
-
-
+<script src="js/sco.panes.js"></script>
+<script src="js/sco.tab.js"></script>
 <script language="javascript">
 
 $(function(){
