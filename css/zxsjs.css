@@ -547,9 +547,101 @@ skins available:
 }
 
 .ds_zxlc {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	position: relative;
 }
+.ds_zxlc_dh {
+	width: 955px;
+	height: 88px;
+	overflow: hidden;
+}
+.ds_zxlc_dh li {
+	float: left;
+	width: 86px;
+	height: 86px;
+	margin-right: 7px;
+	border: 1px solid #CCC;
+	text-align: center;
+}
+.ds_zxlc_dh li.hd {
+	padding: 15px;
+	width: 57px;
+	background-color: #000;
+	color: #fff;
+	font: 21px "Microsoft YaHei";
+}
+.ds_zxlc_dh .zxlc_img {
+	transition: background-position .3s;
+	width: 46px;
+	height: 34px;
+	margin: 11px 19px;
+	overflow: hidden;
+	background-image: url(../img/sglcdh.jpg);
+}
+.ds_zxlc_dh h6 {
+	font:14px "Microsoft YaHei";
+	color: #ABA4A4;
+}
+.ds_zxlc_dh li:hover h6{
+	color: #666;
+}
+.ds_zxlc_dh .zxlc_img.mode1 {
+  background-position: 0 0;
+}
+.ds_zxlc_dh .zxlc_img.mode2 {
+  background-position: -48px 0;
+}
+.ds_zxlc_dh .zxlc_img.mode3 {
+  background-position: -90px 0;
+}
+.ds_zxlc_dh .zxlc_img.mode4 {
+  background-position: -133px 0;
+}
+.ds_zxlc_dh .zxlc_img.mode5 {
+  background-position: -177px 0;
+}
+.ds_zxlc_dh .zxlc_img.mode6 {
+  background-position: -223px 0;
+}
+.ds_zxlc_dh .zxlc_img.mode7 {
+  background-position: -265px 0;
+}
+.ds_zxlc_dh .zxlc_img.mode8 {
+  background-position: -311px 0;
+}
+.ds_zxlc_dh .zxlc_img.mode9 {
+  background-position: -355px 0;
+}
+
+
+.ds_zxlc_dh li:hover .zxlc_img.mode1 {
+  background-position: 0 -35px;
+}
+.ds_zxlc_dh li:hover .zxlc_img.mode2 {
+  background-position: -48px -35px;
+}
+.ds_zxlc_dh li:hover .zxlc_img.mode3 {
+  background-position: -90px -35px;
+}
+.ds_zxlc_dh li:hover .zxlc_img.mode4 {
+  background-position: -133px -35px;
+}
+.ds_zxlc_dh li:hover .zxlc_img.mode5 {
+  background-position: -177px -35px;
+}
+.ds_zxlc_dh li:hover .zxlc_img.mode6 {
+  background-position: -223px -35px;
+}
+.ds_zxlc_dh li:hover .zxlc_img.mode7 {
+  background-position: -265px -35px;
+}
+.ds_zxlc_dh li:hover .zxlc_img.mode8 {
+  background-position: -311px -35px;
+}
+.ds_zxlc_dh li:hover .zxlc_img.mode9 {
+  background-position: -355px -35px;
+}
+
 .ds_zxlc h1 {
 	position: absolute;
 	top: 9px;
@@ -558,7 +650,7 @@ skins available:
 	font-weight: bold;
 	color: #FB8D0D;
 }
-.ds_zxlc a {
+.ds_zxlc>a {
 	position: absolute;
 	top: 45px;
 	right: 49px;
@@ -1300,3 +1392,85 @@ dd.xz_select-all {
 	background: url("../img/download_r2_c2.gif") no-repeat;
 }
 /*装修图片下载end*/
+
+
+/*designsgmode.html*/
+.ds_sglc_hd{
+	padding-bottom: 10px;
+	border-bottom: 2px solid #000;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+
+}
+
+/*文章列表mode*/
+.ds_sglc_list .new_md {
+	width: 580px;
+	float: left;
+	margin-right: 15px;
+}
+.new_md{
+	position: relative;
+}
+a.new_md_a {
+	padding-left: 272px;
+	padding-bottom: 25px;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+}
+.new_md_a img {
+	width: 254px;
+	height: 197px;
+	position: absolute;
+	left: 0;
+}
+.new_md_a h4 {
+	font-size: 14px;
+	font-weight: bold;
+	/* width: 310px; */
+	height: 21px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.new_md_a p {
+	height: 117px;
+	overflow: hidden;
+	margin-bottom: 26px;
+}
+.new_md img,
+.new_md h4,
+.new_md p{
+	transition: all .3s ease 0s;
+}
+.new_md_a:hover img{
+	width: 254px;
+	height: 198px;
+	box-shadow: 0 0 20px -5px #000;
+}
+.new_md_a:hover p{
+	color: #333;
+}
+
+/*生活达人mode*/
+.ds_shdr {
+	width: 100%;
+    border:1px solid #ccc;
+}
+.ds_shdr_m {
+	margin-left: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.ds_shdr_m img{
+	width: 150px;
+	height: 150px;
+}
+.ds_shdr_m h1 {
+	width: 150px;
+	height: 20px;
+
+	overflow: hidden;
+}
