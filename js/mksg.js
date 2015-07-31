@@ -38,7 +38,6 @@
        $(".state_list").css("display","none");
        $(".triangle").removeClass("triangle_up").addClass("triangle_down");
     });
-
     //设计师主页轮播模块1
     $("#rslides_r_s").responsiveSlides({pause: "true",manualControls: '#rslides_r_s-pager',
                         before: function () {
@@ -73,12 +72,4 @@
       playMovieMarginTop: 0,
       bottomNavMarginBottom: -10
     });
-
-
-    
 })(jQuery);
-
-
-
-       
-
