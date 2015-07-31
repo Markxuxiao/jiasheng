@@ -1212,7 +1212,16 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
     <a href="designDownload.html" target="_blank" >马上获取免费案例</a>
   </div>
 </div>
-
+<script>
+$(function(){
+  $(".ds_zxlc>a").mouseover(function(){
+    $(".ds_zxlc>a").transition({ scale: 1.2 });
+  })
+  $(".ds_zxlc>a").mouseout(function(){
+    $(".ds_zxlc>a").transition({ scale: 1 });
+  })
+})
+</script>
 <div class="wrapper">
   <h1 class="ds_sglc_hd mb15">收房阶段</h1>
   <div class="ds_sglc_list clearfix">
@@ -1394,15 +1403,7 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_005.js"></script>
 <script src="js/transit.min.js"></script>
-<script>
-$(".ds_zxlc>a").mouseover(function(){
-  $(".ds_zxlc>a").transition({ scale: 1.2 });
-})
-$(".ds_zxlc>a").mouseout(function(){
-  $(".ds_zxlc>a").transition({ scale: 1 });
-})
-  
-</script>
+
 
 
 

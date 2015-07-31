@@ -198,8 +198,10 @@ input[type="submit"]:hover.ts_linear{
 .notice li a:hover{color:#8B8B8B;}*/
 
 .mod {
-	width: 1198px;
+	width: 1158px;
 	min-height: 200px;
+	padding: 20px;
+	overflow: hidden;
 	border-right:1px solid #DBD7D6;
 	border-left:1px solid #DBD7D6;
 	border-bottom:1px solid #DBD7D6;
