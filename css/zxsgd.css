@@ -839,7 +839,7 @@ input[type="submit"]:hover.ts_linear{
 	font-size: 14px;
 	font-weight: bold;
 	padding: 20px 10px 5px 10px;
-	background: url(../images/zxsjy/jiantou_r2_c2.gif) no-repeat 174px 28px;
+	/*background: url(../images/zxsjy/jiantou_r2_c2.gif) no-repeat 174px 28px;*/
 	border-bottom: 1px solid #EDEDED;
 }
 .wdnav_nav {
