@@ -279,7 +279,7 @@ input[type="submit"]:hover.ts_linear{
 }
 .sghdleft img {
 	float: left;
-	width: 314px;
+	width: 949px;
 	height: 202px;
 }
 .sghd1{
@@ -531,14 +531,14 @@ input[type="submit"]:hover.ts_linear{
 	position: fixed;
 	top: 43%;
 	left: 50%;
-	width: 133px;
-	height: 286px;
+	width: 115px;
+	height: 254px;
 	margin-left: 607px;
-	padding: 9px 4px;
+	padding: 80px 0px 0 0px;
 	cursor: pointer;
 	text-align: center;
-	border: 1px solid #E0E0E0;
-	background: none repeat scroll 0% 0% #FFAF2A;
+	/* border: 1px solid #E0E0E0; */
+	background: url(../images/zxsjy/gototop.jpg);
 
 }
 #gotofloor ul {
@@ -546,20 +546,20 @@ input[type="submit"]:hover.ts_linear{
 }
 #gotofloor ul li a{
 	display: block;
-	width: 117px;
+	width: 104px;
 	height: 40px;
 	margin-left: 7px;
-	color: #fff;
-	border: 1px solid #fff;
-	font-size: 20px;
+	/* color: #030303; */
+	/* border: 1px solid #fff; */
+	font-size: 16px;
 	line-height: 40px;
-	background-color: #FFC461;
+	/* background-color: #FFFFFF; */
 
 }
 #gotofloor ul li a:hover {
 	text-decoration: none;
 	color: #FFC461;
-	background-color: #fff;
+	/* background-color: #fff; */
 
 }
 
@@ -1984,4 +1984,78 @@ border-radius: 4px;
   font-size: 14px;
   border: none;
   cursor: pointer;
+}
+
+/*首页幻灯模块1*/
+#rslides_sgmode1 {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+#rslides_sgmode1-pager {
+  position: relative;
+  top: -31px;
+  text-align: center;
+  z-index: 2;
+}
+#rslides_sgmode1-pager li {
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  background: #fff;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  margin: 0 5px;
+  line-height: 27px;
+  text-align: center;
+  *display:inline;
+  *zoom:1;
+}
+#rslides_sgmode1-pager li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#rslides_sgmode1-pager .rslides_here{
+	background: #ccc;
+}
+
+/*施工人员list改版2*/
+.sginlist .re2{
+	display: inline-block;
+	float: left;
+	margin-right: 19px;
+	width: 280px;
+	height: 244px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.re2 .sg-photo2 {
+    padding: 0;
+    width: 152px;
+}
+.re2 .sg-zhiwei{
+	margin: 0;
+}
+.re2 .sg-blogdate2 {
+	padding: 0;
+}
+.re2 .gkzs{
+	padding: 0;
+}
+.re2 .gkzs img {
+	width: 62px;
+	height: 10px;
+}
+.re2 .sgzx-btn {
+	margin-top: 6px;
+}
+.re2 .sg_pjia h1{
+	font-size: 14px;
+	border-bottom: 1px solid #E7E7E7;
+	margin-bottom: 3px;
+}
+.re821 .sginlist{
+	border: none;
+	height: 614px;
 }

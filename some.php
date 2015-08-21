@@ -1,4 +1,4 @@
 <?php
 $abc = $_POST["mobile"];
-echo $abc;
+echo 123;
 ?>
