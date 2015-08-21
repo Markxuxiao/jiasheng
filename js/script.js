@@ -76,14 +76,26 @@ $(function(){
 });
 
 
-//咨询弹窗
+//咨询弹窗1
 $(function(){
   var modal=$.scojs_modal({
-    title:"免费申请",
+	target:"#modal",
+  	title:"免费预约",
     content: $('#inner').html(),
     keyboard: true});
   $(".sco_modal_zx").click(function(){
     modal.show();
+  })
+});
+//咨询弹窗2
+$(function(){
+  var modal2=$.scojs_modal({
+  	target:"#modal2",
+  	title:"预约看现场",
+    content: $('#inner2').html(),
+    keyboard: true});
+  $(".sco_modal_zx2").click(function(){
+    modal2.show();
   })
 });
 
@@ -97,3 +109,56 @@ $(function(){
   	});
   });
 
+// 发送验证码倒计时
+function start_sms_button(obj){
+  var count = 1 ;
+  var sum = 30;
+  var i = setInterval(function(){
+      if(count >30){
+          obj.attr('disabled',false);
+          obj.val('发送手机验证码');
+          clearInterval(i);
+      }else{
+          obj.val('剩余'+parseInt(sum - count)+'秒');
+      }
+      count++;
+  },1000);
+}
+// 手机验证函数
+function checkMobile(str){ 
+    var re = /^1[3|4|5|8][0-9]\d{4,8}$/; 
+    if(!(re.test(str))){ 
+        return false; 
+    } else{
+    	return true;
+    }
+} 
+$(function(){    //发送验证码
+  $('#modal2').on('click','#zx_yzm_btn',function(){
+      var send_obj = $('input#zx_yzm_btn');
+      // send_obj.attr('disabled',"disabled");
+      // start_sms_button(send_obj);
+
+
+      var phone_obj = $('#modal2 input[name="phone"]');
+      var val = phone_obj.val();
+      if(val){
+          if(checkMobile(val)){
+              send_obj.attr('disabled',"disabled");          //30秒后重新启动发送按钮
+              start_sms_button(send_obj);
+              $.ajax({
+                  url:'some.php',
+                  data:{'mobile':val},
+                  dataType:'html',
+                  type:'post',
+                  success:function(msg){console.log(msg)}
+              });
+          }else{
+  				 showDialog("手机号的格式错误", 'notice');
+          }
+      }else{
+  			showDialog("手机号不能为空", 'notice');
+      }
+  });
+
+});

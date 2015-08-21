@@ -1,0 +1,59 @@
+.nav-wrap{height:33px;padding-top:10px;border-bottom:solid 1px #eee;font:normal 14px/22px "微软雅黑";}
+.main{width: 1200px;margin:40px auto;font-family:"微软雅黑";}
+.left{float:left;width:240px;overflow:hidden;}
+.right{float:right;width: 930px;overflow:inherit;}
+.mb20{margin-bottom:20px;border:solid 1px #eee;}
+.mb20 h3{height:40px;padding-left:20px;font:normal 18px/40px "微软雅黑";color:#333;}
+
+.allNav{border-top:none;}
+.allNav h2{height:40px;padding-left:30px;font:normal 16px/40px "微软雅黑";color:#333;background-color:#eee;}
+.allNav ul{margin:10px 30px;}
+.allNav li{line-height:26px;font-size:14px;}
+.allNav li.current a{color:#ea5505;}
+
+.allad{border:none;}
+
+.taocan h3 a{color:#333;}
+.taocan #taocan_box{width:238px;height:439px;overflow:hidden;}
+.taocan ul li{width:208px;height:75px;line-height:18px;padding:8px 15px 5px;background:url(/images/product/bg-line03.gif) no-repeat center bottom;overflow:hidden;}
+.taocan ul li a img{display:block;float:left;margin-right:10px;width: 83px;height: 53px;}
+.taocan ul li .tit{display:block;height:54px;overflow:hidden;}
+.taocan .price{float:right;width:112px;display:block;color:#FF0000;font-weight:bold;font-family:Verdana;text-align:right;}
+.taocan .cword{color:#FF0000;}
+
+.art-list{padding:0 15px 10px;}
+.art-list li{width:208px;height:30px;line-height:30px;font-size:14px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+/*left end*/
+
+.tool-bar{height:38px;line-height:38px;border:solid 1px #eee;background-color:#f8f8f8;}
+.tool-bar a{display:block;float:left;padding:0 20px;}
+.tool-bar a.first{border-right:solid 1px #eee;}
+.tool-bar a.current,.tool-bar a:hover{color:#ea5505;}
+.tool-bar span{float:left;margin-right:10px;}
+.tool-bar b{float:left;width:9px;height:11px;margin-top:14px;background: url(../images/sxy/list-icon.gif) no-repeat -10px -38px;}
+.tool-bar .current b{background-position:0 -38px;}
+
+.list-box ul li {height: 200px;padding:30px 0;border-bottom:dotted 1px #e8e8e8;}
+.list-box .img-box{position:relative;float:left;margin-right:30px;}
+.list-box .list-item{float:left;width: 579px;}
+.list-box .list-item .list-item-title{color:#333;font-size:20px;line-height:20px;height:36px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.list-box .list-item .list-item-title a{color:#333;}
+.list-box .list-item .list-item-title a:hover{color:#f25618;}
+.list-box .list-item .list-item-summary{color:#666;height: 153px;line-height:26px;overflow: hidden;}
+.list-box .list-item .list-item-summary a{color:#999999;}
+.list-box .list-item .list-item-summary a:hover{color:#5c5c5c;}
+.list-box .list-item .list-item-info-bar{height:16px;line-height:16px;color:#999999;}
+.list-box .list-item .info-bar-left{float:left;}
+.list-box .list-item .info-bar-left span{padding:0 10px;}
+.list-box .list-item .info-bar-left span.view{padding-left:0;}
+.list-box .list-item .info-bar-left em{font-family:Verdana;}
+.list-box .list-item .info-bar-right{float:right;}
+
+/*pagin*/
+.paginbox{width:100%;margin:20px 0;text-align:center;}
+.pagin a,.pagin span{display:inline-block;width:26px;height:32px;margin: 0 0 0 -1px !important;padding:3px 6px;line-height:32px;border:1px solid #eee;font-family:arial;overflow:hidden;}
+.pagin a:link,.pagin a:visited{color:#aaa;}
+.pagin a:hover,.pagin a:active{background:#ff5a00;color:#fff;text-decoration:none;}
+.pagin .current,.pagin .current:link,.pagin .current:visited{background:#ff5a00;color:#fff;}
+.pagin em{display:inline-block;width:40px;height:40px;line-height:34px;overflow:hidden;}
+.pagin .first,.pagin .next{width:60px;}

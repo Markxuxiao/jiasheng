@@ -1165,7 +1165,8 @@ $(function(){
       <div class="lxfs">联系方式：<span>15221555128</span></div>
       <div class="zxzx">在线咨询：<img src="img/sgr4_c2.gif"></div>
       <div class="scfg">擅长风格：<span>中式</span><span>欧式古典</span><span>现代简约</span><span>美式乡村</span><span>地中海风格</span></div>
-      <a data-trigger="modal" href="modal_zixun.html" data-title="预约看现场" class="sgzx-btn">立即预约</a>
+      <!-- 弹窗按钮1 -->
+      <a href="javascript:;" class="sgzx-btn sco_modal_zx">立即预约</a>
     </div> 
   </div>
   <div class="blog_right">
@@ -1210,7 +1211,9 @@ $(function(){
                   <div class="modtitle">福源花园</div>
                   <div class="modxinxi"><span>风格： 现代简约</span><span>户型：二房二厅</span><span>面积：90平米</span></div>
                   <img class="modjindu" src="img/sg2r2_c2.gif" >
-                  <div class="modxinxi"><span class="modnum">设计图： 4 </span><span class="modnum">|</span><span class="modnum">施工图： 7</span><a data-trigger="modal" href="modal_zixun.html" data-title="预约看现场" class="modbtn">免费预约参观</a></div>
+                  <div class="modxinxi"><span class="modnum">设计图： 4 </span><span class="modnum">|</span><span class="modnum">施工图： 7</span>
+                    <!-- 弹窗按钮2 -->
+                    <a href="javascript:;" class="modbtn sco_modal_zx2">免费预约参观</a></div>
                 </div>
               </li>
               <li>
@@ -1219,7 +1222,7 @@ $(function(){
                   <div class="modtitle">福源花园</div>
                   <div class="modxinxi"><span>风格： 现代简约</span><span>户型：二房二厅</span><span>面积：90平米</span></div>
                   <img class="modjindu" src="img/sg2r2_c2.gif" >
-                  <div class="modxinxi"><span class="modnum">设计图： 4 </span><span class="modnum">|</span><span class="modnum">施工图： 7</span><a data-trigger="modal" href="modal_zixun.html" data-title="预约看现场" class="modbtn">免费预约参观</a></div>
+                  <div class="modxinxi"><span class="modnum">设计图： 4 </span><span class="modnum">|</span><span class="modnum">施工图： 7</span><a data-trigger="modal" href="modal_canguan.html" data-title="预约看现场" class="modbtn">免费预约参观</a></div>
                 </div>
               </li>
               <li>
@@ -1319,6 +1322,69 @@ $(function(){
       </div>
 </div>
 
+<!-- 弹窗1 -->
+<div class="modal fade" id="modal" >
+  <div class="modal-header">
+    <a class="close" href="#" data-dismiss="modal" >×</a>
+    <h3> </h3>
+  </div>
+  <div class="inner" id="inner">
+    <div class="zx_modal">
+      <form id="zx_form">
+        <dl>
+          <dt>您的姓名:</dt>
+          <dd><input id="zx_name" style="color: rgb(153, 153, 153);" class="zxipt"  type="text" placeholder="请输入姓名" maxlength="5">
+                  <label></label>
+              </dd>
+          <dt>您的电话:</dt>
+          <dd><input id="zx_phone"style="color: rgb(153, 153, 153);" class="zxipt"  type="text" placeholder="请输入电话号码" maxlength="11">
+                  <label></label>
+              </dd>
+          <dd><input class="sghdbtn2" value="免费申请" type="submit"></dd>
+        </dl>
+        </form>
+      </div>
+  </div>
+</div>
+
+<!-- 弹窗2 -->
+<div class="modal fade" id="modal2">
+  <div class="modal-header">
+    <a class="close" href="#" data-dismiss="modal">×</a>
+    <h3> </h3>
+  </div>
+  <div class="inner" id="inner2">
+    <div class="zx_modal">
+       <form id="zx_form2">
+          <dl>
+            <dt>您的姓名:</dt>
+            <dd><input id="zx_name" style="color: rgb(153, 153, 153);" class="zxipt"  type="text" placeholder="请输入姓名" maxlength="5">
+                    <label></label>
+                </dd>
+            <dt>您的电话:</dt>
+            <dd><input id="zx_phone"style="color: rgb(153, 153, 153);" class="zxipt"  type="text" placeholder="请输入电话号码" maxlength="11" name="phone">
+                    <label></label>
+                </dd>
+                <dt>验证码:</dt>
+                <dd><input id="zx_yzm"style="color: rgb(153, 153, 153);" class="zxipt"  type="text" placeholder="验证码">
+                    <input type="button" id="zx_yzm_btn" value="发送手机验证码">
+                    <label></label>
+                </dd>
+                <dt>所在城市:</dt>
+                <dd><select id="slcCity" name="slcCity" class="zxipt"><option>北京</option><option>重庆</option><option>成都</option><option>长沙</option><option>常州</option><option>大连</option><option>佛山</option><option>广州</option><option>杭州</option><option>合肥</option><option>济南</option><option>南京</option><option>南昌</option><option>南宁</option><option>宁波</option><option>青岛</option><option>上海</option><option>深圳</option><option>苏州</option><option>沈阳</option><option>石家庄</option><option>天津</option><option>太原</option><option selected>武汉</option><option>无锡</option><option>西安</option><option>郑州</option><option>南通</option><option>昆明</option><option>舟山</option><option>兰州</option><option>福州</option><option>长春</option><option>湖州</option><option>嘉兴</option><option>绍兴</option><option>丽水</option><option>金华</option><option>温州</option><option>台州</option><option>衢州</option><option>惠州</option><option>东莞</option><option>佛山</option><option>中山</option><option>清远</option><option>汕头</option><option>汕尾</option><option>江门</option><option>宜昌</option><option>昆山</option><option>常熟</option><option>张家港</option><option>其它城市</option></select>
+                    <label></label>
+                </dd>
+                <dt></dt>
+            <dd><input class="sghdbtn2" value="免费申请" type="submit"></dd>
+          </dl>
+            
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
 <div id="footer" class="wrapper">
   <p><a href="http://www.jstimes.com/shop">首页</a>
                 | <a target="_blank" href="http://jstimes.com.cn/">招聘英才</a>
@@ -1334,13 +1400,8 @@ $(function(){
 <script src="js/sco.modal.js"></script>
 <script src="js/sco.panes.js"></script>
 <script src="js/sco.tab.js"></script>
-<script language="javascript">
+<script src="js/script.js"></script>
 
-$(function(){
-	// Membership card
-	$('[nctype="mcard"]').membershipCard({type:'shop'});
-});
-</script>
 
 
 </body></html>
