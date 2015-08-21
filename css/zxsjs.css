@@ -34,6 +34,7 @@
   zoom: 1;
 }
 /*头部下拉导航end*/
+
 /*selectdaohang.js
 	设计师图片列表导航
 */
@@ -104,7 +105,7 @@
 }
 .select-2 .select-2-result a {
 	padding-right: 20px;
-	background: #f60 url("../img/close.gif") right 9px no-repeat
+	background: #f60 url("../images/zxsjy/close.gif") right 9px no-repeat
 ;
 	color: #fff;
 }
@@ -241,6 +242,7 @@
 #rslides_r_s-pager .rslides_here{
 	background: #ccc;
 }
+
 /*设计院首页幻灯模块2*/
 .rslides {
   position: relative;
@@ -328,7 +330,7 @@ skins available:
 	height: 500px;
 	overflow:hidden;
 	cursor: pointer;
-	background:url(../img/design/skins/charming/empty.gif) repeat;
+	background:url(../images/zxsjy/design/skins/charming/empty.gif) repeat;
 }
 
 
@@ -350,14 +352,14 @@ skins available:
 	position:absolute;
 	width:73px;
 	height:73px;
-	background:url(../img/design/skins/charming/play_overOFF.png) 0 0 no-repeat;
+	background:url(../images/zxsjy/design/skins/charming/play_overOFF.png) 0 0 no-repeat;
 	display:none;
 	z-index:200;
 	cursor: pointer;
 }
 
 .allinone_carousel.charming .playOver:hover {
-	background:url(../img/design/skins/charming/play_overON.png) 0 0 no-repeat;
+	background:url(../images/zxsjy/design/skins/charming/play_overON.png) 0 0 no-repeat;
 	display:none;
 	z-index:200;
 	cursor: pointer;
@@ -376,22 +378,22 @@ skins available:
 	left:5px;
 	width:47px;
 	height:47px;
-	background:url(../img/design/skins/charming/leftNavOFF.png) 0 0 no-repeat;
+	background:url(../images/zxsjy/design/skins/charming/leftNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 .allinone_carousel.charming .leftNav:hover {
-	background:url(../img/design/skins/charming/leftNavON.png) 0 0 no-repeat;
+	background:url(../images/zxsjy/design/skins/charming/leftNavON.png) 0 0 no-repeat;
 }
 .allinone_carousel.charming .rightNav {
 	position:absolute;
 	right:5px;
 	width:47px;
 	height:47px;
-	background:url(../img/design/skins/charming/rightNavOFF.png) 0 0 no-repeat;
+	background:url(../images/zxsjy/design/skins/charming/rightNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 .allinone_carousel.charming .rightNav:hover {
-	background:url(../img/design/skins/charming/rightNavON.png) 0 0 no-repeat;
+	background:url(../images/zxsjy/design/skins/charming/rightNavON.png) 0 0 no-repeat;
 }
 .allinone_carousel.charming .bottomNav {
 	position:absolute;
@@ -405,7 +407,7 @@ skins available:
 	display:block;
 	width:19px;
 	height:19px;
-	background:url(../img/design/skins/charming/bottomNavOFF.png) 0 0 no-repeat;
+	background:url(../images/zxsjy/design/skins/charming/bottomNavOFF.png) 0 0 no-repeat;
 	padding-left:9px;
 	cursor: pointer;
 }
@@ -416,7 +418,7 @@ skins available:
 	width:19px;
 	height:19px;
 	padding-left:9px;
-	background:url(../img/design/skins/charming/bottomNavON.png) 0 0 no-repeat;
+	background:url(../images/zxsjy/design/skins/charming/bottomNavON.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
@@ -435,7 +437,7 @@ skins available:
 	position:absolute;
 	width:88px;
 	height:106px;
-	background:url(../img/design/skins/charming/bottomOverThumbBg.png) 23px bottom no-repeat;
+	background:url(../images/zxsjy/design/skins/charming/bottomOverThumbBg.png) 23px bottom no-repeat;
 	bottom:27px;
 	xleft:0px;
 	margin-left:-25px;
@@ -452,15 +454,15 @@ skins available:
 #play .prev_a {left:0;}
 #play .next_a {right:0}
 #play .change_a span {width:24px;height:43px;display:block;position:absolute;top:50%;margin-top:-21px;display:none}
-#play .prev_a span {background:url(../img/s_gallery_2012110702.png) no-repeat 0px -50px;left:0;}
-#play .next_a span {background:url(../img/s_gallery_2012110702.png) no-repeat -30px -50px;right:0;}
+#play .prev_a span {background:url(../images/zxsjy/s_gallery_2012110702.png) no-repeat 0px -50px;left:0;}
+#play .next_a span {background:url(../images/zxsjy/s_gallery_2012110702.png) no-repeat -30px -50px;right:0;}
 #play .img_ul {position:relative;z-index:1;}
 .img_hd  {width: 845px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#eee;overflow:hidden;height:66px;padding:2px 0;margin-top:15px;margin:5px auto;position:relative;}
 .img_hd ul {position:absolute;z-index:1}
 .img_hd ul li {float:left;width:80px;height: 60px;border:3px solid #eee;cursor:pointer;margin:0 3px 0 1px;overflow:hidden;*display:inline;padding:1px;text-align:center}
 .img_hd ul li img {height:60px;}
 .img_hd ul li.on{ border-color:rgb(45, 150, 233);}
-.img_hd .bottom_a {background:url(../img/s_gallery_2012110702.png) no-repeat;width:22px;height:22px;position:absolute;display:block;top:50%;margin-top:-11px;cursor:pointer;z-index:10}
+.img_hd .bottom_a {background:url(../images/zxsjy/s_gallery_2012110702.png) no-repeat;width:22px;height:22px;position:absolute;display:block;top:50%;margin-top:-11px;cursor:pointer;z-index:10}
 .img_hd .prev_a { background-position:0 -24px;left:5px;}
 .img_hd .next_a { background-position:-30px -24px;right:5px;}
 
@@ -576,7 +578,7 @@ skins available:
 	height: 34px;
 	margin: 11px 19px;
 	overflow: hidden;
-	background-image: url(../img/sglcdh.jpg);
+	background-image: url(../images/zxsjy/sglcdh.jpg);
 }
 .ds_zxlc_dh h6 {
 	font:14px "Microsoft YaHei";
@@ -641,7 +643,6 @@ skins available:
 .ds_zxlc_dh li:hover .zxlc_img.mode9 {
   background-position: -355px -35px;
 }
-
 .ds_zxlc h1 {
 	position: absolute;
 	top: 9px;
@@ -699,7 +700,7 @@ skins available:
 }
 .ds_md3 {
 	height: 421px;
-	background: url(../img/design/de_20.jpg) no-repeat right bottom ;
+	background: url(../images/zxsjy/design/de_20.jpg) no-repeat right bottom ;
 }
 .ds_md3 img {
 	margin: 30px 0;
@@ -720,7 +721,7 @@ skins available:
 .ds_md5 {
 	width: 100%;
 	height: 550px;
-	background: url(../img/design/de_47.jpg) repeat ;
+	background: url(../images/zxsjy/design/de_47.jpg) repeat ;
 }
 
 .ds_sjs_l {
@@ -745,7 +746,9 @@ skins available:
 }
 
 .ds_sjs_md p {
-	padding:10px 0;
+  padding: 10px 0;
+  height: 48px;
+  overflow: hidden;
 }
 .ds_sjs_md a {
 	display:inline-block;
@@ -916,7 +919,7 @@ skins available:
 .ds_md7 {
 	width: 100%;
 	height: 882px;
-	background: url(../img/design/de_47.jpg) repeat ;
+	background: url(../images/zxsjy/design/de_47.jpg) repeat ;
 	padding-top: 30px;
 }
 .ds_md7_hd {
@@ -924,9 +927,9 @@ skins available:
 	margin-bottom: 20px;
 }
 #ds_md7_hd_fs {
-	position: absolute;
-	right: 0;
-	bottom: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
 }
 
 
@@ -963,10 +966,10 @@ skins available:
 }
 
 .ds_md7_main p {
-    padding-left: 5px;
-    overflow: hidden;
-    width: 274px;
-    height: 18px;
+  padding-left: 5px;
+  overflow: hidden;
+  width: 274px;
+  height: 18px;
 }
 .ds_md7_main img {
 	width: 286px;
@@ -1334,7 +1337,7 @@ skins available:
 }
 .xz_select .xz_select-result a {
 	padding-right: 20px;
-	background: #f60 url("../img/close.gif") right 9px no-repeat
+	background: #f60 url("../images/zxsjy/close.gif") right 9px no-repeat
 }
 .xz_select .xz_select-result a:hover {
 	background-position: right -15px
@@ -1389,10 +1392,9 @@ dd.xz_select-all {
 	display: block;
 	width: 126px;
   	height: 37px;
-	background: url("../img/download_r2_c2.gif") no-repeat;
+	background: url("../images/zxsjy/download_r2_c2.gif") no-repeat;
 }
 /*装修图片下载end*/
-
 
 /*designsgmode.html*/
 .ds_sglc_hd{

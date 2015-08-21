@@ -1,7 +1,5 @@
-
-
-// 设计师图片下载页面筛选组件
 $(document).ready(function(){
+							
 	$("#xz_select1 dd").click(function () {
 		$(this).addClass("xz_selected").siblings().removeClass("xz_selected");
 		if ($(this).hasClass("xz_select-all")) {

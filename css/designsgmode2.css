@@ -1,0 +1,65 @@
+.imgmode.img1{
+	margin: 20px 12px;
+}
+.advantage ul li {
+	height: 100px;
+	border-bottom: 1px solid #ccc;
+}
+
+.advantage li span{
+	width: 92px;
+	height: 68px;
+	padding: 0px 1px 1px 24px;
+	display: inline-block;
+	float: left;
+	margin-right: 50px;
+	margin-top: 14px;
+}
+#first{
+	font-weight: bold;
+	background-color: #FAF2F2;
+}
+.advantage li span.hd{
+	font-weight: bold;
+	font-size: 14px;
+}
+.advantage li span.has{
+	background: url(../images/zxsjy/sjjd/r4_c13.gif) no-repeat 0 0;
+}
+.advantage li span.not{
+	background: url(../images/zxsjy/sjjd/r6_c8.gif) no-repeat 0 0;
+}
+
+.wmode {
+  width: 100%;
+  height: 550px;
+  background: url(../images/zxsjy/sjjd/50805155248.jpg) repeat;
+  text-align: center;
+}
+
+.bigtitle{
+	font: 35px "Microsoft Yahei";
+	font-weight: 900;
+}
+.wrapper.center{
+	text-align: center;
+}
+
+/*box2*/
+#box2{padding:50px 0;}
+#box2 .mt{height:50px;border-bottom:solid 1px #cecece;}
+#box2 .mt h2{float:left;font:normal 28px/40px "microsoft yahei";color:#333;}
+#box2 .mt .extra{float:right;padding-top:20px;font-size:14px;}
+#box2 .mt strong{padding:0 3px;font-family:Arial;color:#f35516;}       
+#box2 .mc{float:left;font-family:"microsoft yahei";}
+#box2 .mc li{float:left;width:100%;height:35px;border-bottom:solid 1px #cecece;color:#999;}
+#box2 .mc li.title{margin-top:8px;padding-bottom:6px;font-size:14px;color:#666;}
+#box2 .mc li.loading{height:45px;background:url(/images/none/loading.gif) no-repeat center center;}
+#box2 .mc li span{float:left;display:block;width: 195px;height:35px;line-height:35px;text-align:center;overflow:hidden;}       
+#box2 .mc li .s_data{width:90px;}
+#box2 .mc li .s_fit{width:330px;}
+#design_box{width:100%;height:360px;overflow:hidden;}
+#box2 .title{height: 38px;border-bottom: 4px solid #B7A7F2;}
+#box2 .title h1{width: 300px;height: 26px;font-size: 22px;font-family: "Microsoft Yahei";font-weight: bold;display: inline-block;float: left;}
+#box2 .title>a {display: inline-block; width: 160px;height: 32px;font-size: 14px;color: #fff;background-color: #F00;text-align: center;line-height: 31px;float: right;text-decoration: none;}
+#box2 .title>a:hover{background-color: #D60C0C;}
