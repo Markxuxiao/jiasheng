@@ -6,7 +6,7 @@
 .mb20 h3{height:40px;padding-left:20px;font:normal 18px/40px "微软雅黑";color:#333;}
 
 .allNav{border-top:none;}
-.allNav h2{height:40px;padding-left:30px;font:normal 16px/40px "微软雅黑";color:#333;background-color:#eee;}
+.allNav h2{height:40px;padding-left:30px;font:normal 16px/40px "微软雅黑";color:#333;background-color: #E4AA1A;}
 .allNav ul{margin:10px 30px;}
 .allNav li{line-height:26px;font-size:14px;}
 .allNav li.current a{color:#ea5505;}
@@ -57,3 +57,69 @@
 .pagin .current,.pagin .current:link,.pagin .current:visited{background:#ff5a00;color:#fff;}
 .pagin em{display:inline-block;width:40px;height:40px;line-height:34px;overflow:hidden;}
 .pagin .first,.pagin .next{width:60px;}
+
+/*shangxueyuanKeChengList.html*/
+.YaHei{
+	font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+}
+.xykc_hd {
+	height: 30px;
+	font-size: 19px;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+}
+.xykc_name {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	width: 130px;
+	background: red;
+	height: 33px;
+	line-height: 29px;
+	text-align: center;
+	border-radius: 17px;
+	margin-top: 20px;
+}
+.xykc_name:hover {
+	color: #ff1;
+	text-decoration: none;
+}
+.list_hd {
+	padding: 10px 0;
+	border-bottom: 1px dotted #d3d3d3;
+	position: relative;
+}
+.list_hd .list_time{
+	position: absolute;
+	right: 0;
+}
+.xykc_list .list_dt {
+	color: red;
+}
+.list_c {
+	width: 500px;
+	float: left;
+}
+.xykc_list {
+	height: 255px;
+	overflow: hidden;
+}
+.list_c>div {
+	margin-top: 10px;
+}
+.list_pic {
+	float: right;
+	margin-top: 10px;
+}
+.list_img {
+	margin-left: 106px;
+}
+.list_img img{
+	width: 320px;
+	height: 190px;
+}
+
+.allNav.xykecheng h2{
+	color: #fff;
+	background: red;
+}
