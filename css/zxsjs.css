@@ -1476,3 +1476,133 @@ a.new_md_a {
 
 	overflow: hidden;
 }
+
+/*设计师首页头部banner*/
+.ds_index_hd_img1,.ds_index_hd_img2{
+		transition-property: transform;
+		transition-duration: 0.5s;
+		-moz-transition-property: -moz-transform;
+		-moz-transition-duration: 0.5s;
+		-webkit-transition-property: -webkit-transform;
+		-webkit-transition-duration: 0.5s;
+		-o-transition-property: -o-transform;
+		-o-transition-duration: 0.5s;
+}
+.ds_index_newhd.d831{
+	display: block;
+	background-color: #55ccfd;
+
+}
+.ds_index_hd_p {
+	position: relative;
+	width: 1200px;
+	height: 400px;
+	overflow: hidden;
+}
+.ds_index_hd_img1 {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 399px;
+	height: 409px;
+	background:url(../images/zxsjy/de_index_hd_3.jpg) no-repeat;
+	-webkit-animation: pendulum 3s ease-in-out infinite alternate;
+	   -moz-animation: pendulum 3s ease-in-out infinite alternate;
+	     -o-animation: pendulum 3s ease-in-out infinite alternate;
+	        animation: pendulum 3s ease-in-out infinite alternate;
+	  
+}
+
+.ds_index_newhd:hover .ds_index_hd_img1{
+	-webkit-transform: rotate(-4deg);
+	   -moz-transform: rotate(-4deg);
+	     -o-transform: rotate(-4deg);
+	        transform: rotate(-4deg);
+	/* IE8+ - must be on one line, unfortunately */ 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.9975640502598243, M12=-0.06975647374412476, M21=0.06975647374412476, M22=0.9975640502598243, SizingMethod='auto expand')";
+	/* IE6 and 7 */ 
+	filter: progid:DXImageTransform.Microsoft.Matrix(
+	         M11=0.9975640502598243,
+	         M12=-0.06975647374412476,
+	         M21=0.06975647374412476,
+	         M22=0.9975640502598243,
+	         SizingMethod='auto expand');
+}
+.ds_index_newhd:hover .ds_index_hd_img2{
+	-moz-transform:    translateY(-10px);
+	-o-transform:      translateY(-10px);
+	-webkit-transform: translateY(-10px);
+	transform:         translateY(-10px);
+	   margin-top: -13px\9;
+}
+.ds_index_hd_img2 {
+	position: absolute;
+	top: 28px;
+	left: 359px;
+	width: 502px;
+	height: 330px;
+	background:url(../images/zxsjy/de_index_hd_2.png) no-repeat;
+}
+.ds_index_hd_form {
+	position: absolute;
+	top: 28px;
+	left: 855px;
+	width: 330px;
+	height: 346px;
+	background-color: #fff;
+
+}
+ /*设计师头部form表单*/
+ .sjsq_form{
+ 	position: relative;
+ 	padding: 30px;
+ 	overflow: hidden;
+}
+.sjsq_form h1 {
+	font: 18px "Microsoft YaHei";
+}
+.sjsq_form h4 {
+	color: #888787;
+}
+.sjsq_form .form-group {
+	margin-bottom: 15px;
+}
+ .sjsq_form .G_button{
+ 	background-color: #f25618;
+ }
+.G_button {
+  height: 32px;
+  background-color: #FF991C;
+  color: #FFF;
+  width: 100%;
+  border: medium none;
+  cursor: pointer;
+}
+.sjsq_form .G_input {
+	width: 249px;
+	height: 20px;
+	padding: 5px 10px;
+}
+.G_input {
+display: block;
+width: 100%;
+height: 33px;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.G_input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+

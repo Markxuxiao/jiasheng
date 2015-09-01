@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -1134,22 +1134,31 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
   </div>
 </nav>
 <!-- PublicNavLayout End-->
-<div class="ds_index_hd mb30">
-<!--   <a class="ds_index_hd_ab sco_modal_zx" href="javascript:;"></a>
-  <img src="img/design/de_index_hd.jpg" > -->
-   <ul class="rslides" id="rslides_r_s">
-    <li><a href="javascript:;" target="_blank"><img src="img/temp/21.jpg" ></a></li>
-    <li><a href="javascript:;" target="_blank"><img src="img/temp/22.jpg" ></a></li>
-    <li><a href="javascript:;" target="_blank"><img src="img/temp/23.jpg" ></a></li>
-  </ul>
+<div class="ds_index_newhd d831">
+  <div class="wrapper ds_index_hd_p">
+    <div class="ds_index_hd_img1">&nbsp;</div>
+    <div class="ds_index_hd_img2">&nbsp;</div>
+    <div class="ds_index_hd_form">
+      <div class="sjsq_form">
+        <h1>一分钟申请，就能搞定设计</h1>
+        <h4 class="mb30">已为<span style="color:red;">3598</span>业主申请报名</h4>
+        <form action="">
+          <div class="form-group">
+            <input class="G_input" type="text" fs="您的称呼">
+          </div>
+          <div class="form-group">
+            <input class="G_input" type="text" fs="手机号码">
+          </div>
+          <div class="form-button">
+            <input type="submit" class="G_button ts_linear" value="免费申请报名">
+          </div>
+        </form>
+        <p class="mt15">我们承诺：家盛时代提供该项服务，绝不会乱收取任何费用，为了您的利益以及我们的口碑，您的隐私将被严格保密</p>
+      </div>
+    </div>
+  </div> 
+</div>
 
-
-  <ul id="rslides_r_s-pager">
-    <li><a href="javascript:;"></a></li>
-    <li><a href="javascript:;"></a></li>
-    <li><a href="javascript:;"></a></li>
-  </ul>
-</div> 
 
 <div class="wrapper">
   <div class="ds_zxlc">
@@ -1414,8 +1423,8 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
     </div>
   <div class="ds_sjs1">
     <img src="img/design/de_29.jpg" alt="在线预约">
-    <p><label>姓名：</label><input type="text" maxlength="5" fs="您的姓名"></p>
-    <p><label>手机：</label><input type="text"maxlength="11" fs="请填写真实有效的手机号码"></p>
+    <p><label>姓名：<input type="text" maxlength="5" placeholder="您的姓名"></label></p>
+    <p><label>手机：<input type="text"maxlength="11" fs="请填写真实有效的手机号码"></label></p>
     <p><input type="submit" class="ts_linear" value="免费预约"></p>
     <div class="ds_sjs2">
       <img src="img/design/5441233.jpg" alt="问题解答">
@@ -1818,7 +1827,17 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <script src="js/allinone_carousel.js"></script>
 <script type="text/javascript" src="js/mksg.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+
+
+
 <script language="javascript">
+
+$(function() {
+ $('input, textarea').placeholder();
+});
+
+
   $(function(){
   	// Membership card
   	$('[nctype="mcard"]').membershipCard({type:'shop'});

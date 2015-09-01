@@ -68,6 +68,16 @@ input[type="submit"]:hover.ts_linear{
     -webkit-border-radius: 5px;   
     border-radius:5px; 
 }
+.sg-zhiwei-2 {
+  padding: 1px 4px;
+  color: #fff;
+  /* margin-left: 0; */
+  background-color: #9B9A9A;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+}
 .sg-zhuangtai {
 	padding: 2px 4px;
 	margin-left: 17px;
@@ -115,13 +125,15 @@ input[type="submit"]:hover.ts_linear{
 }
 .sgzx-btn {
 	width: 124px;
-	height: 22px;
+	height: 20px;
 	text-align: center;
-	color: #fff;
+	color: #565656;
 	margin-top: 17px;
-	background-color: #FB8D0D;
+	background: url(../images/zxsjy/btn-bg.gif) repeat;
 	display: inline-block;
 	text-decoration: none !important;
+	border-radius: 5px;
+	border: 1px solid #ccc;
 }
 
 .blog_right {
@@ -371,10 +383,11 @@ input[type="submit"]:hover.ts_linear{
     overflow: hidden;
 }
 .mk-hot-top2 {
-    width: 100%;
-    float: left;
-    border-bottom: medium solid #ACB20C;
-    height: 30px;
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #ACB20C;
+  height: 33px;
+  margin-bottom: 5px;
 }
 
 .hot-pic-new2 {
@@ -398,25 +411,6 @@ input[type="submit"]:hover.ts_linear{
 
 
 /*工长信息*/
-.lisgongzhang {
-	background: url("../images/zxsjy/gongzhang.jpg") no-repeat right;
-}
-
-.lisniwa {
-	background: url("../images/zxsjy/niwa.jpg") no-repeat right;
-}
-.lismugong {
-	background: url("../images/zxsjy/mugong.jpg") no-repeat right;
-}
-.lisshuidian {
-	background: url("../images/zxsjy/shuidian.jpg") no-repeat right;
-}
-.lisanzhuang {
-	background: url("../images/zxsjy/anzhuang.jpg") no-repeat right;
-}
-.lisyouqi {
-	background: url("../images/zxsjy/youqi.jpg") no-repeat right;
-}
 
 
 .sglistone{
@@ -430,28 +424,29 @@ input[type="submit"]:hover.ts_linear{
 	width: 1198px;
 	height: 680px;
 	border: 1px solid #ccc;
-	margin-top: 30px;
+	/* margin-top: 30px; */
 }
 
 .sglisthd {
 	position: relative;
 	width: 1198px;
-	height: 100px;
-	background-color: #ECECEC;
+	height: 45px;
+	background-color: #FFFFFF;
 	overflow: hidden;
+	border-bottom: 1px solid #ccc;
 }
 
 .sglisthd span {
 	position: absolute;
-	right: 47px;
-	top: 32px;
+	right: 0px;
+	top: 11px;
 	display: block;
 	width: 74px;
 	height: 28px;
 	line-height: 28px;
 	text-align: center;
-	color: #fff;
-	background-color: #FDB700;
+	color: #888;
+	/* background-color: #FDB700; */
 }
 
 .blog_left2 {

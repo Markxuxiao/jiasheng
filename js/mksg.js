@@ -38,18 +38,7 @@
        $(".state_list").css("display","none");
        $(".triangle").removeClass("triangle_up").addClass("triangle_down");
     });
-    //设计师主页轮播模块1
-    $("#rslides_r_s").responsiveSlides({pause: "true",manualControls: '#rslides_r_s-pager',
-                        before: function () {
-                          var $img = $('#rslides_r_s').find("img");
-                          $img.each(function(){
-                           // $(this).width("100%");
-                           // $(this).height("100%");
-                           $(this).animate({width:"101%",height:"101%",left:"-0.5%"},0);
-                            $(this).animate({width:"100%",height:"100%",left:"0%"},1000);
-                          })
-                        }
-                      });
+
     
     //设计师主页问答滚动调用
     $("#ds_sjs2_gd").kxbdMarquee({direction:"up",isEqual:false,scrollDelay:"50"});
