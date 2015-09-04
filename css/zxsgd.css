@@ -422,7 +422,6 @@ input[type="submit"]:hover.ts_linear{
 .sginlist {
 	float: left;
 	width: 1198px;
-	height: 680px;
 	border: 1px solid #ccc;
 	/* margin-top: 30px; */
 }
@@ -469,7 +468,9 @@ input[type="submit"]:hover.ts_linear{
 	width: 137px;
 	text-align: center;
 }
-
+.sginlist .re2 .clearfix{
+	*height: 173px;
+}
 .sg-blogdate2 {
     padding-left: 10px;
     float: left;
@@ -1490,7 +1491,7 @@ input.btn_green {
     display: inline-block;
     height: 28px;
     color: #FFF;
-    background-color: #FB8D0D;
+    background-color: #fff;
     border: medium none;
     cursor: pointer;
     padding: 0px 20px;
@@ -2052,5 +2053,35 @@ border-radius: 4px;
 }
 .re821 .sginlist{
 	border: none;
-	height: 614px;
+	margin-bottom: 20px;
+}
+
+/*首页底部问答模块*/
+.wdlist93 ul {
+	display: block;
+	margin-right: -15px;
+}
+.wdlist93 ul li{
+	float: left;
+	width: 292px;
+	*width: 290px;
+	height: 73px;
+	margin-right: 10px;
+	margin-bottom: 8px;
+	border-bottom:1px solid #ccc;
+}
+.wdlist93 ul li p{
+	height: 41px;
+	margin-top:5px;
+	overflow: hidden;
+}
+.wdlist93 ul li a{
+	display: block;
+	border-left: 9px solid #B27BED;
+	padding-left: 4px;
+	width: 278px;
+	height: 16px;
+	overflow: hidden;
+	color: #C26A15;
+	line-height: 16px;
 }
