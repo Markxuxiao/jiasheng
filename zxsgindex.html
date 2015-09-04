@@ -2706,8 +2706,22 @@ $(function(){
 <script src="js/sco.modal.js"></script>
 <!-- 幻灯模块1 -->
 <script>
+  var ds_index_newhd_Bgcolor = ["#FEB250","#53D9E5","#FF0308"];
+  var Bgcolorcont = 0;
   $(function(){
-    $("#rslides_sgmode1").responsiveSlides({manualControls: '#rslides_sgmode1-pager'});
+    $("#rslides_sgmode1").responsiveSlides({
+          manualControls: '#rslides_sgmode1-pager',
+          pause: true,
+          speed: 0, 
+          namespace: "callbacks",
+          before: function () {
+            var cgcolor= ds_index_newhd_Bgcolor[Bgcolorcont];
+              Bgcolorcont++;
+              if (Bgcolorcont==3){ Bgcolorcont = 0; };
+              $(".ds_index_newhd").css({"background-color":cgcolor});
+              console.log(cgcolor);
+          }
+        });
   })
 </script>
 <!-- sss -->
