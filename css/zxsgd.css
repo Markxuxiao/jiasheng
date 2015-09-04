@@ -1646,7 +1646,7 @@ input.btn_green {
 	height: 350px;
 	float:left;
 	margin-right:10px;
-			}
+	}
 .box span{position: absolute;bottom: 40%; display: inline-block;width: 50px;text-align: center;cursor: pointer;background: red;z-index: 90;color: #fff;}
 .box .next{right: 0;}
 .mk-box {

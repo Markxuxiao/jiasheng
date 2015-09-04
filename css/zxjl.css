@@ -100,6 +100,7 @@ input[type="submit"]:hover.ts_linear{
 }
 .jl_m1 h4{
 	text-align:center;
+	color: #999;
 }
 
 /*fwlc*/
@@ -133,3 +134,89 @@ input[type="submit"]:hover.ts_linear{
 	width: 276px;
 	height: 20px;
 }
+.jl_m3 ul {height: 260px;margin-top: 40px;}
+.jl_m3 ul li {
+	width: 200px;
+	height: 200px;
+	margin-left: 80px;
+	text-align: center;
+}
+.jl_m3 ul li h1{
+	font:20px "Microsoft YaHei";
+	margin: 13px 0;
+}
+.jl_m3 ul li a{
+	display: block;
+	margin-left: 52px;
+	width: 100px;
+	height: 32px;
+	line-height: 30px;
+	color: #989898;
+	border:1px solid #ccc;
+}
+.jl_m3 p.beizhu {
+	position: relative;
+	top: -33px;
+	left: 131px;
+	color: #8a8a8a;
+}
+
+.jl_m4 .jl_m4l{
+	float: left;
+	width: 710px;
+}
+.jl_m4 .jl_m4l .ds_md7_main{
+	width: 100%;
+}
+.jl_m4 .jl_m4l .ds_md7_main ul{
+	width: auto;
+}
+.jl_m4 .jl_m4l .ds_md7_main li {
+	position: relative;
+	width: 213px;
+	height: 247px;
+}
+.jl_m4 .jl_m4l .ds_md7_main img {
+	width: 213px;
+	height: 170px;
+	margin-bottom: 5px;
+}
+.jl_m4 .jl_m4l .ds_md7_main li h4{
+	font:14px "Microsoft YaHei";
+	font-weight: bold;
+	margin-left: 5px;
+}
+.jl_m4 .jl_m4l .ds_md7_main a {
+	width: auto;
+	height: auto;
+}
+i.videoico{
+	position: absolute;
+	display: block;
+	width: 36px;
+	height: 36px;
+	background: url(../images/jianli/播放图标_r2_c2.png) no-repeat;
+}
+.jl_m4 .jl_m4l i.videoico{
+	top: 60px;
+	left: 90px;
+}
+
+.jl_m4 .jl_m4r{
+	width: 470px;
+	float: right;
+}
+
+.jl_m4r .mt{height:50px;border-bottom:solid 1px #cecece;}
+.jl_m4r .mt h2{float:left;font:normal 28px/40px "microsoft yahei";color:#333;}
+.jl_m4r .mt .extra{float:right;padding-top:20px;font-size:14px;}
+.jl_m4r .mt strong{padding:0 3px;font-family:Arial;color:#f35516;}       
+.jl_m4r .mc{float:left;font-family:"microsoft yahei";}
+.jl_m4r .mc li{float:left;width:100%;height:35px;/* border-bottom:solid 1px #cecece; */color:#999;}
+.jl_m4r .mc li.title{/* margin-top:8px; */padding-bottom:6px;font-size:14px;color:#666;border-bottom: solid 1px #cecece;}
+.jl_m4r .mc li.loading{height:45px;background:url(/images/none/loading.gif) no-repeat center center;}
+.jl_m4r .mc li span{float:left;display:block;width: 93px;height:35px;line-height:35px;text-align:center;overflow:hidden;}       
+.jl_m4r .title{height: 38px;border-bottom: 4px solid #B7A7F2;}
+.jl_m4r .title h1{width: 300px;height: 26px;font-size: 22px;font-family: "Microsoft Yahei";font-weight: bold;display: inline-block;float: left;}
+.jl_m4r .title>a {display: inline-block; width: 160px;height: 32px;font-size: 14px;color: #fff;background-color: #F00;text-align: center;line-height: 31px;float: right;text-decoration: none;}
+.jl_m4r .title>a:hover{background-color: #D60C0C;}
