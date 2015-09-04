@@ -2706,6 +2706,7 @@ $(function(){
 <script src="js/sco.modal.js"></script>
 <!-- 幻灯模块1 -->
 <script>
+  // 幻灯的背景色
   var ds_index_newhd_Bgcolor = ["#FEB250","#53D9E5","#FF0308"];
   var Bgcolorcont = 0;
   $(function(){
@@ -2719,7 +2720,6 @@ $(function(){
               Bgcolorcont++;
               if (Bgcolorcont==3){ Bgcolorcont = 0; };
               $(".ds_index_newhd").css({"background-color":cgcolor});
-              console.log(cgcolor);
           }
         });
   })
