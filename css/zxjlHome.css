@@ -179,3 +179,24 @@
 	background:url(../img/r14_c4.gif) no-repeat;
     position:absolute;
 	}
+
+.jianli96 h1 {
+	padding-left: 4px;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	width: 276px;
+	height: 20px;
+}
+
+
+.jl_m1 .jl_list .sgzx-btn{
+	width: 100%;
+	margin-top: 4px;
+}
+.jl_m1 .jl_list a{
+	text-decoration: none;
+}
+.jl_m1 .jl_list li{
+	margin-bottom: 30px;
+}

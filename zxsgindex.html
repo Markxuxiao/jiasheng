@@ -1138,7 +1138,7 @@ $(function(){
 </nav>
 <!-- PublicNavLayout End-->
 
-<div class="ds_index_newhd d831" style="background-color: #F30505;" >
+<div class="ds_index_newhd d831" >
   <div class="wrapper ds_index_hd_p">
      <ul class="rslides" id="rslides_sgmode1">
       <li><a href="javascript:;" target="_blank"><img src="img/temp/21.jpg" ></a></li>
@@ -2708,13 +2708,14 @@ $(function(){
 <script>
   // 幻灯的背景色
   var ds_index_newhd_Bgcolor = ["#FF0308","#FEB250","#53D9E5"];
+  $(".ds_index_newhd").css({"background-color":ds_index_newhd_Bgcolor[0]});
   $(function(){
     $("#rslides_sgmode1").responsiveSlides({
           manualControls: '#rslides_sgmode1-pager',
           pause: true,
           speed: 0, 
           namespace: "callbacks",
-          before: function (idx) {
+          after: function (idx) {
             $(".ds_index_newhd").css({"background-color":ds_index_newhd_Bgcolor[idx]});
           }
         });

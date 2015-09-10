@@ -55,62 +55,66 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_002.js"></script>
 <script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/dialog.js" id="dialog_js" charset="utf-8"></script>
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/dialog.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/zxsgd.css">
+<link rel="stylesheet" type="text/css" href="css/zxjl.css">
+<link rel="stylesheet" type="text/css" href="css/zxjlHome.css">
+
 <script type="text/javascript">
   var PRICE_FORMAT = '&yen;%s';
   $(function(){
-  	//首页左侧分类菜单
-  	$(".category ul.menu").find("li").each(
-  		function() {
-  			$(this).hover(
-  				function() {
-  				    var cat_id = $(this).attr("cat_id");
-  					var menu = $(this).find("div[cat_menu_id='"+cat_id+"']");
-  					menu.show();
-  					$(this).addClass("hover");
-  					if(menu.attr("hover")>0) return;
-  					menu.masonry({itemSelector: 'dl'});
-  					/*
-  					var menu_height = menu.height();
-  					if (menu_height < 60) menu.height(80);
-  					*/
-  					var menu_height = menu.height(448);
-  					if (menu_height < 60) menu.height(448);
-  					menu_height = menu.height();
-  					var li_top = $(this).position().top;
-  					if ((li_top > 60) && (menu_height >= li_top)) $(menu).css("top",-li_top+38);
-  					if ((li_top > 150) && (menu_height >= li_top)) $(menu).css("top",-li_top+38);
-  					if ((li_top > 240) && (li_top > menu_height)) $(menu).css("top",-li_top+38);
-  					if (li_top > 300 && (li_top > menu_height)) $(menu).css("top",-li_top+38);
-  					if ((li_top > 40) && (menu_height <= 120)) $(menu).css("top",-li_top+38);
-  					menu.attr("hover",1);
-  				},
-  				function() {
-  					$(this).removeClass("hover");
-  				    var cat_id = $(this).attr("cat_id");
-  					$(this).find("div[cat_menu_id='"+cat_id+"']").hide();
-  				}
-  			);
-  		}
-  	);
-  	$(".head-user-menu dl").hover(function() {
-  		$(this).addClass("hover");
-  	},
-  	function() {
-  		$(this).removeClass("hover");
-  	});
-  	$('.head-user-menu .my-mall').mouseover(function(){// 最近浏览的商品
-  		load_history_information();
-  		$(this).unbind('mouseover');
-  	});
-  	$('.head-user-menu .my-cart').mouseover(function(){// 运行加载购物车
-  		load_cart_information();
-  		$(this).unbind('mouseover');
-  	});
-  	$('#button').click(function(){
-  	    if ($('#keyword').val() == '') {
-  		    return false;
-  	    }
-  	});
+    //首页左侧分类菜单
+    $(".category ul.menu").find("li").each(
+      function() {
+        $(this).hover(
+          function() {
+              var cat_id = $(this).attr("cat_id");
+            var menu = $(this).find("div[cat_menu_id='"+cat_id+"']");
+            menu.show();
+            $(this).addClass("hover");
+            if(menu.attr("hover")>0) return;
+            menu.masonry({itemSelector: 'dl'});
+            /*
+            var menu_height = menu.height();
+            if (menu_height < 60) menu.height(80);
+            */
+            var menu_height = menu.height(448);
+            if (menu_height < 60) menu.height(448);
+            menu_height = menu.height();
+            var li_top = $(this).position().top;
+            if ((li_top > 60) && (menu_height >= li_top)) $(menu).css("top",-li_top+38);
+            if ((li_top > 150) && (menu_height >= li_top)) $(menu).css("top",-li_top+38);
+            if ((li_top > 240) && (li_top > menu_height)) $(menu).css("top",-li_top+38);
+            if (li_top > 300 && (li_top > menu_height)) $(menu).css("top",-li_top+38);
+            if ((li_top > 40) && (menu_height <= 120)) $(menu).css("top",-li_top+38);
+            menu.attr("hover",1);
+          },
+          function() {
+            $(this).removeClass("hover");
+              var cat_id = $(this).attr("cat_id");
+            $(this).find("div[cat_menu_id='"+cat_id+"']").hide();
+          }
+        );
+      }
+    );
+    $(".head-user-menu dl").hover(function() {
+      $(this).addClass("hover");
+    },
+    function() {
+      $(this).removeClass("hover");
+    });
+    $('.head-user-menu .my-mall').mouseover(function(){// 最近浏览的商品
+      load_history_information();
+      $(this).unbind('mouseover');
+    });
+    $('.head-user-menu .my-cart').mouseover(function(){// 运行加载购物车
+      load_cart_information();
+      $(this).unbind('mouseover');
+    });
+    $('#button').click(function(){
+        if ($('#keyword').val() == '') {
+          return false;
+        }
+    });
   });
 </script>
 </head>
@@ -122,13 +126,13 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <div class="public-top-layout w">
   <div class="topbar wrapper">  
     <div class="user-entry">
-	<!--
+  <!--
           您好，欢迎来到      <a href="http://www.jstimes.com/shop" title="首页" alt="首页">家盛时代-首页-国际建材旗帜-武汉建材、家盛时代建材广场</a>
        <span >[<a href="http://www.jstimes.com/shop/index.php?act=login&op=index">登录</a>]</span>
         <span>[<a href="http://www.jstimes.com/shop/index.php?act=login&op=register">注册</a>]</span>
-    	-->
-	<span class="seller-login"><a href="http://www.jstimes.com/shop/index.php?act=seller_login&amp;op=show_login" target="_blank" title="登录商家管理中心"><i class="icon-signin"></i>商家管理中心</a></span> <em> <a href="http://www.jstimes.com/shop/index.php?act=store_joinin&amp;op=index" title="招商入驻" target="_blank">&nbsp;|&nbsp;招商入驻</a></em></div>
-	
+      -->
+  <span class="seller-login"><a href="http://www.jstimes.com/shop/index.php?act=seller_login&amp;op=show_login" target="_blank" title="登录商家管理中心"><i class="icon-signin"></i>商家管理中心</a></span> <em> <a href="http://www.jstimes.com/shop/index.php?act=store_joinin&amp;op=index" title="招商入驻" target="_blank">&nbsp;|&nbsp;招商入驻</a></em></div>
+  
 
     <div class="quick-menu">
       <dl>
@@ -150,12 +154,12 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
           </ul>
         </dd>
       </dl>
-	    <dl>
+      <dl>
         <dt>设计师中心<i></i></dt>
         <dd>
           <ul>
             <li><a href="http://www.jstimes.com/shop/index.php?act=designer_joinin&amp;op=index" target="_blank">设计师入驻</a></li>
-			       <li><a href="http://www.jstimes.com/shop/index.php?act=designer_login&amp;op=show_login" target="_blank">设计师登录</a></li>
+             <li><a href="http://www.jstimes.com/shop/index.php?act=designer_login&amp;op=show_login" target="_blank">设计师登录</a></li>
           </ul>
        </dd>
       </dl>
@@ -175,7 +179,7 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
           <ul>
             <li><a href="http://www.jstimes.com:7890/oa" target="_blank">内部OA</a></li>
             <li><a href="http://www.jstimes.com/shop/index.php?act=seller_login&amp;op=show_login" target="_blank">在线开单</a></li>
-            <li><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register_replace" target="_blank">代客户注册</a></li>	
+            <li><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register_replace" target="_blank">代客户注册</a></li>  
           </ul>
        </dd>
       </dl>
@@ -194,22 +198,22 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 </div>
 <script type="text/javascript">
   $(function(){
-  	$(".quick-menu dl").hover(
+    $(".quick-menu dl").hover(
       function() {
-  		$(this).addClass("hover");
-  	},
-  	function() {
-  		$(this).removeClass("hover");
-  	});
+      $(this).addClass("hover");
+    },
+    function() {
+      $(this).removeClass("hover");
+    });
   });
 </script>
 <!-- PublicHeadLayout Begin -->
 <div class="header-wrap">
   <header class="public-head-layout wrapper">
     <div class="site-logo"><a href="http://www.jstimes.com/shop"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/04767024249170454.jpg" class="pngFix"></a></div>
-	<!--原版点击报名
-	<div class="baoming"><a href="http://www.jstimes.com/shop/index.php?act=show_visitor&op=visitor" target="_blank"><img src="http://www.jstimes.com/data/upload/shop/common/take.gif" target="_blank"></a></div>
-	-->
+  <!--原版点击报名
+  <div class="baoming"><a href="http://www.jstimes.com/shop/index.php?act=show_visitor&op=visitor" target="_blank"><img src="http://www.jstimes.com/data/upload/shop/common/take.gif" target="_blank"></a></div>
+  -->
     <div class="baoming"><a href="http://www.jstimes.com/shop/index.php?act=show_visitor&amp;op=visitor" target="_blank"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/take.gif" target="_blank"></a></div>
     <div class="head-search-bar">
       <form action="http://www.jstimes.com/shop" method="get" class="search-form">
@@ -280,12 +284,12 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
         <ul class="menu">
 
                               <li cat_id="1" class="odd">            
-			<div class="class">	
-				<br>              <h4><a href="http://www.jstimes.com/shop/cate-1-0-0-0-0-0-0-0.html">建材厨卫类</a></h4>
+      <div class="class"> 
+        <br>              <h4><a href="http://www.jstimes.com/shop/cate-1-0-0-0-0-0-0-0.html">建材厨卫类</a></h4>
                             <span class="ico"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/category-pic-1.jpg"></span>
               
               <span class="recommend-class">
-			  <!--
+        <!--
                                           <a href="http://www.jstimes.com/shop/cate-5027-0-0-0-0-0-0-0.html" title="瓷砖品牌">瓷砖品牌</a>
                             <a href="http://www.jstimes.com/shop/cate-6972-0-0-0-0-0-0-0.html" title="地板品牌">地板品牌</a>
                             <a href="http://www.jstimes.com/shop/cate-5343-0-0-0-0-0-0-0.html" title="橱柜品牌">橱柜品牌</a>
@@ -296,19 +300,19 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                             <a href="http://www.jstimes.com/shop/cate-5350-0-0-0-0-0-0-0.html" title="水槽品牌">水槽品牌</a>
                             <a href="http://www.jstimes.com/shop/cate-5344-0-0-0-0-0-0-0.html" title="厨配品牌">厨配品牌</a>
                              
-			  -->
+        -->
             </span><span class="arrow"></span> </div>
-	<!--下2行原版：div class="sub-class" cat_menu_id="1">-->
-		<div class="sub-class" cat_menu_id="1">
+  <!--下2行原版：div class="sub-class" cat_menu_id="1">-->
+    <div class="sub-class" cat_menu_id="1">
             <div class="sub-class-left">
-			 <dl>
-			 </dl>
-				
+       <dl>
+       </dl>
+        
                                           <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5027-0-0-2-2-0-0-0.html">瓷砖品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-374-cate_id-5027-b_id-374-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">东鹏瓷砖</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-421-cate_id-5027-b_id-421-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">金舵瓷砖</a>
@@ -316,9 +320,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-507-cate_id-5027-b_id-507-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">楼兰瓷砖</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-484-cate_id-5027-b_id-484-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">合富陶瓷</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-506-cate_id-5027-b_id-506-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">汉嘉瓷砖</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-374-cate_id-5027-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">东鹏瓷砖</a>
@@ -328,13 +332,13 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-484-cate_id-5027-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">合富陶瓷</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-506-cate_id-5027-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">汉嘉瓷砖</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-6972-0-0-2-2-0-0-0.html">地板品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-508-cate_id-6972-b_id-508-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">生活家</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-454-cate_id-6972-b_id-454-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">金舵地板</a>
@@ -342,9 +346,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-485-cate_id-6972-b_id-485-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">佳伦地板</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-504-cate_id-6972-b_id-504-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">友威</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-562-cate_id-6972-b_id-562-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">悦美</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-508-cate_id-6972-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">生活家</a>
@@ -354,13 +358,13 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-504-cate_id-6972-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">友威</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-562-cate_id-6972-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">悦美</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5343-0-0-2-2-0-0-0.html">橱柜品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-439-cate_id-5343-b_id-439-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">欧派</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-432-cate_id-5343-b_id-432-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">樱花卫厨</a>
@@ -370,9 +374,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-416-cate_id-5343-b_id-416-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">百丽</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-457-cate_id-7059-b_id-457-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">帝森橱柜</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-460-cate_id-5343-b_id-460-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">吉林森工橱柜</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-439-cate_id-5343-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">欧派</a>
@@ -384,13 +388,13 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-457-cate_id-7059-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">帝森橱柜</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-460-cate_id-5343-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">吉林森工橱柜</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5028-0-0-2-2-0-0-0.html">卫浴品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-455-cate_id-5028-b_id-455-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">赛唯雅</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-511-cate_id-5028-b_id-511-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">科勒</a>
@@ -402,9 +406,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-426-cate_id-5028-b_id-426-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">钻石</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-517-cate_id-5028-b_id-517-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">席玛</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-544-cate_id-5028-b_id-544-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">TOTO</a>
-                                                                        				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                                                                  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-455-cate_id-5028-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">赛唯雅</a>
@@ -418,21 +422,21 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-517-cate_id-5028-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">席玛</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-544-cate_id-5028-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">TOTO</a>
                                                                                         </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5029-0-0-2-2-0-0-0.html">吊顶品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-473-cate_id-5029-b_id-473-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">友邦</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-491-cate_id-5029-b_id-491-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">品格</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-476-cate_id-5029-b_id-476-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">奥柯美</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-440-cate_id-5029-b_id-440-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">美凯隆</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-473-cate_id-5029-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">友邦</a>
@@ -440,13 +444,13 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-476-cate_id-5029-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">奥柯美</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-440-cate_id-5029-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">美凯隆</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5348-0-0-2-2-0-0-0.html">门窗品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-459-cate_id-5348-b_id-459-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">凤铝门窗</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-533-cate_id-5348-b_id-533-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">王力</a>
@@ -458,9 +462,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-534-cate_id-5348-b_id-534-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">艾斯兰德</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-423-cate_id-5348-b_id-423-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">颐庭轩</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-433-cate_id-5348-b_id-433-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">忠旺</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-459-cate_id-5348-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">凤铝门窗</a>
@@ -474,51 +478,51 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-423-cate_id-5348-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">颐庭轩</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-433-cate_id-5348-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">忠旺</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5349-0-0-2-2-0-0-0.html">石材品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-535-cate_id-5349-b_id-535-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">勇登</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-467-cate_id-5349-b_id-467-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">色萨利</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-535-cate_id-5349-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">勇登</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-467-cate_id-5349-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">色萨利</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5350-0-0-2-2-0-0-0.html">水槽品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-536-cate_id-5350-b_id-536-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">普乐美</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-513-cate_id-5350-b_id-513-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">摩恩</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-453-cate_id-5028-b_id-453-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">白鸟水槽</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-536-cate_id-5350-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">普乐美</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-513-cate_id-5350-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">摩恩</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-453-cate_id-5028-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">白鸟水槽</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5344-0-0-2-2-0-0-0.html">厨配品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-441-cate_id-5344-b_id-441-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">HANILSTS(不锈钢类煎锅/炒锅/汤锅具/勺筷组合)</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-442-cate_id-5344-b_id-442-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">PANSTAR(炒锅)</a>
@@ -530,9 +534,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-449-cate_id-5344-b_id-449-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">KITCHEN WAY(3D涂层煎锅/炒锅/汤锅)</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-450-cate_id-5344-b_id-450-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">石器天国(天然石锅)</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-552-cate_id-5344-b_id-552-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">SAMMI (内钢功能煎锅/汤锅)</a>
-                                                                                                            				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                                                                                                      <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-441-cate_id-5344-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">HANILSTS(不锈钢类煎锅/炒锅/汤锅具/勺筷组合)</a>
@@ -546,59 +550,59 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-450-cate_id-5344-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">石器天国(天然石锅)</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-552-cate_id-5344-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">SAMMI (内钢功能煎锅/汤锅)</a>
                                                                                                                             </dd>
-                				-->
+                        -->
               </dl>
                                        </div>
-			
-			<div class="sub-class-right">
-		        <dt>
+      
+      <div class="sub-class-right">
+            <dt>
                   <h1>推荐品牌：</h1>
                 </dt>
-			    				                
-                  				
+                                  
+                          
                     <a href="http://www.jstimes.com/shop/brand-list-brand-374-cate_id-0-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/04717980566422560_sm.jpg" alt="东鹏瓷砖" height="50px" width="110px"></a>
-					                                    				
+                                                      
                     <a href="http://www.jstimes.com/shop/brand-list-brand-421-cate_id-0-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/04717976241295070_sm.jpg" alt="金舵瓷砖" height="50px" width="110px"></a>
-					                                    				
+                                                      
                     <a href="http://www.jstimes.com/shop/brand-list-brand-430-cate_id-0-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/04717986129237325_sm.jpg" alt="兴辉瓷砖" height="50px" width="110px"></a>
-					                                    				
+                                                      
                     <a href="http://www.jstimes.com/shop/brand-list-brand-507-cate_id-0-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/04789699790407685_sm.jpg" alt="楼兰瓷砖" height="50px" width="110px"></a>
-					                                    				
+                                                      
                     <a href="http://www.jstimes.com/shop/brand-list-brand-484-cate_id-0-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/04724735550422332_sm.jpg" alt="合富陶瓷" height="50px" width="110px"></a>
-					                                    				
+                                                      
                     <a href="http://www.jstimes.com/shop/brand-list-brand-506-cate_id-0-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/04789696900516580_sm.jpg" alt="汉嘉瓷砖" height="50px" width="110px"></a>
-					                                    												                
-                                                      				
+                                                                                      
+                                                              
                     <a href="http://www.jstimes.com/shop/brand-list-brand-454-cate_id-0-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/04711075646321311_sm.png" alt="金舵地板" height="50px" width="110px"></a>
-					                                                                   
+                                                                             
                                                                         
-                                         												                
-                                                                        
-                                                                        
+                                                                                
                                                                         
                                                                         
-                  												                
-                  				
+                                                                        
+                                                                        
+                                                          
+                          
                     <a href="http://www.jstimes.com/shop/brand-list-brand-455-cate_id-0-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/04717984197165876_sm.jpg" alt="赛唯雅" height="50px" width="110px"></a>
-					                                                                   
+                                                                             
                                                                         
                                                                         
                                                                         
                                                                         
-                                         												                
+                                                                                
                                                                         
                                                                         
-                  												                
+                                                          
                                                                         
                                                                         
                                                                         
                                                                         
                                                                         
-                  												                
+                                                          
                                                                         
-                  												                
+                                                          
                                                                         
-                                                      												      
+                                                                                    
           
                                                                         
                                                                         
@@ -606,38 +610,38 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                                         
                                                                         
                                                                         
-                  										
-			</div>
-		</div>
-	
-		
+                                      
+      </div>
+    </div>
+  
+    
          </li>
                     <li cat_id="2" class="even">            
-			<div class="class">	
-				<br>              <h4><a href="http://www.jstimes.com/shop/cate-2-0-0-0-0-0-0-0.html">家居电器类</a></h4>
+      <div class="class"> 
+        <br>              <h4><a href="http://www.jstimes.com/shop/cate-2-0-0-0-0-0-0-0.html">家居电器类</a></h4>
                             <span class="ico"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/category-pic-2.jpg"></span>
               
               <span class="recommend-class">
-			  <!--
+        <!--
                                           <a href="http://www.jstimes.com/shop/cate-5342-0-0-0-0-0-0-0.html" title="厨电品牌">厨电品牌</a>
                             <a href="http://www.jstimes.com/shop/cate-5351-0-0-0-0-0-0-0.html" title="晾衣架品牌">晾衣架品牌</a>
                             <a href="http://www.jstimes.com/shop/cate-5352-0-0-0-0-0-0-0.html" title="榻榻米品牌">榻榻米品牌</a>
                             <a href="http://www.jstimes.com/shop/cate-5353-0-0-0-0-0-0-0.html" title="整体家居品牌">整体家居品牌</a>
                             <a href="http://www.jstimes.com/shop/cate-5354-0-0-0-0-0-0-0.html" title="家具品牌">家具品牌</a>
                              
-			  -->
+        -->
             </span><span class="arrow"></span> </div>
-	<!--下2行原版：div class="sub-class" cat_menu_id="2">-->
-		<div class="sub-class" cat_menu_id="2">
+  <!--下2行原版：div class="sub-class" cat_menu_id="2">-->
+    <div class="sub-class" cat_menu_id="2">
             <div class="sub-class-left">
-			 <dl>
-			 </dl>
-				
+       <dl>
+       </dl>
+        
                                           <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5342-0-0-2-2-0-0-0.html">厨电品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-520-cate_id-5342-b_id-520-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">方太</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-429-cate_id-5342-b_id-429-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">西门子</a>
@@ -649,9 +653,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-567-cate_id-5347-b_id-567-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">Alikes净水机</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-571-cate_id-5342-b_id-571-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">老板</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-561-cate_id-5342-b_id-561-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">威尔士莫卡</a>
-                                                                        				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                                                                  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-520-cate_id-5342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">方太</a>
@@ -665,51 +669,51 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-571-cate_id-5342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">老板</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-561-cate_id-5342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">威尔士莫卡</a>
                                                                                         </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5351-0-0-2-2-0-0-0.html">晾衣架品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-569-cate_id-5348-b_id-569-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">恋晴</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-537-cate_id-5351-b_id-537-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">好太太</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-538-cate_id-5351-b_id-538-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">红杏</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-569-cate_id-5348-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">恋晴</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-537-cate_id-5351-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">好太太</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-538-cate_id-5351-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">红杏</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5352-0-0-2-2-0-0-0.html">榻榻米品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-539-cate_id-5352-b_id-539-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">和室创意</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-424-cate_id-5352-b_id-424-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">雅静</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-539-cate_id-5352-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">和室创意</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-424-cate_id-5352-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">雅静</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5353-0-0-2-2-0-0-0.html">整体家居品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-541-cate_id-5353-b_id-541-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">见喜</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-493-cate_id-5353-b_id-493-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">怡萧行</a>
@@ -720,9 +724,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-438-cate_id-5353-b_id-438-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">维多利亚</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-503-cate_id-5353-b_id-503-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">F.L.Y怡馨雅</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-474-cate_id-5353-b_id-474-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">御宅坊木门衣柜</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-541-cate_id-5353-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">见喜</a>
@@ -735,119 +739,119 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-503-cate_id-5353-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">F.L.Y怡馨雅</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-474-cate_id-5353-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">御宅坊木门衣柜</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5354-0-0-2-2-0-0-0.html">家具品牌</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-543-cate_id-5354-b_id-543-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">香港恒信</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-566-cate_id-7350-b_id-566-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">物联智能家居</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-543-cate_id-5354-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">香港恒信</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-566-cate_id-7350-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">物联智能家居</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                                        </div>
-			
-			<div class="sub-class-right">
-		        <dt>
+      
+      <div class="sub-class-right">
+            <dt>
                   <h1>推荐品牌：</h1>
                 </dt>
-			    				                
+                                  
                                                                         
                                                                         
                                                                         
                                                                         
                                                                         
-                                                      												      
+                                                                                    
           
                                                                         
-                                                      												      
+                                                                                    
           
                                                                         
-                  												                
+                                                          
                                                                         
                                                                         
                                                                         
                                                                         
-                                                      												      
+                                                                                    
           
                                                                         
-                  										
-			</div>
-		</div>
-	
-		
+                                      
+      </div>
+    </div>
+  
+    
          </li>
                     <li cat_id="3" class="odd">            
-			<div class="class">	
-				<br>              <h4><a href="http://www.jstimes.com/shop/cate-3-0-0-0-0-0-0-0.html">智能家居类</a></h4>
+      <div class="class"> 
+        <br>              <h4><a href="http://www.jstimes.com/shop/cate-3-0-0-0-0-0-0-0.html">智能家居类</a></h4>
                             <span class="ico"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/category-pic-3.jpg"></span>
               
               <span class="recommend-class">
-			  <!--
+        <!--
                                           <a href="http://www.jstimes.com/shop/cate-7350-0-0-0-0-0-0-0.html" title="智能家居">智能家居</a>
                             <a href="http://www.jstimes.com/shop/cate-7353-0-0-0-0-0-0-0.html" title="新风系统">新风系统</a>
                             <a href="http://www.jstimes.com/shop/cate-5030-0-0-0-0-0-0-0.html" title="供暧">供暧</a>
                             <a href="http://www.jstimes.com/shop/cate-5346-0-0-0-0-0-0-0.html" title="保险柜">保险柜</a>
                              
-			  -->
+        -->
             </span><span class="arrow"></span> </div>
-	<!--下2行原版：div class="sub-class" cat_menu_id="3">-->
-		<div class="sub-class" cat_menu_id="3">
+  <!--下2行原版：div class="sub-class" cat_menu_id="3">-->
+    <div class="sub-class" cat_menu_id="3">
             <div class="sub-class-left">
-			 <dl>
-			 </dl>
-				
+       <dl>
+       </dl>
+        
                                           <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-7350-0-0-2-2-0-0-0.html">智能家居</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-543-cate_id-5354-b_id-543-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">香港恒信</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-566-cate_id-7350-b_id-566-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">物联智能家居</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-543-cate_id-5354-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">香港恒信</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-566-cate_id-7350-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">物联智能家居</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-7353-0-0-2-2-0-0-0.html">新风系统</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-543-cate_id-5354-b_id-543-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">香港恒信</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-566-cate_id-7350-b_id-566-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">物联智能家居</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-543-cate_id-5354-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">香港恒信</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-566-cate_id-7350-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">物联智能家居</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5030-0-0-2-2-0-0-0.html">供暧</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-492-cate_id-5030-b_id-492-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">祥和暖通</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-519-cate_id-5030-b_id-519-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">品质空间</a>
@@ -856,9 +860,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-477-cate_id-5030-b_id-477-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">菲斯曼</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-489-cate_id-7030-b_id-489-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">格力</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-518-cate_id-7030-b_id-518-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">开利</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-492-cate_id-5030-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">祥和暖通</a>
@@ -869,196 +873,196 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-489-cate_id-7030-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">格力</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-518-cate_id-7030-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">开利</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5346-0-0-2-2-0-0-0.html">保险柜</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-530-cate_id-5346-b_id-530-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">恩尔</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-472-cate_id-5346-b_id-472-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">永发</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-458-cate_id-5346-b_id-458-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">康华</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-530-cate_id-5346-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">恩尔</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-472-cate_id-5346-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">永发</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-458-cate_id-5346-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">康华</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                                        </div>
-			
-			<div class="sub-class-right">
-		        <dt>
+      
+      <div class="sub-class-right">
+            <dt>
                   <h1>推荐品牌：</h1>
                 </dt>
-			    				                
+                                  
                                                                         
-                  												                
+                                                          
                                                                         
-                  												                
+                                                          
                                                                         
                                                                         
                                                                         
-                                                      												      
+                                                                                    
           
                                                                         
-                                                      										
-			</div>
-		</div>
-	
-		
+                                                                          
+      </div>
+    </div>
+  
+    
          </li>
                     <li cat_id="5" class="even">            
-			<div class="class">	
-				<br>              <h4><a href="http://www.jstimes.com/shop/cate-5-0-0-0-0-0-0-0.html">家装施工类</a></h4>
+      <div class="class"> 
+        <br>              <h4><a href="http://www.jstimes.com/shop/cate-5-0-0-0-0-0-0-0.html">家装施工类</a></h4>
                             <span class="ico"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/category-pic-5.jpg"></span>
               
               <span class="recommend-class">
-			  <!--
+        <!--
                                           <a href="http://www.jstimes.com/shop/cate-7342-0-0-0-0-0-0-0.html" title="家装公司">家装公司</a>
                             <a href="http://www.jstimes.com/shop/cate-7343-0-0-0-0-0-0-0.html" title="设计公司">设计公司</a>
                             <a href="http://www.jstimes.com/shop/cate-7344-0-0-0-0-0-0-0.html" title="施工单位">施工单位</a>
                             <a href="http://www.jstimes.com/shop/cate-7345-0-0-0-0-0-0-0.html" title="监理公司">监理公司</a>
                              
-			  -->
+        -->
             </span><span class="arrow"></span> </div>
-	<!--下2行原版：div class="sub-class" cat_menu_id="5">-->
-		<div class="sub-class" cat_menu_id="5">
+  <!--下2行原版：div class="sub-class" cat_menu_id="5">-->
+    <div class="sub-class" cat_menu_id="5">
             <div class="sub-class-left">
-			 <dl>
-			 </dl>
-				
+       <dl>
+       </dl>
+        
                                           <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-7342-0-0-2-2-0-0-0.html">家装公司</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-557-cate_id-7342-b_id-557-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">广东唯美装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-558-cate_id-7342-b_id-558-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">广东领南装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-564-cate_id-7344-b_id-564-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">华旗供应链</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-557-cate_id-7342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">广东唯美装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-558-cate_id-7342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">广东领南装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-564-cate_id-7344-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">华旗供应链</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-7343-0-0-2-2-0-0-0.html">设计公司</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-557-cate_id-7342-b_id-557-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">广东唯美装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-558-cate_id-7342-b_id-558-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">广东领南装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-564-cate_id-7344-b_id-564-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">华旗供应链</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-557-cate_id-7342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">广东唯美装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-558-cate_id-7342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">广东领南装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-564-cate_id-7344-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">华旗供应链</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-7344-0-0-2-2-0-0-0.html">施工单位</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-557-cate_id-7342-b_id-557-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">广东唯美装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-558-cate_id-7342-b_id-558-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">广东领南装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-564-cate_id-7344-b_id-564-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">华旗供应链</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-557-cate_id-7342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">广东唯美装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-558-cate_id-7342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">广东领南装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-564-cate_id-7344-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">华旗供应链</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                             <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-7345-0-0-2-2-0-0-0.html">监理公司</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-557-cate_id-7342-b_id-557-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">广东唯美装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-558-cate_id-7342-b_id-558-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">广东领南装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-564-cate_id-7344-b_id-564-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">华旗供应链</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-557-cate_id-7342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">广东唯美装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-558-cate_id-7342-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">广东领南装饰公司</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-564-cate_id-7344-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">华旗供应链</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                                        </div>
-			
-			<div class="sub-class-right">
-		        <dt>
+      
+      <div class="sub-class-right">
+            <dt>
                   <h1>推荐品牌：</h1>
                 </dt>
-			    				                
+                                  
                                                                         
-                                                      												      
+                                                                                    
           
                                                                         
-                                                      												      
+                                                                                    
           
                                                                         
-                                                      												      
+                                                                                    
           
                                                                         
-                                                      										
-			</div>
-		</div>
-	
-		
+                                                                          
+      </div>
+    </div>
+  
+    
          </li>
                     <li cat_id="4" class="odd">            
-			<div class="class">	
-				<br>              <h4><a href="http://www.jstimes.com/shop/cate-4-0-0-0-0-0-0-0.html">家饰其他类</a></h4>
+      <div class="class"> 
+        <br>              <h4><a href="http://www.jstimes.com/shop/cate-4-0-0-0-0-0-0-0.html">家饰其他类</a></h4>
                             <span class="ico"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/category-pic-4.jpg"></span>
               
               <span class="recommend-class">
-			  <!--
+        <!--
                                           <a href="http://www.jstimes.com/shop/cate-5345-0-0-0-0-0-0-0.html" title="窗帘墙纸">窗帘墙纸</a>
                              
-			  -->
+        -->
             </span><span class="arrow"></span> </div>
-	<!--下2行原版：div class="sub-class" cat_menu_id="4">-->
-		<div class="sub-class" cat_menu_id="4">
+  <!--下2行原版：div class="sub-class" cat_menu_id="4">-->
+    <div class="sub-class" cat_menu_id="4">
             <div class="sub-class-left">
-			 <dl>
-			 </dl>
-				
+       <dl>
+       </dl>
+        
                                           <dl>
                 <dt>
                   <h3><a href="http://www.jstimes.com/shop/cate-5345-0-0-2-2-0-0-0.html">窗帘墙纸</a></h3>
                 </dt>
-                			                  <dd class="brands-class">
+                                        <dd class="brands-class">
                  <!-- <h5>品牌：</h5>-->
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-565-cate_id-5345-b_id-565-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">昕佳居</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-568-cate_id-5345-b_id-568-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">亚皇</a>
@@ -1069,9 +1073,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-527-cate_id-5345-b_id-527-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">宜兰领秀</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-486-cate_id-5345-b_id-486-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">玉兰</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-529-cate_id-5345-b_id-529-a_id-0-key-2-order-2-type-0-area_id-0-curpage-0.html">志海</a>
-                                    				  <a href="http://www.jstimes.com/shop/brand.html">更多…</a>					  
+                                              <a href="http://www.jstimes.com/shop/brand.html">更多…</a>            
                 </dd>
-								<!--
+                <!--
                                 <dd class="brands-class">
                   <h5>品牌：</h5>
                                       <a href="http://www.jstimes.com/shop/brand-list-brand-565-cate_id-5345-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">昕佳居</a>
@@ -1084,39 +1088,39 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-486-cate_id-5345-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">玉兰</a>
                                                         <a href="http://www.jstimes.com/shop/brand-list-brand-529-cate_id-5345-b_id-0-a_id-0-key-0-order-0-type-0-area_id-0-curpage-0.html">志海</a>
                                                     </dd>
-                				-->
+                        -->
               </dl>
                                        </div>
-			
-			<div class="sub-class-right">
-		        <dt>
+      
+      <div class="sub-class-right">
+            <dt>
                   <h1>推荐品牌：</h1>
                 </dt>
-			    				                
+                                  
                                                                         
                                                                         
                                                                         
                                                                         
-                                                      										
-			</div>
-		</div>
-	
-		
+                                                                          
+      </div>
+    </div>
+  
+    
          </li>
                             </ul>
       </div>    </div>
     <ul class="site-menu">
-	
+  
       <li><a href="http://www.jstimes.com/shop">首页</a></li>
-	   <!--
+     <!--
             <li><a href="http://www.jstimes.com/shop/groupbuy-0-0-0-0-0-0.html" > 团购</a></li>
-      	  <li><a href="http://www.jstimes.com/shop/brand.html" > 品牌</a></li>
-	        <li><a href="http://www.jstimes.com/shop/index.php?act=show_designer&op=index" > 设计师中心</a></li>
-	        <li><a href="http://www.jstimes.com/shop/index.php?act=show_xgt&op=index" > 效果图</a></li>
+          <li><a href="http://www.jstimes.com/shop/brand.html" > 品牌</a></li>
+          <li><a href="http://www.jstimes.com/shop/index.php?act=show_designer&op=index" > 设计师中心</a></li>
+          <li><a href="http://www.jstimes.com/shop/index.php?act=show_xgt&op=index" > 效果图</a></li>
             <li><a href="http://www.jstimes.com/shop/integral.html" > 积分中心</a></li>
-      	  -->
-	   
-	  <li><a href="http://www.jstimes.com/shop/index.php?act=zxsjy&amp;op=zxsjy">装修设计院</a>
+          -->
+     
+    <li><a href="http://www.jstimes.com/shop/index.php?act=zxsjy&amp;op=zxsjy">装修设计院</a>
         <ul class="site-menu-ul">
           <li><a href="#">装修案例</a></li>
           <li><a href="#">图片下载</a></li>
@@ -1158,6 +1162,357 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
   </div> 
 </div>
 
+
+<div class="wrapper jl_m1 mt30">
+  <div class="ds_md7_hd2">
+   全部监理
+  </div>
+  <ul class="lh jl_list">
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
+        <h4>李东 8年质检经验<span>木工</span></h4>
+        <div class="sgzx-btn">我要预约TA</div>
+      </a>
+    </li>
+
+
+  </ul>
+  <div class="tc mt50 mb50 ">
+            <div class="pagination">
+              <ul>
+                <li><span>首页</span></li>
+                <li><span>上一页</span></li>
+                <li><span class="currentpage">1</span>
+                </li><li><span>下一页</span></li>
+                <li><span>末页</span></li>
+              </ul>
+            </div>
+          </div>
+</div>
+
+<div class="wrapper mt30 mb30">
+  <div class="ds_md7_hd2">
+   监理师傅推荐
+  </div>
+  <div class="mk-box" style="margin-top: 0;">
+    <div class="box" style="height: 308px;">
+      <dl id="roll">
+        <dd>
+          <a href="#">
+            <div class="hot-pic">
+              <img src="http://www.jstimes.com/data/upload/shop/store/goods/32/32_04711089533931427_240.jpg" class="pic">
+              <div class="hot-pic-new"></div>
+            </div>    
+            <div class="biaoqian">
+              <em class="J_11723 ">￥</em><strong class="J_11723 marg-r-15" >789.00</strong>
+              <label  class="tm-price2">市场价</label>
+              <em class="tm-price2">￥</em>
+              <label class="tm-price2 marg-r-15 tm-price-x">278.00</label>
+            </div>
+            <div class="hot2 hot-title">1马桶AB1226喷射虹吸坐便器新品上市静音节水座便器箭牌马桶</div>
+          </a>
+        </dd>
+        <dd>
+          <a href="#">
+            <div class="hot-pic">
+              <img src="http://www.jstimes.com/data/upload/shop/store/goods/32/32_04711089533931427_240.jpg" class="pic">
+              <div class="hot-pic-new"></div>
+            </div>    
+            <div class="biaoqian">
+              <em class="J_11723 ">￥</em><strong class="J_11723 marg-r-15" >789.00</strong>
+              <label  class="tm-price2">市场价</label>
+              <em class="tm-price2">￥</em>
+              <label class="tm-price2 marg-r-15 tm-price-x">278.00</label>
+            </div>
+            <div class="hot2 hot-title">1马桶AB1226喷射虹吸坐便器新品上市静音节水座便器箭牌马桶</div>
+          </a>
+        </dd>
+        <dd>
+          <a href="#">
+            <div class="hot-pic">
+              <img src="http://www.jstimes.com/data/upload/shop/store/goods/32/32_04711089533931427_240.jpg" class="pic">
+              <div class="hot-pic-new"></div>
+            </div>    
+            <div class="biaoqian">
+              <em class="J_11723 ">￥</em><strong class="J_11723 marg-r-15" >789.00</strong>
+              <label  class="tm-price2">市场价</label>
+              <em class="tm-price2">￥</em>
+              <label class="tm-price2 marg-r-15 tm-price-x">278.00</label>
+            </div>
+            <div class="hot2 hot-title">1马桶AB1226喷射虹吸坐便器新品上市静音节水座便器箭牌马桶</div>
+          </a>
+        </dd>
+        <dd>
+          <a href="#">
+            <div class="hot-pic">
+              <img src="http://www.jstimes.com/data/upload/shop/store/goods/32/32_04711089533931427_240.jpg" class="pic">
+              <div class="hot-pic-new"></div>
+            </div>    
+            <div class="biaoqian">
+              <em class="J_11723 ">￥</em><strong class="J_11723 marg-r-15" >789.00</strong>
+              <label  class="tm-price2">市场价</label>
+              <em class="tm-price2">￥</em>
+              <label class="tm-price2 marg-r-15 tm-price-x">278.00</label>
+            </div>
+            <div class="hot2 hot-title">1马桶AB1226喷射虹吸坐便器新品上市静音节水座便器箭牌马桶</div>
+          </a>
+        </dd>
+        <dd>
+          <a href="#">
+            <div class="hot-pic">
+              <img src="http://www.jstimes.com/data/upload/shop/store/goods/32/32_04711089533931427_240.jpg" class="pic">
+              <div class="hot-pic-new"></div>
+            </div>    
+            <div class="biaoqian">
+              <em class="J_11723 ">￥</em><strong class="J_11723 marg-r-15" >789.00</strong>
+              <label  class="tm-price2">市场价</label>
+              <em class="tm-price2">￥</em>
+              <label class="tm-price2 marg-r-15 tm-price-x">278.00</label>
+            </div>
+            <div class="hot2 hot-title">1马桶AB1226喷射虹吸坐便器新品上市静音节水座便器箭牌马桶</div>
+          </a>
+        </dd>
+        <dd>
+          <a href="#">
+            <div class="hot-pic">
+              <img src="http://www.jstimes.com/data/upload/shop/store/goods/32/32_04711089533931427_240.jpg" class="pic">
+              <div class="hot-pic-new"></div>
+            </div>    
+            <div class="biaoqian">
+              <em class="J_11723 ">￥</em><strong class="J_11723 marg-r-15" >789.00</strong>
+              <label  class="tm-price2">市场价</label>
+              <em class="tm-price2">￥</em>
+              <label class="tm-price2 marg-r-15 tm-price-x">278.00</label>
+            </div>
+            <div class="hot2 hot-title">1马桶AB1226喷射虹吸坐便器新品上市静音节水座便器箭牌马桶</div>
+          </a>
+        </dd>
+        <dd>
+          <a href="#">
+            <div class="hot-pic">
+              <img src="http://www.jstimes.com/data/upload/shop/store/goods/32/32_04711089533931427_240.jpg" class="pic">
+              <div class="hot-pic-new"></div>
+            </div>    
+            <div class="biaoqian">
+              <em class="J_11723 ">￥</em><strong class="J_11723 marg-r-15" >789.00</strong>
+              <label  class="tm-price2">市场价</label>
+              <em class="tm-price2">￥</em>
+              <label class="tm-price2 marg-r-15 tm-price-x">278.00</label>
+            </div>
+            <div class="hot2 hot-title">1马桶AB1226喷射虹吸坐便器新品上市静音节水座便器箭牌马桶</div>
+          </a>
+        </dd>
+
+      </dl>
+    </div>
+    <span class="mk-prev"></span>
+    <span class="mk-next"></span>
+  </div>
+</div>
 
 
 <div id="faq" class="wrapper">
@@ -1226,7 +1581,12 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_005.js"></script>
 
 <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
-
+<script src="js/paomadeng.js"></script>
+<script>
+  $(document).ready(function(){ 
+    $("#roll").parallelRoll({amount : 1});       
+  });  
+</script>
 
 
 <script language="javascript">

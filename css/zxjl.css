@@ -1,4 +1,4 @@
-.ts_linear { -moz-transition:all 0.2s linear; -webkit-transition:all 0.2s linear; -o-transition:all 0.2s linear; transition:all 0.2s linear; }
+﻿.ts_linear { -moz-transition:all 0.2s linear; -webkit-transition:all 0.2s linear; -o-transition:all 0.2s linear; transition:all 0.2s linear; }
 input[type="button"]:hover.ts_linear,
 input[type="submit"]:hover.ts_linear{
 	background: #DD8218;
@@ -154,6 +154,11 @@ input[type="submit"]:hover.ts_linear{
 	color: #989898;
 	border:1px solid #ccc;
 }
+.jl_m3 ul li a:hover {
+	border-color: red;
+	text-decoration: none;
+	color: red;
+}
 .jl_m3 p.beizhu {
 	position: relative;
 	top: -33px;
@@ -220,3 +225,69 @@ i.videoico{
 .jl_m4r .title h1{width: 300px;height: 26px;font-size: 22px;font-family: "Microsoft Yahei";font-weight: bold;display: inline-block;float: left;}
 .jl_m4r .title>a {display: inline-block; width: 160px;height: 32px;font-size: 14px;color: #fff;background-color: #F00;text-align: center;line-height: 31px;float: right;text-decoration: none;}
 .jl_m4r .title>a:hover{background-color: #D60C0C;}
+
+
+
+.video_page_hd {
+	display: block;
+	position: relative;
+	width: 1183px;
+	height: 45px;
+	padding-left: 15px;
+	font-size: 25px;
+	font-family: "Microsoft YaHei";
+	line-height: 45px;
+}
+
+.video_page_hd span {
+	position: absolute;
+	top: 4px;
+	right: 19px;
+	font-size: 14px;
+	color:#ccc;
+}
+.video_page .mod {
+	border:none;
+}
+
+.jl_video {
+	width: 939px;
+	height: 820px;
+	margin: 0 auto;
+	background: url(../images/jianli/video-bg.jpg) no-repeat;
+}
+#a1 {
+	position: relative;
+	width: 888px;
+	height: 515px;
+	margin-top: 26px;
+	margin-left: 22px;
+	top: 25px;
+}
+
+/*video_list*/
+.video910 li {
+	position: relative;
+	height: 320px;
+}
+.video910 .videoico{
+	top: 50%;
+	left: 50%;
+	margin: -78px 0 0 -12px;
+}
+.video910 h4{
+	margin-left: 4px;
+	font-weight: bold;
+}
+
+/* 翻页样式 */
+.pagination { display: inline-block; margin: 0 auto;}
+.pagination ul { font-size: 0; *word-spacing:-1px/*IE6、7*/; }
+.pagination ul li { vertical-align: top; letter-spacing: normal; word-spacing: normal; display: inline-block; margin: 0 0 0 -1px;}
+.pagination ul li { *display: inline/*IE6、7*/; *zoom:1;}
+.pagination li span { font: normal 14px/20px "microsoft yahei"; color: #AAA; background-color: #FAFAFA; text-align: center; display: block; min-width: 20px; padding: 8px; border: 1px solid #E6E6E6; position: relative;/* z-index: 1;*/}
+.pagination li a span , 
+.pagination li a:visited span { color: #005AA0; text-decoration: none; background-color: #FFF; position: relative; /*z-index: 1;*/}
+.pagination li a:hover span, .pagination li a:active span{ color: #FFF; text-decoration: none !important; background-color: #D93600; border-color: #CA3300; position: relative; /*z-index: 9;*/ cursor:pointer;}
+.pagination li a:hover { text-decoration: none;}
+.pagination li span.currentpage { color: #AAA; font-weight: bold; background-color: #FAFAFA; border-color: #E6E6E6; position: relative; z-index: 2;}
