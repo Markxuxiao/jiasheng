@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="zh"><head>
 
@@ -1138,7 +1138,7 @@ $(function(){
 </nav>
 <!-- PublicNavLayout End-->
 
-<div class="ds_index_newhd d831" style="background-color: #F30505;" >
+<div class="ds_index_newhd d831" >
   <div class="wrapper ds_index_hd_p">
      <ul class="rslides" id="rslides_sgmode1">
       <li><a href="javascript:;" target="_blank"><img src="img/temp/21.jpg" ></a></li>
@@ -1157,10 +1157,10 @@ $(function(){
         <h4 class="mb30">已为<span style="color:red;">3598</span>业主申请报名</h4>
         <form action="">
           <div class="form-group">
-            <input class="G_input" type="text" fs="您的称呼">
+            <input class="G_input" type="text" placeholder="您的称呼">
           </div>
           <div class="form-group">
-            <input class="G_input" type="text" fs="手机号码">
+            <input class="G_input" type="text" placeholder="手机号码">
           </div>
           <div class="form-button">
             <input type="submit" class="G_button ts_linear" value="免费申请">
@@ -1318,7 +1318,7 @@ $(function(){
   
 </div> 
 
-<div class="warpper">
+<div class="warpper clearfix">
   <div class="sglisthd lisgongzhang mb15"><h1 style="position:absolute;bottom:6px;font: 24px Microsoft YaHei;">金牌案例分享</h1><a href="#"><span>更多》</span></a></div>
   <div class="ds_md7_main clearfix">
         <ul>
@@ -2570,7 +2570,7 @@ $(function(){
 </div>
 
 
-<div class="warpper mb50">
+<div class="warpper mb50 clearfix">
     <div class="sglisthd lisgongzhang mb15"><h1 style="position:absolute;bottom:6px;font: 24px Microsoft YaHei;">装修问答</h1><a href="#"><span>更多》</span></a>
     </div>
 
@@ -2700,31 +2700,32 @@ $(function(){
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_005.js"></script>
-<script type="text/javascript" src="js/mksg.js"></script>
 <script src="js/paomadeng.js"></script>
 <script src="js/responsiveslides.min.js"></script>
 <script src="js/sco.modal.js"></script>
-<!-- 幻灯模块1 -->
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<!-- 幻灯模块1  -->
 <script>
   // 幻灯的背景色
-  var ds_index_newhd_Bgcolor = ["#FEB250","#53D9E5","#FF0308"];
-  var Bgcolorcont = 0;
+  var ds_index_newhd_Bgcolor = ["#FF0308","#FEB250","#53D9E5"];
+  $(".ds_index_newhd").css({"background-color":ds_index_newhd_Bgcolor[0]});
   $(function(){
     $("#rslides_sgmode1").responsiveSlides({
           manualControls: '#rslides_sgmode1-pager',
           pause: true,
           speed: 0, 
           namespace: "callbacks",
-          before: function () {
-            var cgcolor= ds_index_newhd_Bgcolor[Bgcolorcont];
-              Bgcolorcont++;
-              if (Bgcolorcont==3){ Bgcolorcont = 0; };
-              $(".ds_index_newhd").css({"background-color":cgcolor});
+          after: function (idx) {
+            $(".ds_index_newhd").css({"background-color":ds_index_newhd_Bgcolor[idx]});
           }
         });
   })
+  $(function() {
+   $('input, textarea').placeholder();
+  });
 </script>
-<!-- sss -->
+
+
 
 
 </body></html>

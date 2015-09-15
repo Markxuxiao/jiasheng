@@ -1092,7 +1092,7 @@ skins available:
 	padding-left: 8px;
 	line-height: 18px;
 	margin-bottom: 20px;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 .ds_page_l {
@@ -1118,6 +1118,7 @@ skins available:
 	float: left;
 	padding-left: 5px;
 	padding-top: 5px;
+	width: 165px;
 }
 .ds_page_sjs>p {
 	width:166px;

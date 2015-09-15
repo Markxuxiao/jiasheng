@@ -57,16 +57,16 @@ input[type="submit"]:hover.ts_linear{
 .sg-name {
 	font-weight:bold ;
 	font-size: 18px;
-
 }
 .sg-zhiwei {
 	padding: 1px 4px;
 	color: #fff;
 	margin-left: 10px;
 	background-color: #FB8D0D;
-	-moz-border-radius: 5px;      
-    -webkit-border-radius: 5px;   
-    border-radius:5px; 
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+	display: inline-block;
 }
 .sg-zhiwei-2 {
   padding: 1px 4px;
@@ -808,10 +808,8 @@ input[type="submit"]:hover.ts_linear{
 	border:  1px solid #DBD7D6;
 }
 .mod2 {
-
-	width: 1119px;
-	padding: 40px;
-
+width: 1119px;
+/* padding: 40px; */
 }
 
 .modli2 {
@@ -1647,7 +1645,7 @@ input.btn_green {
 	height: 350px;
 	float:left;
 	margin-right:10px;
-			}
+	}
 .box span{position: absolute;bottom: 40%; display: inline-block;width: 50px;text-align: center;cursor: pointer;background: red;z-index: 90;color: #fff;}
 .box .next{right: 0;}
 .mk-box {
@@ -2013,6 +2011,9 @@ border-radius: 4px;
 	height: 100%;
 }
 #rslides_sgmode1-pager .rslides_here{
+	background: #ccc;
+}
+#rslides_sgmode1-pager .callbacks_here{
 	background: #ccc;
 }
 
