@@ -1,3 +1,31 @@
+<?php
+  header("Content-type: text/html; charset=utf-8");
+  define('HOST', 'localhost');
+  define('USERNAME', 'tkadmin');
+  define('PASSWORD', 'tkadmin');
+?>
+<?php
+  if(!($con = mysql_connect(HOST, USERNAME, PASSWORD))){
+    echo mysql_error();
+  }
+  if(!mysql_select_db('tk')){
+    echo mysql_error();
+  }
+  if(!mysql_query('set names utf8')){
+    echo mysql_error();
+  }
+?>
+<?php 
+
+  $sql = 'SELECT * FROM `tm` WHERE leixing = 1 LIMIT 0, 30 ';
+  $query = mysql_query($sql);
+  if($query&&mysql_num_rows($query)){
+    while($row = mysql_fetch_assoc($query)){
+      $data[] = $row;
+    }
+  }
+  shuffle($data);
+?>
 <!DOCTYPE html>
 <html lang="zh"><head>
 
@@ -21,6 +49,7 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/home_login.css" rel="stylesheet" type="text/css">
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/article-list.css">
+<link rel="stylesheet" type="text/css" href="css/amazeui-form.css">
 
   <!--[if IE 7]>
     <link rel="stylesheet" href="http://www.jstimes.com/shop/resource/font/font-awesome/css/font-awesome-ie7.min.css">
@@ -1153,7 +1182,7 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <div class="wrapper">
   <div class="nav-wrap">
       <div class="w">
-          <div class="breadcrumb"><a href="#">首页</a>&nbsp;&gt;&nbsp;<a href="#">嘉盛学院</a>&nbsp;&gt;&nbsp;<a href="#">学院课件</a></div>
+          <div class="breadcrumb"><a href="#">首页</a>&nbsp;&gt;&nbsp;<a href="#">嘉盛学院</a>&nbsp;&gt;&nbsp;<a href="#">学院问卷</a></div>
       </div>
   </div>
   <div class="main">
@@ -1163,48 +1192,317 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
             <h2>家盛学院</h2>
             <ul>
               <!-- <li ><a href="#" >学院课程</a></li> -->
-              <li class="current"><a href="#" >学院课件</a></li>
-              <li><a href="#" >学院问卷</a></li>
+              <li ><a href="#" >学院课件</a></li>
+              <li class="current"><a href="#" >学院问卷</a></li>
             </ul>
           </div>
           
       </div>
-      <div class="right">
-        <h1 class="xykc_hd YaHei">学院课件</h1>
-        <div class="kejianlist">
-          <ul class="clearfix">
-            <li>
-              <a href="#">
-                <h1>东鹏瓷砖销售知识课件<span class="time">2015-9-20</span></h1>
-              </a>
-              <div class="shaoma">
-                <img src="http://www.jstimes.com/data/upload/xgt/designer/04914182128506010.jpg" alt="课件详情二维码">
-                <h3>扫二维码查看课件</h3>
+      <div class="right mb50">
+        <h1 class="xykc_hd YaHei">东鹏瓷砖销售知识问卷</h1>
+        <div class="wenda-form mt20">
+          <form class="am-form" action="some.php" method="post">
+            <fieldset>
+              <?php
+                if(empty($data)){ 
+                  echo "当前没有文章，请管理员在后台添加文章";
+                }else{
+                  foreach($data as $value){
+              ?>
+              <div class="am-form-group">
+                <label class="timu"><?php echo $value['biaoti']?></label>
+                <input type="text" name="<?php echo "id".$value['id']?>" value="<?php echo $value['id']?>" >
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="<?php echo "da".$value['id']?>" value="A" > A. <?php echo $value['daan']?>
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="<?php echo "da".$value['id']?>" value="B" > B. <?php echo $value['qitab']?>
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="<?php echo "da".$value['id']?>" value="C" > C. <?php echo $value['qitac']?>
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="<?php echo "da".$value['id']?>" value="D" > C. <?php echo $value['qitad']?>
+                  </label>
+                </div>
               </div>
-              <div class="shaoma">
-                <img src="http://www.jstimes.com/data/upload/xgt/designer/04929511639255101.jpg" alt="答题二维码">
-                <h3>扫二维码手机答题</h3>
-              </div>
-            </li>
-        
-          </ul>
-        </div>
-          
+              <?php
+                  }
+                }
+              ?>
+             
 
-<!--           <div class="paginbox">
-            <div class="pagin">
-              <span class="current">1</span>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">5</a>
-              <a href="#">6</a>
-              <a href="#">7</a>
-              <a href="#">8</a>
-              <em>……</em>
-              <a class="next" href="#">下一页</a>
-            </div>
-          </div> -->
+              
+              
+              
+<!-- 
+              <div class="am-form-group">
+                <label class="timu">14.东鹏采用的是（）做原料，东鹏原料价格是普通铝原料的两倍，硬度也高两倍、寿命长两倍。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">15.东鹏粉料细度是（）目，粉料比奶粉还细，这样压制出来的砖坯更密实，也就更耐磨、更防污。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">16.东鹏水晶瓷采用的是（）釉料，氧化锌能充分发色，所以东鹏水晶瓷看起来层次更清晰，线条更细腻，更加透亮，而且是烧熟的釉料，不会有小针孔、小气泡，防污性能更好。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">17.东鹏一块800的砖，面釉比普通砖要多用（）克。东鹏的砖釉面层更厚，更耐磨。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">18.东鹏水晶层含有（）的氧化锌和氧化钡，是普通厂家的两倍，氧化锌和氧化钡的含量越高，砖的通透感越强，表面更加油光发亮。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">19.同样长的窑炉，东鹏的产量只有别人的（），是因为东鹏的烧制时间特别长。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">20.东鹏800的微晶砖比普通砖多烧（）小时。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">21.东鹏的砖能（），像瓷碗一样密实，硬度高、耐磨。而且晶体层与底料紧密结合，不脱落、不崩裂。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">22.实木地板一般都是多层的，多层粘合都需要胶水，而且铺贴也需要胶水，胶水里都有（），瓷木地板是用水泥铺贴，所以更环保。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">23.瓷木地板比实木地板更（），在南方潮湿不用担心木地板吸水发胀起拱，在北方不用担心地热膨胀起拱。不怕虫、不怕水、不怕霉！</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">24.瓷木地板用（）填缝，但实木地板的缝不能填充，容易藏污纳垢，滋生细菌，所以瓷木地板更能保护家人健康。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">25.东鹏的仿古砖都是（）设计的，没有传统仿古砖的压抑沉闷，是超现代的时尚简约，引领仿古砖的未来潮流。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">26.东鹏仿古砖摸起来有金属感，颜色纯正细腻，是因为采用（）釉料。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">27.东鹏仿古砖耐磨性能达到（）级，普通釉料的砖只能达到3级，寿命长、更耐磨！</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">28.东鹏一块450*300的瓷片，釉料比别人多（），釉料越厚光泽度越高，更耐磨，更防污。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">29.您看（引导顾客看白炽灯的照影），光影是（），如果表面平整度不够，光影是弯曲，而且有锯齿。平整度越高，越好铺贴，也更整齐漂亮。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">30.东鹏的烧制时间要长，烧得越久就更密实，吸水率比普通的瓷片低 （），吸水率越低防污能力就越强，越好打理。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">31.东鹏瓷砖采用（）色喷墨打印机，普通只有4色。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">32.东鹏瓷砖采用（），可以刻出发丝一样的线条，而且不断线，更加清晰、逼真、立体。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">33.我们这里还有一款获得国家发明专利的健康宝，能除（）除异味。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">34.健康宝和壁纸一样好看，又比（）更好用，很神奇。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">35.健康宝材质看起来像瓷砖，纹理看起来像壁纸，它是用海底的（）和天然粘土做成的。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">36.健康宝的密度只有普通瓷砖的（）。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">37.健康宝（）的纳米级微孔，有强大的吸附作用。比方说装修后的甲醛、吸烟后的烟雾，还有房间里的其它异味，都能去除。做实验（氨水实验）</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">38.如果室内的湿度达到80%，就会有很多螨虫、霉菌产生。健康宝能吸附多余的湿气，将湿度控制在（）之间，不会让衣柜、衣物有霉变。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">39.健康宝的厚度是（）MM，能起到保温作用，而且不会老化褪色，使用年限长，不像墙纸，用了3、5年就发黄、发霉还得重新换。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">40.东鹏有（）多年的历史，是靠品质发展到今天的，买产品首先要选放心的品牌是吧？老品牌的品质最可靠，技术最雄厚，买着放心，看着开心，用着舒心！</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">41.产品好不好，要看用的人多不多，东鹏连续几年荣获瓷砖（），您说东鹏质量好不好？您看，这是国家统计局的数据。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">42.东鹏拥有行业唯一的（）。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">43.东鹏目前已经拥有（）项专利。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">44.东鹏是行业（）能力最强的企业。幸福是自己创造的好，产品是原创的好！</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">45.客厅下地很简单，（）最有现代感；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">46.客厅下地很简单，（）是首选；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">47. 过道入户是（），主人品位要体现；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">48.过道入户：（）外加波打线，主人品位要体现；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">49.客厅 （）配天圆；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">50. 餐厅大厅（）；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">51.别墅波打（）线；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">52. 通透瓷砖水晶灯，上墙需要（）；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">53.浅色（）要造型，各个角度亮晶晶；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">54.深色整体（）造型，浑然一体有点睛；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">55.干湿（）主客卫；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">56.湿区（）做防备；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">57.马桶花洒浴缸背，没有焦点太乏味，做个（）有品位；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">58.深浅双色（）配；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">59.一体同色（）缀；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">60.（）地漏没异味，一切为四才对位；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">61. 厨房焦点是（），吊柜台面有空位，发挥想象做点缀；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">62. 三两花片不累赘，欧式（）角花配；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">63.三两花片不累赘，现代 （）来配对；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">64. 卧室淡雅要自然，（）纹理最心安，铺贴方式风格现，少做造型不凌乱；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">65.书房营造文化感，（）纹韵味是首选；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">66.书房营造文化感，（）色沉静心不散；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">67.书房营造文化感，（）色活跃思维宽；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">68.工字（）铺空间，配上地花做围边；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">69.除湿静音护空间，健康宝要（）嵌；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">70.景观阳台要夸张，休闲阳台要清爽，阳台要（）；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">71.（）客厅；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">72.（）厨房；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">73.效果全在（），美好寓意幸福长；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">74.一匹好马配好鞍，好砖也要好配件，转角踢脚台边线，（）点缀是必选；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">75深配浅，（）搭，无极色配都无暇；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">76.       （）色中显优雅，选准主色用料大，六三一分黄金。</label>
+                <input type="text">
+              </div>
+   -->
+
+            
+              
+              <p><button  class="tijiao">提交答卷</button></p>
+            </fieldset>
+          </form>
+        </div>
       </div>
   </div>
   <span class="clr"></span>

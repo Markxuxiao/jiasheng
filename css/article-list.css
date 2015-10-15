@@ -154,6 +154,8 @@
 	border:1px solid #ccc;
 	text-align: center;
 	padding: 5px;
+	*zoom:1;
+	*display: inline;
 }
 .kejianlist .shaoma h3 {
 	margin-top: 0px;
@@ -202,10 +204,13 @@
 .wenda-form .tijiao {
 	width: 200px;
 	height: 30px;
-	color: #fff;
-	background-color: red;
-	border: none;
+	color: #FFF;
+	background-color: #F00;
+	border: medium none;
 	font-size: 14px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
 }
 .wenda-form .tijiao:hover {
 	background-color:#FB2A2A;
