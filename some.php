@@ -3,7 +3,7 @@ $d=array();
 $i= 1;
 
 $k="";
-for (;$i<20;$i++){
+for (;empty($_POST[$id]);$i++){
 	$id="id".$i;
 	$ke="da".$i;
 	$k=$_POST[$id];

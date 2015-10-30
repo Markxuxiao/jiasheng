@@ -1,0 +1,42 @@
+
+.color-red {
+	color:red;
+}
+.cvip-more {
+	font-size: 14px;
+	font-weight: normal;
+	float: right;
+	*margin-top: -25px;
+}
+
+.shopingcar ul {
+	margin-right: -20px;
+}
+.shopingcar .item {
+	width: 224px;
+	height: 272px;
+	margin-right: 20px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.shopingcar-goods img {
+	height: 215px;
+	width: 223px;
+}
+.shopingcar-goods-info h1{
+	width: 100%;
+	height: 21px;
+	font-size: 16px;
+	overflow: hidden;
+	margin: 5px 0;
+}
+.shopingcar-goods-price .sale-price {
+	font-size: 22px;
+	float: left;
+	color: red;
+}
+.shopingcar-goods-price .market-price {
+	font-size: 14px;
+	float: right;
+	text-decoration: line-through;
+}
