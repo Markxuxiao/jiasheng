@@ -2,7 +2,7 @@
 .main{width: 1200px;margin:40px auto;font-family:"微软雅黑";}
 .left{float:left;width:240px;overflow:hidden;}
 .right{float:right;width: 930px;overflow:inherit;}
-.mb20{margin-bottom:20px;border:solid 1px #eee;}
+.mb20{margin-bottom:20px;border: solid 1px #bbb;}
 .mb20 h3{height:40px;padding-left:20px;font:normal 18px/40px "微软雅黑";color:#333;}
 
 .allNav{border-top:none;}
@@ -122,4 +122,96 @@
 .allNav.xykecheng h2{
 	color: #fff;
 	background: red;
+}
+
+/*kejianlist*/
+.kejianlist ul {
+	width: 100%;
+}
+.kejianlist li {
+	border-bottom: 1px dotted #d3d3d3;
+	margin-top: 10px;
+}
+.kejianlist li img {
+	width: 150px;
+	height: 150px;
+}
+.kejianlist li h1{
+	width: 80%;
+	height: 24px;
+	overflow: hidden;
+	font:18px "Microsoft YaHei";
+	font-weight: bold;
+}
+.kejianlist li h1 .time {
+	font-size: 12px;
+	color: #ccc;
+	margin-left: 20px;
+}
+.kejianlist .shaoma {
+	display: inline-block;
+	margin: 10px 20px 10px 0;
+	border:1px solid #ccc;
+	text-align: center;
+	padding: 5px;
+	*zoom:1;
+	*display: inline;
+}
+.kejianlist .shaoma h3 {
+	margin-top: 0px;
+}
+
+/*shangxueyuanKejianpage.html*/
+#dati-btn {text-align: center;}
+#dati-btn .btn {
+	display: block;
+	width: 200px;
+	height: 35px;
+	margin: 10px auto;
+	background-color: red;
+	color: #fff;
+	font-size: 18px;
+	line-height: 35px;
+}
+#dati-btn .btn:hover {
+	background-color:#FB2A2A;
+}
+
+#dati-btn .shaoma {
+	width: 198px;
+	margin: 0 auto;
+	border:1px solid #ccc;
+	text-align: center;
+	padding: 5px;
+}
+#dati-btn .shaoma img {
+	width: 150px;
+	height: 150px;
+}
+
+/*shangxueyuanKejiandati.html*/
+.wenda-form .am-form input[type="text"] {
+	width: 33%;
+	padding: 0.5em;
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.wenda-form .timu {
+	font-size: 16px;
+}
+
+.wenda-form .tijiao {
+	width: 200px;
+	height: 30px;
+	color: #FFF;
+	background-color: #F00;
+	border: medium none;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+}
+.wenda-form .tijiao:hover {
+	background-color:#FB2A2A;
 }

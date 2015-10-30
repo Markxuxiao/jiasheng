@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,8 +20,9 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/home_header.css" rel="stylesheet" type="text/css">
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/home_login.css" rel="stylesheet" type="text/css">
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/zxsjs.css">
-<link rel="stylesheet" type="text/css" href="css/zxjl.css">
+<link rel="stylesheet" type="text/css" href="css/article-list.css">
+<link rel="stylesheet" type="text/css" href="css/amazeui-form.css">
+
   <!--[if IE 7]>
     <link rel="stylesheet" href="http://www.jstimes.com/shop/resource/font/font-awesome/css/font-awesome-ie7.min.css">
   <![endif]-->
@@ -129,8 +130,22 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
     	-->
 	<span class="seller-login"><a href="http://www.jstimes.com/shop/index.php?act=seller_login&amp;op=show_login" target="_blank" title="登录商家管理中心"><i class="icon-signin"></i>商家管理中心</a></span> <em> <a href="http://www.jstimes.com/shop/index.php?act=store_joinin&amp;op=index" title="招商入驻" target="_blank">&nbsp;|&nbsp;招商入驻</a></em></div>
 	
-
+    <div class="user-login">
+	<!-- -->
+	<dl>
+	<dt>
+		<!--
+      	  
+	  您好      <a href="http://www.jstimes.com/shop" title="首页" alt="首页">家盛时代-首页-国际建材旗帜-武汉建材、家盛时代建材广场</a>
+	  -->
+       <em><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=index">您好,请点击[登录</a>]</em>
+        <em>[<a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register">注册</a>]</em>
+    	</dt>
+	</dl>
+	
+	</div>
     <div class="quick-menu">
+	
       <dl>
         <dt><a href="http://www.jstimes.com/shop/index.php?act=member_order">我的订单</a><i></i></dt>
         <dd>
@@ -150,12 +165,13 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
           </ul>
         </dd>
       </dl>
-	    <dl>
+	  <dl>
         <dt>设计师中心<i></i></dt>
         <dd>
           <ul>
             <li><a href="http://www.jstimes.com/shop/index.php?act=designer_joinin&amp;op=index" target="_blank">设计师入驻</a></li>
-			       <li><a href="http://www.jstimes.com/shop/index.php?act=designer_login&amp;op=show_login" target="_blank">设计师登录</a></li>
+			<li><a href="http://www.jstimes.com/shop/index.php?act=designer_login&amp;op=show_login" target="_blank">设计师登录</a></li>
+			
           </ul>
        </dd>
       </dl>
@@ -169,27 +185,18 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
           </ul>
         </dd>
       </dl>
-      <dl>
+	  <dl>
         <dt>内部系统<i></i></dt>
         <dd>
           <ul>
             <li><a href="http://www.jstimes.com:7890/oa" target="_blank">内部OA</a></li>
-            <li><a href="http://www.jstimes.com/shop/index.php?act=seller_login&amp;op=show_login" target="_blank">在线开单</a></li>
-            <li><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register_replace" target="_blank">代客户注册</a></li>	
+			<li><a href="http://www.jstimes.com/shop/index.php?act=seller_login&amp;op=show_login" target="_blank">在线开单</a></li>
+			<li><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register_replace" target="_blank">代客户注册</a></li>	
+			
           </ul>
        </dd>
       </dl>
-    </div>
-    <div class="user-login" style="float:right">
-      <dl>
-      <dt>
-        <!--您好      <a href="http://www.jstimes.com/shop" title="首页" alt="首页">家盛时代-首页-国际建材旗帜-武汉建材、家盛时代建材广场</a>-->
-           <em><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=index">您好,请点击[登录</a>]</em>
-            <em>[<a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register">注册</a>]</em>
-          </dt>
-      </dl>
-     </div>
-
+          </div>
   </div>
 </div>
 <script type="text/javascript">
@@ -1108,21 +1115,18 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
     <ul class="site-menu">
 	
       <li><a href="http://www.jstimes.com/shop">首页</a></li>
-	   <!--
+	  <!--
             <li><a href="http://www.jstimes.com/shop/groupbuy-0-0-0-0-0-0.html" > 团购</a></li>
       	  <li><a href="http://www.jstimes.com/shop/brand.html" > 品牌</a></li>
+	  
 	        <li><a href="http://www.jstimes.com/shop/index.php?act=show_designer&op=index" > 设计师中心</a></li>
+      	  
 	        <li><a href="http://www.jstimes.com/shop/index.php?act=show_xgt&op=index" > 效果图</a></li>
+        
             <li><a href="http://www.jstimes.com/shop/integral.html" > 积分中心</a></li>
       	  -->
 	   
-	  <li><a href="http://www.jstimes.com/shop/index.php?act=zxsjy&amp;op=zxsjy">装修设计院</a>
-        <ul class="site-menu-ul">
-          <li><a href="#">装修案例</a></li>
-          <li><a href="#">图片下载</a></li>
-          <li><a href="#">装修设计师</a></li>
-        </ul>
-    </li>
+	  <li><a href="http://www.jstimes.com/shop/index.php?act=zxsjy&amp;op=zxsjy">装修设计院</a></li>
       <li><a target="_blank" href="http://www.jstimes.com/shop/cate-5027-0-0-2-2-0-0-0.html">家居商城</a></li>
       <li><a target="_blank" href="http://www.jstimes.com/shop/">装修施工队</a></li>
       <li><a href="http://www.jstimes.com/shop/index.php?act=huodong_sp&amp;op=gylyfw">供应链与服务</a></li>
@@ -1134,519 +1138,631 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
   </div>
 </nav>
 <!-- PublicNavLayout End-->
-<div class="ds_index_newhd d831 d92">
-  <div class="wrapper ds_index_hd_p">
-    <div class="ds_index_hd_img3">&nbsp;</div>
-    <div class="ds_index_hd_form">
-      <div class="sjsq_form">
-        <h1>快速填表帮您省心省力装修</h1>
-        <h4 class="mb30">已为<span style="color:red;">6878</span>业主提供专业监理服务</h4>
-        <form action="">
-          <div class="form-group">
-            <input class="G_input" type="text" placeholder="您的称呼">
-          </div>
-          <div class="form-group">
-            <input class="G_input" type="text" placeholder="手机号码">
-          </div>
-          <div class="form-button">
-            <input type="submit" class="G_button ts_linear" value="免费申请报名">
-          </div>
-        </form>
-        <p class="mt15">我们承诺：家盛时代提供该项服务，绝不会乱收取任何费用，为了您的利益以及我们的口碑，您的隐私将被严格保密</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+  <div class="nav-wrap">
+      <div class="w">
+          <div class="breadcrumb"><a href="#">首页</a>&nbsp;&gt;&nbsp;<a href="#">嘉盛学院</a>&nbsp;&gt;&nbsp;<a href="#">学院问卷</a></div>
       </div>
-    </div>
-  </div> 
-</div>
-<!-- 12道装修节点 -->
-<div class="wrapper zxjd12">
-  <h1 class="h1_head_ct mt50 mb50">12道装修节点监理</h1>
-  <div class="jiedian_dh">
-    <div class="jiedian_hr">&nbsp;</div>
-    <ul class="jiedian_ul">
-      <li>
-        <a href="#">
-          <h6>1</h6>
-          <div class="jiedian_img"></div>
-          <p>施工合同</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>2</h6>
-          <div class="jiedian_img"></div>
-          <p>准备开始</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>3</h6>
-          <div class="jiedian_img"></div>
-          <p>材料进场</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>4</h6>
-          <div class="jiedian_img"></div>
-          <p>隐蔽工程</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>5</h6>
-          <div class="jiedian_img"></div>
-          <p>水路、电路改造</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>6</h6>
-          <div class="jiedian_img"></div>
-          <p>防水工程及闭水实验</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>7</h6>
-          <div class="jiedian_img"></div>
-          <p>细木工衬底工程</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>8</h6>
-          <div class="jiedian_img"></div>
-          <p>面板、木线实木收口</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>9</h6>
-          <div class="jiedian_img"></div>
-          <p>底漆、面漆H、墙、顶面基础处理</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>10</h6>
-          <div class="jiedian_img"></div>
-          <p>吊顶工程龙骨面板</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>11</h6>
-          <div class="jiedian_img"></div>
-          <p>各部位板块铺贴</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>12</h6>
-          <div class="jiedian_img"></div>
-          <p>工程中期验收</p>
-        </a>
-      </li>
-
-    </ul>
   </div>
-</div>
-<div class="wrapper jl_m2">
-  <div class="ds_md7_main clearfix">
-      <ul>
-        <li>
-          <a href="#" target="_blank">
-            <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-            <h4>标题标题标题标题</h4>
-            <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-            <h4>标题标题标题标题</h4>
-            <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-            <h4>标题标题标题标题</h4>
-            <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-            <h4>标题标题标题标题</h4>
-            <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-
-
-<div class="wrapper jl_m1">
-  <h1 class="h1_head_ct mt50 ">装修监理师推荐</h1>
-  <div class="ld clearfix "><a href="#" class="gengduo">更多>></a></div>
-  <ul class="lh">
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-  </ul>
-</div>
-<div class="wrapper fwlc mt30">
-  <div class="t1">
-    <p>开工前</p>
-    <p>签订监理服务合同</p>
-  </div>
-  <div class="t2">
-    <p>专业监理服务</p>
-    <p>12个节点任选四个</p>
-    <p>推荐：水电、泥木、油漆、竣工</p>
-  </div>
-  <div class="t3">
-    <p>验收完毕</p>
-    <p>出示监理验收报告</p>
-    <p><a href="#">下载验收报告>></a></p>
-  </div>
-</div>
-<div class="wrapper jl_m2">
-  <h1 class="h1_head_ct mt50 mb30">监理师教您验收装修</h1>
-  <div class="ds_md7_main clearfix">
-    <ul>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="wrapper jl_m3 mb20">
-  <ul class="lh">
-    <li>
-      <img src="images/jianli/装修监理首页_r6_c5.gif">
-      <h1>远程监理</h1>
-      <a href="#">点击进入</a>
-    </li>
-    <li>
-      <img src="images/jianli/装修监理首页_r6_c7.gif" >
-      <h1>确认监理节点</h1>
-      <a href="#">点击进入</a>
-    </li>
-    <li>
-      <img src="images/jianli/装修监理首页_r6_c11.gif" >
-      <h1>在线答疑</h1>
-      <a href="#">点击进入</a>
-    </li>
-    <li>
-      <img src="images/jianli/装修监理首页_r6_c15.gif" >
-      <h1>出节点报告</h1>
-      <a href="#">点击进入</a>
-    </li>
-  </ul>
-  <p class="beizhu">注：业主需要在装修房屋内安装网线和监控器</p>
-</div>
-
-<div class="wrapper jl_m4 mt50">
-  <div class="jl_m4l">
-    <h1 class="h1_head_ct mb30">直击现场监理过程</h1>
-    <div class="ds_md7_main clearfix">
-    <ul>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-    </ul> 
-    </div>
-  </div>
-  <div class="jl_m4r">
-    <h1 class="h1_head_ct mb30">监理报告</h1>
-    <div class="mc ">
-        <ul>
-          <li class="title">
-            <span>小区</span>
-            <span>验收阶段</span>
-            <span>工长</span>
-            <span>验收结果</span>
-            <span>监理</span>
-          </li>
-        </ul>
-        <div id="design_box">
-          <div class="tempWrap">
-            <ul >
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>2新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>3新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>4新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
+  <div class="main">
+    
+      <div class="left">
+          <div class="allNav mb20 xykecheng">
+            <h2>家盛学院</h2>
+            <ul>
+              <!-- <li ><a href="#" >学院课程</a></li> -->
+              <li ><a href="#" >学院课件</a></li>
+              <li class="current"><a href="#" >学院问卷</a></li>
             </ul>
           </div>
+          
+      </div>
+      <div class="right mb50">
+        <h1 class="xykc_hd YaHei">东鹏瓷砖销售知识问卷</h1>
+        <div class="wenda-form mt20">
+          <form class="am-form">
+            <fieldset>
+              <div class="am-form-group">
+                <label class="timu">1.东鹏建有最先进、现代化的生产线，清远基地的一条生产线就投资（ ）元。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A. 1亿
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B. 2亿
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C. 3亿
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > C. 3亿
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">2.当别人还是靠工人手工操作的时候，东鹏已经完全实现了生产自动化。瓷砖的品质是靠精益生产与控制，只有最先进的生产线，才能生产出品质最好的产品，在行业内只有东鹏的砖才能叫（ ）砖。先进生产线，带给您的是品质保障。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  2A
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  3A
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  4A
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  5A
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">3.为什么装修师傅都说东鹏砖硬，难切！首先是因为东鹏的砖原料不一样。东鹏采用的是（ ）做原料，铝含量达到（ ），普通砖的铝含量只有15%。高铝原料价格是普通铝原料的两倍，硬度也高（ ）。所以施工师傅都说东鹏砖最难切割！</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  中铝；20%；1.5倍
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  中铝；20%；两倍
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  高铝；21%；1.5倍
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  高铝；21%；两倍
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">4.东鹏对每一车原料都会进行打版检验，测定（ ）的含量，看颜色、看收缩、看白度，还要进行放射性检验。确保每批次原料品质都是一样。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  钛、钾、锡
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  钛、镁、锡
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  铝、钾、钠
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  铝、镁、钠
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">5.普通厂家仅是批次抽检，做不到每车都检，东鹏从（ ）控制质量。所以，东鹏的瓷砖用起来是最放心的。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  源头
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  过程
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  原料
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  结果
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">6.东鹏采用（ ）吨大吨位球磨机，比普通厂家40吨的球磨机球磨力度更大，能磨得更细。同时，采用了高铝球蛋，球蛋硬度更高，重量更重，冲击力更强，磨得更细，达到（ ）目。普通厂家产用的是（ ），易变形，球磨不够精细。东鹏粉料细度和牛奶奶粉的细度一样，这样压制出来的砖坯更密实，也就更耐磨、更防污。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  50吨；400目；低铝球蛋
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  50吨；400目；中铝球蛋
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  60吨；300目；低铝球蛋
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  60吨；300目；中铝球蛋
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">7.东鹏采用高磁性电磁棒吸附铁屑，铁含量低于（ ），确保烧制后的坯体没有黑色杂质，砖体纯净。普通厂家采用普通磁棒除铁，铁含量较高，容易发黑，再用含有放射性的（ ）增白。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  0.1%；氧化锡
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  0.1‰；氧化锡
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  0.1%；氧化锆
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > C.  0.1%；氧化锆
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">8.玻化砖的纹理也是不同颜色的粉料一层层布上去的，布料的管越多，画面就会更丰富。东鹏拥有行业唯一的（ ）管布料系统，普通玻化砖只有（ ）管布料，所以做不出来像亚马逊这种大流纹有张力的玻化砖，也做不出意大利木纹这样细腻的小流纹。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  23；3
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  23；4
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  32；3
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  32；4
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">9.东鹏采用全自动（ ）层干燥窑达到（ ）米，普通干燥窑只有（ ）层，180米长。东鹏干燥窑能让砖坯的水分由内到外排出，水分含量低于（ ），烧制不会出现形变。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  6；360；3；0.6%
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  6；360；3；0.1%
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  5；250；1；0.6%
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  5；250；1；0.1%
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">10.同样240米长的窑炉，东鹏的产量只有别人的（ ）分之一，就是因为东鹏的烧制时间特别长。800的玻化砖需要烧制（ ）分钟，普通只有（ ）分钟</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  2；70；30-40
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  2；80；30-40
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  3；70；40-50
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  3；80；40-50
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">11.东鹏拥有亚洲（ ）的（ ），激光自动控制，砖坯运输储藏过程中不会受到任何损伤，降低残次品率。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="a" value="A" > A.  唯一；自动储坯系统
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="a" value="B" > B.  顶级；自动储坯系统
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="a" value="C" > C.  唯一；自动储运系统
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="a" value="D" > D.  顶级；自动储运系统
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">12.东鹏玻化砖每片砖需要经过粗抛、精抛多道工序，1分钟智能抛光（ ）片，亮度高达（ ）度。普通抛光线是1分钟能抛（ ）片，亮度只有（ ）度，所以都用厚厚的超洁亮涂上去，显得更亮。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  16；60；36；16
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  16；80；38；18
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  18；80；36；16
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  18；60；38；18
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label class="timu">13.东鹏每片砖都经过机器、人工检验两道关口。严格检验尺寸、规格、色差。东鹏是在上（ ）（ ）进行检验，确保真实的颜色。普通厂家是在上（ ）（ ）检验，会出现与真实色彩不同。</label>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="A" > A.  防水剂；前；防水剂；后
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="B" > B.  防水剂；前；防污蜡；后
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="C" > C.  防污蜡；前；防污蜡；后
+                  </label>
+                </div>
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="" value="D" > D.  防污蜡；前；防水剂；后
+                  </label>
+                </div>
+              </div>
+
+              
+              
+              
+
+              <div class="am-form-group">
+                <label class="timu">14.东鹏采用的是（）做原料，东鹏原料价格是普通铝原料的两倍，硬度也高两倍、寿命长两倍。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">15.东鹏粉料细度是（）目，粉料比奶粉还细，这样压制出来的砖坯更密实，也就更耐磨、更防污。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">16.东鹏水晶瓷采用的是（）釉料，氧化锌能充分发色，所以东鹏水晶瓷看起来层次更清晰，线条更细腻，更加透亮，而且是烧熟的釉料，不会有小针孔、小气泡，防污性能更好。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">17.东鹏一块800的砖，面釉比普通砖要多用（）克。东鹏的砖釉面层更厚，更耐磨。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">18.东鹏水晶层含有（）的氧化锌和氧化钡，是普通厂家的两倍，氧化锌和氧化钡的含量越高，砖的通透感越强，表面更加油光发亮。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">19.同样长的窑炉，东鹏的产量只有别人的（），是因为东鹏的烧制时间特别长。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">20.东鹏800的微晶砖比普通砖多烧（）小时。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">21.东鹏的砖能（），像瓷碗一样密实，硬度高、耐磨。而且晶体层与底料紧密结合，不脱落、不崩裂。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">22.实木地板一般都是多层的，多层粘合都需要胶水，而且铺贴也需要胶水，胶水里都有（），瓷木地板是用水泥铺贴，所以更环保。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">23.瓷木地板比实木地板更（），在南方潮湿不用担心木地板吸水发胀起拱，在北方不用担心地热膨胀起拱。不怕虫、不怕水、不怕霉！</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">24.瓷木地板用（）填缝，但实木地板的缝不能填充，容易藏污纳垢，滋生细菌，所以瓷木地板更能保护家人健康。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">25.东鹏的仿古砖都是（）设计的，没有传统仿古砖的压抑沉闷，是超现代的时尚简约，引领仿古砖的未来潮流。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">26.东鹏仿古砖摸起来有金属感，颜色纯正细腻，是因为采用（）釉料。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">27.东鹏仿古砖耐磨性能达到（）级，普通釉料的砖只能达到3级，寿命长、更耐磨！</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">28.东鹏一块450*300的瓷片，釉料比别人多（），釉料越厚光泽度越高，更耐磨，更防污。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">29.您看（引导顾客看白炽灯的照影），光影是（），如果表面平整度不够，光影是弯曲，而且有锯齿。平整度越高，越好铺贴，也更整齐漂亮。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">30.东鹏的烧制时间要长，烧得越久就更密实，吸水率比普通的瓷片低 （），吸水率越低防污能力就越强，越好打理。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">31.东鹏瓷砖采用（）色喷墨打印机，普通只有4色。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">32.东鹏瓷砖采用（），可以刻出发丝一样的线条，而且不断线，更加清晰、逼真、立体。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">33.我们这里还有一款获得国家发明专利的健康宝，能除（）除异味。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">34.健康宝和壁纸一样好看，又比（）更好用，很神奇。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">35.健康宝材质看起来像瓷砖，纹理看起来像壁纸，它是用海底的（）和天然粘土做成的。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">36.健康宝的密度只有普通瓷砖的（）。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">37.健康宝（）的纳米级微孔，有强大的吸附作用。比方说装修后的甲醛、吸烟后的烟雾，还有房间里的其它异味，都能去除。做实验（氨水实验）</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">38.如果室内的湿度达到80%，就会有很多螨虫、霉菌产生。健康宝能吸附多余的湿气，将湿度控制在（）之间，不会让衣柜、衣物有霉变。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">39.健康宝的厚度是（）MM，能起到保温作用，而且不会老化褪色，使用年限长，不像墙纸，用了3、5年就发黄、发霉还得重新换。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">40.东鹏有（）多年的历史，是靠品质发展到今天的，买产品首先要选放心的品牌是吧？老品牌的品质最可靠，技术最雄厚，买着放心，看着开心，用着舒心！</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">41.产品好不好，要看用的人多不多，东鹏连续几年荣获瓷砖（），您说东鹏质量好不好？您看，这是国家统计局的数据。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">42.东鹏拥有行业唯一的（）。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">43.东鹏目前已经拥有（）项专利。</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">44.东鹏是行业（）能力最强的企业。幸福是自己创造的好，产品是原创的好！</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">45.客厅下地很简单，（）最有现代感；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">46.客厅下地很简单，（）是首选；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">47. 过道入户是（），主人品位要体现；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">48.过道入户：（）外加波打线，主人品位要体现；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">49.客厅 （）配天圆；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">50. 餐厅大厅（）；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">51.别墅波打（）线；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">52. 通透瓷砖水晶灯，上墙需要（）；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">53.浅色（）要造型，各个角度亮晶晶；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">54.深色整体（）造型，浑然一体有点睛；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">55.干湿（）主客卫；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">56.湿区（）做防备；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">57.马桶花洒浴缸背，没有焦点太乏味，做个（）有品位；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">58.深浅双色（）配；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">59.一体同色（）缀；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">60.（）地漏没异味，一切为四才对位；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">61. 厨房焦点是（），吊柜台面有空位，发挥想象做点缀；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">62. 三两花片不累赘，欧式（）角花配；</label>
+                <input type="text">
+              </div>
+               <div class="am-form-group">
+                <label class="timu">63.三两花片不累赘，现代 （）来配对；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">64. 卧室淡雅要自然，（）纹理最心安，铺贴方式风格现，少做造型不凌乱；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">65.书房营造文化感，（）纹韵味是首选；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">66.书房营造文化感，（）色沉静心不散；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">67.书房营造文化感，（）色活跃思维宽；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">68.工字（）铺空间，配上地花做围边；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">69.除湿静音护空间，健康宝要（）嵌；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">70.景观阳台要夸张，休闲阳台要清爽，阳台要（）；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">71.（）客厅；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">72.（）厨房；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">73.效果全在（），美好寓意幸福长；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">74.一匹好马配好鞍，好砖也要好配件，转角踢脚台边线，（）点缀是必选；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">75深配浅，（）搭，无极色配都无暇；</label>
+                <input type="text">
+              </div>
+              <div class="am-form-group">
+                <label class="timu">76.       （）色中显优雅，选准主色用料大，六三一分黄金。</label>
+                <input type="text">
+              </div>
+  
+
+            
+              
+              <p><a  class="tijiao">提交答卷</a></p>
+            </fieldset>
+          </form>
         </div>
       </div>
   </div>
-  
+  <span class="clr"></span>
 </div>
+
+
+
+
+
+
+
+
 
 
 <div id="faq" class="wrapper">
@@ -1706,24 +1822,16 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                 | <a target="_blank" href="http://jstimes.com.cn/">合作及洽谈</a>
                 | <a target="_blank" href="http://jstimes.com.cn/">联系我们</a>
                 | <a target="_blank" href="http://jstimes.com.cn/">关于我们</a>
-            <!--   </p>网站备案编号：鄂ICP备14020050号-1 | ICP经营许可证编号：鄂B2-20150042<br>
-
-  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254120465'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254120465%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1254120465"><a href="http://www.cnzz.com/stat/website.php?web_id=1254120465" target="_blank" title="站长统计"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/pic.gif" hspace="0" border="0" vspace="0"></a></span><script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/z_stat.php" type="text/javascript"></script><script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/core.php" charset="utf-8" type="text/javascript"></script> --> </div>
+         </div>
 
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_005.js"></script>
 
-<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
 
 
 
-<script language="javascript">
 
-  $(function() {
-   $('input, textarea').placeholder();
-  });
 
-</script>
 
 </body></html>

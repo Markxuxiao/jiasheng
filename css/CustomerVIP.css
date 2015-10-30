@@ -1,0 +1,84 @@
+
+.color-red {
+	color:red;
+}
+.cvip-more {
+	font-size: 14px;
+	font-weight: normal;
+	float: right;
+	*margin-top: -25px;
+}
+
+.shopingcar ul {
+	margin-right: -20px;
+}
+.shopingcar .item {
+	width: 224px;
+	height: 272px;
+	margin-right: 20px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.shopingcar-goods img {
+	height: 215px;
+	width: 223px;
+}
+.shopingcar-goods-info h1{
+	width: 100%;
+	height: 21px;
+	font-size: 16px;
+	overflow: hidden;
+	margin: 5px 0;
+}
+.shopingcar-goods-price .sale-price {
+	font-size: 22px;
+	float: left;
+	color: red;
+}
+.shopingcar-goods-price .market-price {
+	font-size: 14px;
+	float: right;
+	text-decoration: line-through;
+}
+
+.vip-jf-list {
+	margin-right: -20px;
+}
+.vip-jf-list .item {
+	position: relative;
+	width: 208px;
+	height: 272px;
+	padding: 15px;
+	margin-top: 10px;
+	margin-right: -1px;
+	border:1px solid #ddd;
+	overflow: hidden;
+}
+.vip-jf-list h1{
+	width: 100%;
+	height: 19px;
+	color: #000;
+	font-size: 14px;
+	overflow: hidden;
+	margin: 5px 0;
+}
+.vip-jf-list img {
+	height: 197px;
+	width: 100%;
+}
+.vip-jf-list .vip-jf-btn{
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	display: block;
+	padding: 0 10px;
+	color: #fff;
+	background-color: red;
+}
+.vip-jf-list p {
+	color:red;
+}
+.vip-jf-list .vip-jf-btn:hover{
+	text-decoration: none;
+	background-color: #F35B5B;
+}

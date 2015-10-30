@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,8 +20,8 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/home_header.css" rel="stylesheet" type="text/css">
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/home_login.css" rel="stylesheet" type="text/css">
 <link href="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/zxsjs.css">
-<link rel="stylesheet" type="text/css" href="css/zxjl.css">
+<link rel="stylesheet" type="text/css" href="css/article-list.css">
+
   <!--[if IE 7]>
     <link rel="stylesheet" href="http://www.jstimes.com/shop/resource/font/font-awesome/css/font-awesome-ie7.min.css">
   <![endif]-->
@@ -129,8 +129,22 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
     	-->
 	<span class="seller-login"><a href="http://www.jstimes.com/shop/index.php?act=seller_login&amp;op=show_login" target="_blank" title="登录商家管理中心"><i class="icon-signin"></i>商家管理中心</a></span> <em> <a href="http://www.jstimes.com/shop/index.php?act=store_joinin&amp;op=index" title="招商入驻" target="_blank">&nbsp;|&nbsp;招商入驻</a></em></div>
 	
-
+    <div class="user-login">
+	<!-- -->
+	<dl>
+	<dt>
+		<!--
+      	  
+	  您好      <a href="http://www.jstimes.com/shop" title="首页" alt="首页">家盛时代-首页-国际建材旗帜-武汉建材、家盛时代建材广场</a>
+	  -->
+       <em><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=index">您好,请点击[登录</a>]</em>
+        <em>[<a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register">注册</a>]</em>
+    	</dt>
+	</dl>
+	
+	</div>
     <div class="quick-menu">
+	
       <dl>
         <dt><a href="http://www.jstimes.com/shop/index.php?act=member_order">我的订单</a><i></i></dt>
         <dd>
@@ -150,12 +164,13 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
           </ul>
         </dd>
       </dl>
-	    <dl>
+	  <dl>
         <dt>设计师中心<i></i></dt>
         <dd>
           <ul>
             <li><a href="http://www.jstimes.com/shop/index.php?act=designer_joinin&amp;op=index" target="_blank">设计师入驻</a></li>
-			       <li><a href="http://www.jstimes.com/shop/index.php?act=designer_login&amp;op=show_login" target="_blank">设计师登录</a></li>
+			<li><a href="http://www.jstimes.com/shop/index.php?act=designer_login&amp;op=show_login" target="_blank">设计师登录</a></li>
+			
           </ul>
        </dd>
       </dl>
@@ -169,27 +184,18 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
           </ul>
         </dd>
       </dl>
-      <dl>
+	  <dl>
         <dt>内部系统<i></i></dt>
         <dd>
           <ul>
             <li><a href="http://www.jstimes.com:7890/oa" target="_blank">内部OA</a></li>
-            <li><a href="http://www.jstimes.com/shop/index.php?act=seller_login&amp;op=show_login" target="_blank">在线开单</a></li>
-            <li><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register_replace" target="_blank">代客户注册</a></li>	
+			<li><a href="http://www.jstimes.com/shop/index.php?act=seller_login&amp;op=show_login" target="_blank">在线开单</a></li>
+			<li><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register_replace" target="_blank">代客户注册</a></li>	
+			
           </ul>
        </dd>
       </dl>
-    </div>
-    <div class="user-login" style="float:right">
-      <dl>
-      <dt>
-        <!--您好      <a href="http://www.jstimes.com/shop" title="首页" alt="首页">家盛时代-首页-国际建材旗帜-武汉建材、家盛时代建材广场</a>-->
-           <em><a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=index">您好,请点击[登录</a>]</em>
-            <em>[<a href="http://www.jstimes.com/shop/index.php?act=login&amp;op=register">注册</a>]</em>
-          </dt>
-      </dl>
-     </div>
-
+          </div>
   </div>
 </div>
 <script type="text/javascript">
@@ -1108,21 +1114,18 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
     <ul class="site-menu">
 	
       <li><a href="http://www.jstimes.com/shop">首页</a></li>
-	   <!--
+	  <!--
             <li><a href="http://www.jstimes.com/shop/groupbuy-0-0-0-0-0-0.html" > 团购</a></li>
       	  <li><a href="http://www.jstimes.com/shop/brand.html" > 品牌</a></li>
+	  
 	        <li><a href="http://www.jstimes.com/shop/index.php?act=show_designer&op=index" > 设计师中心</a></li>
+      	  
 	        <li><a href="http://www.jstimes.com/shop/index.php?act=show_xgt&op=index" > 效果图</a></li>
+        
             <li><a href="http://www.jstimes.com/shop/integral.html" > 积分中心</a></li>
       	  -->
 	   
-	  <li><a href="http://www.jstimes.com/shop/index.php?act=zxsjy&amp;op=zxsjy">装修设计院</a>
-        <ul class="site-menu-ul">
-          <li><a href="#">装修案例</a></li>
-          <li><a href="#">图片下载</a></li>
-          <li><a href="#">装修设计师</a></li>
-        </ul>
-    </li>
+	  <li><a href="http://www.jstimes.com/shop/index.php?act=zxsjy&amp;op=zxsjy">装修设计院</a></li>
       <li><a target="_blank" href="http://www.jstimes.com/shop/cate-5027-0-0-2-2-0-0-0.html">家居商城</a></li>
       <li><a target="_blank" href="http://www.jstimes.com/shop/">装修施工队</a></li>
       <li><a href="http://www.jstimes.com/shop/index.php?act=huodong_sp&amp;op=gylyfw">供应链与服务</a></li>
@@ -1134,519 +1137,86 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
   </div>
 </nav>
 <!-- PublicNavLayout End-->
-<div class="ds_index_newhd d831 d92">
-  <div class="wrapper ds_index_hd_p">
-    <div class="ds_index_hd_img3">&nbsp;</div>
-    <div class="ds_index_hd_form">
-      <div class="sjsq_form">
-        <h1>快速填表帮您省心省力装修</h1>
-        <h4 class="mb30">已为<span style="color:red;">6878</span>业主提供专业监理服务</h4>
-        <form action="">
-          <div class="form-group">
-            <input class="G_input" type="text" placeholder="您的称呼">
-          </div>
-          <div class="form-group">
-            <input class="G_input" type="text" placeholder="手机号码">
-          </div>
-          <div class="form-button">
-            <input type="submit" class="G_button ts_linear" value="免费申请报名">
-          </div>
-        </form>
-        <p class="mt15">我们承诺：家盛时代提供该项服务，绝不会乱收取任何费用，为了您的利益以及我们的口碑，您的隐私将被严格保密</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+  <div class="nav-wrap">
+      <div class="w">
+          <div class="breadcrumb"><a href="#">首页</a>&nbsp;&gt;&nbsp;<a href="#">嘉盛学院</a>&nbsp;&gt;&nbsp;<a href="#">学院课件</a></div>
       </div>
-    </div>
-  </div> 
-</div>
-<!-- 12道装修节点 -->
-<div class="wrapper zxjd12">
-  <h1 class="h1_head_ct mt50 mb50">12道装修节点监理</h1>
-  <div class="jiedian_dh">
-    <div class="jiedian_hr">&nbsp;</div>
-    <ul class="jiedian_ul">
-      <li>
-        <a href="#">
-          <h6>1</h6>
-          <div class="jiedian_img"></div>
-          <p>施工合同</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>2</h6>
-          <div class="jiedian_img"></div>
-          <p>准备开始</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>3</h6>
-          <div class="jiedian_img"></div>
-          <p>材料进场</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>4</h6>
-          <div class="jiedian_img"></div>
-          <p>隐蔽工程</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>5</h6>
-          <div class="jiedian_img"></div>
-          <p>水路、电路改造</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>6</h6>
-          <div class="jiedian_img"></div>
-          <p>防水工程及闭水实验</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>7</h6>
-          <div class="jiedian_img"></div>
-          <p>细木工衬底工程</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>8</h6>
-          <div class="jiedian_img"></div>
-          <p>面板、木线实木收口</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>9</h6>
-          <div class="jiedian_img"></div>
-          <p>底漆、面漆H、墙、顶面基础处理</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>10</h6>
-          <div class="jiedian_img"></div>
-          <p>吊顶工程龙骨面板</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>11</h6>
-          <div class="jiedian_img"></div>
-          <p>各部位板块铺贴</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h6>12</h6>
-          <div class="jiedian_img"></div>
-          <p>工程中期验收</p>
-        </a>
-      </li>
-
-    </ul>
   </div>
-</div>
-<div class="wrapper jl_m2">
-  <div class="ds_md7_main clearfix">
-      <ul>
-        <li>
-          <a href="#" target="_blank">
-            <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-            <h4>标题标题标题标题</h4>
-            <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-            <h4>标题标题标题标题</h4>
-            <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-            <h4>标题标题标题标题</h4>
-            <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-            <h4>标题标题标题标题</h4>
-            <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-
-
-<div class="wrapper jl_m1">
-  <h1 class="h1_head_ct mt50 ">装修监理师推荐</h1>
-  <div class="ld clearfix "><a href="#" class="gengduo">更多>></a></div>
-  <ul class="lh">
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="http://www.jstimes.com/data/upload/xgt/designer/sjs013.png">
-        <h4>李东 8年质检经验</h4>
-      </a>
-    </li>
-  </ul>
-</div>
-<div class="wrapper fwlc mt30">
-  <div class="t1">
-    <p>开工前</p>
-    <p>签订监理服务合同</p>
-  </div>
-  <div class="t2">
-    <p>专业监理服务</p>
-    <p>12个节点任选四个</p>
-    <p>推荐：水电、泥木、油漆、竣工</p>
-  </div>
-  <div class="t3">
-    <p>验收完毕</p>
-    <p>出示监理验收报告</p>
-    <p><a href="#">下载验收报告>></a></p>
-  </div>
-</div>
-<div class="wrapper jl_m2">
-  <h1 class="h1_head_ct mt50 mb30">监理师教您验收装修</h1>
-  <div class="ds_md7_main clearfix">
-    <ul>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>标题标题标题标题</h4>
-          <p>现代混搭风格，三室两厅，用蓝色来装饰空间，让人眼前一亮。</p>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="wrapper jl_m3 mb20">
-  <ul class="lh">
-    <li>
-      <img src="images/jianli/装修监理首页_r6_c5.gif">
-      <h1>远程监理</h1>
-      <a href="#">点击进入</a>
-    </li>
-    <li>
-      <img src="images/jianli/装修监理首页_r6_c7.gif" >
-      <h1>确认监理节点</h1>
-      <a href="#">点击进入</a>
-    </li>
-    <li>
-      <img src="images/jianli/装修监理首页_r6_c11.gif" >
-      <h1>在线答疑</h1>
-      <a href="#">点击进入</a>
-    </li>
-    <li>
-      <img src="images/jianli/装修监理首页_r6_c15.gif" >
-      <h1>出节点报告</h1>
-      <a href="#">点击进入</a>
-    </li>
-  </ul>
-  <p class="beizhu">注：业主需要在装修房屋内安装网线和监控器</p>
-</div>
-
-<div class="wrapper jl_m4 mt50">
-  <div class="jl_m4l">
-    <h1 class="h1_head_ct mb30">直击现场监理过程</h1>
-    <div class="ds_md7_main clearfix">
-    <ul>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <img src="http://www.jstimes.com/data/upload/xgt/designer/04910692445086105.jpg" alt="">
-          <h4>复地小区</h4>
-          <p>工长：王某某</p>
-          <p>阶段：木工工程验收</p>
-          <i class="videoico"></i>
-        </a>
-      </li>
-    </ul> 
-    </div>
-  </div>
-  <div class="jl_m4r">
-    <h1 class="h1_head_ct mb30">监理报告</h1>
-    <div class="mc ">
-        <ul>
-          <li class="title">
-            <span>小区</span>
-            <span>验收阶段</span>
-            <span>工长</span>
-            <span>验收结果</span>
-            <span>监理</span>
-          </li>
-        </ul>
-        <div id="design_box">
-          <div class="tempWrap">
-            <ul >
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>2新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>3新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>4新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
-              <li style="height: 35px;">
-                <span>新南湖</span>
-                <span>油漆工程验收</span>
-                <span>吴飞红</span>
-                <span>优秀</span>
-                <span>王某某</span>
-              </li>
+  <div class="main">
+    
+      <div class="left">
+          <div class="allNav mb20 xykecheng">
+            <h2>家盛学院</h2>
+            <ul>
+              <!-- <li ><a href="#" >学院课程</a></li> -->
+              <li class="current"><a href="#" >学院课件</a></li>
+              <li><a href="#" >学院问卷</a></li>
             </ul>
           </div>
+          
+      </div>
+      <div class="right">
+        <h1 class="xykc_hd YaHei">学院课件</h1>
+        <div class="kejianlist">
+          <ul class="clearfix">
+            <li>
+              <a href="#">
+                <h1>东鹏瓷砖销售知识课件<span class="time">2015-9-20</span></h1>
+              </a>
+              <div class="shaoma">
+                <img src="http://www.jstimes.com/data/upload/xgt/designer/04914182128506010.jpg" alt="课件详情二维码">
+                <h3>扫二维码查看课件</h3>
+              </div>
+              <div class="shaoma">
+                <img src="http://www.jstimes.com/data/upload/xgt/designer/04929511639255101.jpg" alt="答题二维码">
+                <h3>扫二维码手机答题</h3>
+              </div>
+            </li>
+        
+          </ul>
         </div>
+          
+
+<!--           <div class="paginbox">
+            <div class="pagin">
+              <span class="current">1</span>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+              <em>……</em>
+              <a class="next" href="#">下一页</a>
+            </div>
+          </div> -->
       </div>
   </div>
-  
+  <span class="clr"></span>
 </div>
+
+
+
+
+
+
+
+
 
 
 <div id="faq" class="wrapper">
@@ -1706,24 +1276,16 @@ _behavior: url(http://www.jstimes.com/shop/templates/default/css/csshover.htc);
                 | <a target="_blank" href="http://jstimes.com.cn/">合作及洽谈</a>
                 | <a target="_blank" href="http://jstimes.com.cn/">联系我们</a>
                 | <a target="_blank" href="http://jstimes.com.cn/">关于我们</a>
-            <!--   </p>网站备案编号：鄂ICP备14020050号-1 | ICP经营许可证编号：鄂B2-20150042<br>
-
-  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254120465'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254120465%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1254120465"><a href="http://www.cnzz.com/stat/website.php?web_id=1254120465" target="_blank" title="站长统计"><img src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/pic.gif" hspace="0" border="0" vspace="0"></a></span><script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/z_stat.php" type="text/javascript"></script><script src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/core.php" charset="utf-8" type="text/javascript"></script> --> </div>
+         </div>
 
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="%E8%A3%85%E4%BF%AE%E6%96%BD%E5%B7%A5%E9%98%9F_files/jquery_005.js"></script>
 
-<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
 
 
 
-<script language="javascript">
 
-  $(function() {
-   $('input, textarea').placeholder();
-  });
 
-</script>
 
 </body></html>
