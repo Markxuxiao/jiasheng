@@ -40,3 +40,45 @@
 	float: right;
 	text-decoration: line-through;
 }
+
+.vip-jf-list {
+	margin-right: -20px;
+}
+.vip-jf-list .item {
+	position: relative;
+	width: 208px;
+	height: 272px;
+	padding: 15px;
+	margin-top: 10px;
+	margin-right: -1px;
+	border:1px solid #ddd;
+	overflow: hidden;
+}
+.vip-jf-list h1{
+	width: 100%;
+	height: 19px;
+	color: #000;
+	font-size: 14px;
+	overflow: hidden;
+	margin: 5px 0;
+}
+.vip-jf-list img {
+	height: 197px;
+	width: 100%;
+}
+.vip-jf-list .vip-jf-btn{
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	display: block;
+	padding: 0 10px;
+	color: #fff;
+	background-color: red;
+}
+.vip-jf-list p {
+	color:red;
+}
+.vip-jf-list .vip-jf-btn:hover{
+	text-decoration: none;
+	background-color: #F35B5B;
+}
